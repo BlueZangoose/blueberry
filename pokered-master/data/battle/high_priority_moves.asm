@@ -1,0 +1,12 @@
+HighPriorityMoves:
+	db QUICK_ATTACK
+	db SWIFT_SLASH
+	db SURPRISEPNCH
+	db ZEPHYR
+	db AIR_SCYTHE
+	db BOULDER_ROLL
+	db WATERJET
+	db MANTIS_SLASH
+	db WING_STRIKE
+	db -1 ; end
+	

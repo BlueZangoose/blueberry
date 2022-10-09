@@ -1322,9 +1322,14 @@ StoneShellAnim:
 ;lightscreen:
 PsyshieldAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
-	battle_anim PSYSHIELD, SUBANIM_1_BARRIER, 1, 6
-	battle_anim PSYSHIELD, SUBANIM_1_BARRIER, 1, 6
+	battle_anim NO_MOVE, SUBANIM_UNUSED_CIRCLE_SQUARE_HALFTOSS, 0, 12
+	battle_anim NO_MOVE, SUBANIM_1_BARRIER, 1, 12
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim PSYSHIELD, SUBANIM_1_BARRIER, 1, 6
+;	battle_anim PSYSHIELD, SUBANIM_1_BARRIER, 1, 6
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;haze:
 HazeAnim:

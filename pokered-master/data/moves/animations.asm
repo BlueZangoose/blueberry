@@ -1463,9 +1463,15 @@ GrassBladesAnim:
 	db -1 ; end
 ;constrict:
 PsyblastAnim:
-	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
-	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
-	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
+	battle_anim RAISEHACKLES, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 6
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim VILE_STENCH, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	
+;	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
+;	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
+;	battle_anim PSYBLAST, SUBANIM_0_BIND, 0, 6
 	db -1 ; end
 ;amnesia:
 FocusAnim:

@@ -809,7 +809,14 @@ StonetailAnim:
 	db -1 ; end
 ;ember:
 PsychicSongAnim:
-	battle_anim PSYCHIC_SONG, SUBANIM_1_FLAMES, 1, 6
+	battle_anim GEM_MISSILE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_BOTH_HEART_MUSIC, 1, 3
+	battle_anim NO_MOVE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 3
+	battle_anim NO_MOVE, SUBANIM_BOTH_HEART_MUSIC, 1, 3
+	battle_anim NO_MOVE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 3
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim PSYCHIC_SONG, SUBANIM_1_FLAMES, 1, 6
 	db -1 ; end
 ;flamethrower:
 SleeperholdAnim:

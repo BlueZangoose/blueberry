@@ -648,7 +648,13 @@ DouseAnim:
 	db -1 ; end
 ;headbutt:
 PsysqueezeAnim:
-	battle_anim PSYSQUEEZE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim QUICK_ATTACK, SE_WAVY_SCREEN
+	battle_anim PSYSQUEEZE, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
+	battle_anim NO_MOVE, SUBANIM_0_STAR, 0, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim PSYSQUEEZE, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 ;hornattack:
 StingingHairAnim:

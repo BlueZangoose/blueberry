@@ -873,8 +873,15 @@ IonBeamAnim:
 	db -1 ; end
 ;psybeam:
 PsionicSlamAnim:
-	battle_anim PSIONIC_SLAM, SUBANIM_0_BEAM, 0, 3
-	battle_anim NO_MOVE, SE_FLASH_SCREEN_LONG
+	battle_anim PSIONIC_SLAM, SE_SHAKE_ENEMY_HUD
+	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
+
+;	battle_anim PSIONIC_SLAM, SUBANIM_0_BEAM, 0, 3
+;	battle_anim NO_MOVE, SE_FLASH_SCREEN_LONG
 	db -1 ; end
 ;bubblebeam:
 FlametailAnim:

@@ -9,7 +9,7 @@ AnimationIdSpecialEffects:
 	anim_special_effect SHELL_SMACK,           AnimationFlashScreen				; changed, was guillotine
 	anim_special_effect WILDFIRE,              AnimationFlashScreen				; was mega kick
 	anim_special_effect PSYSQUEEZE,            AnimationFlashScreen				; changed, was headbutt
-	anim_special_effect PUPPY_EYES,            TailWhipAnimationUnused			; changed, was tail whip
+;	anim_special_effect PUPPY_EYES,            TailWhipAnimationUnused			; changed, was tail whip
 	anim_special_effect CUTE_BARK,             DoGrowlSpecialEffects			; changed, was growl
 ;	anim_special_effect ECHO_SONG,             DoGrowlSpecialEffects			; new
 	anim_special_effect SAD_SONG,              AnimationFlashScreen				; changed, was disable

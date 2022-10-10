@@ -729,13 +729,16 @@ ScaleSlamAnim:
 	db -1 ; end
 ;tailwhip:
 PuppyEyesAnim:
-	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_RESET_MON_POSITION
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_RESET_MON_POSITION
+	battle_anim SOFTBOILED, SUBANIM_BOTH_HEART_MUSIC, 0, 6
+	battle_anim HAUNT, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 0, 6
+
+;	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_RESET_MON_POSITION
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_RESET_MON_POSITION
 	db -1 ; end
 ;poisonsting:
 PoisonStingAnim:

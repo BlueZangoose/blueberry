@@ -283,6 +283,10 @@ ZigZagScreenAnim:
 	db -1 ; end
 
 SandBombAnim:
+	battle_anim FIST_BARRAGE, SUBANIM_0_BALL_TOSS_LOW, 0, 2
+	battle_anim DOUSE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 6
+	battle_anim TOXIC_GAS, SUBANIM_0_ROCKS_FALL_ENEMY, 1, 6
+	db -1 ; end
 SnowBreathAnim:
 DustKickAnim:
 	battle_anim DOUSE, SUBANIM_1_SAND, 1, 6

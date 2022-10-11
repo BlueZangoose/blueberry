@@ -422,6 +422,9 @@ BoulderRollAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
 ZephyrAnim:
+	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 4
+	battle_anim WHIRLWIND, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	db -1 ; end
 SurprisePnchAnim:
 SwiftSlashAnim:
 BoulderSlamAnim:

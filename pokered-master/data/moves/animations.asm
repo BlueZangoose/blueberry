@@ -312,6 +312,9 @@ FoamSprayAnim:
 	db -1 ; end
 TarSlapAnim:
 WyrmtailAnim:
+	battle_anim LAVA_GEYSER, SUBANIM_0_STAR_THRICE, 0, 4
+	battle_anim GHOSTFIRE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 8
+	db -1 ; end
 CorrodeAnim:
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
 	battle_anim RED_MOLD, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6

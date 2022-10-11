@@ -1224,6 +1224,12 @@ RageAnim:
 TeleportAnim:
 	battle_anim TELEPORT, SE_SQUISH_MON_PIC
 	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim TALON_ATTACK, SUBANIM_0_STAR_DESCENDING, 0, 6
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	
+;	battle_anim TELEPORT, SE_SQUISH_MON_PIC
+;	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
 	db -1 ; end
 ;nightshade:
 NightShadeAnim:

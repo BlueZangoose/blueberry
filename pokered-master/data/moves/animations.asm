@@ -825,8 +825,11 @@ SadSongAnim:
 	db -1 ; end
 ;acid:
 StonetailAnim:
-	battle_anim STONETAIL, SUBANIM_1_BLOB_TOSS, 1, 6
-	battle_anim STONETAIL, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	battle_anim LAVA_GEYSER, SUBANIM_0_STAR_THRICE, 0, 4
+	battle_anim LEAF_TRAP, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 4
+
+;	battle_anim STONETAIL, SUBANIM_1_BLOB_TOSS, 1, 6
+;	battle_anim STONETAIL, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db -1 ; end
 ;ember:
 PsychicSongAnim:

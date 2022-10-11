@@ -1285,10 +1285,14 @@ RegenerateAnim:
 	db -1 ; end
 ;harden:
 SandArmorAnim:
-	battle_anim SAND_ARMOR, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim DOUSE, SUBANIM_0_ROCKS_LIFT, 1, 6
+	battle_anim SAND_ARMOR, SUBANIM_0_STATUS_PARALYZED, 0, 6
+	battle_anim SAND_ARMOR, SUBANIM_0_STATUS_PARALYZED, 0, 6
+
+;	battle_anim SAND_ARMOR, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;minimize:
 EagleEyeAnim:

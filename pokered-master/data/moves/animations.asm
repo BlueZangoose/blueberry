@@ -296,6 +296,8 @@ DustKickAnim:
 	db -1 ; end
 MudslideAnim:
 SupercoolAnim:
+	battle_anim POSSESSION, SUBANIM_0_ICE_RISE, 0, 24
+	db -1 ; end
 LandslideAnim:
 	battle_anim TREMOR, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 1
 	battle_anim NO_MOVE, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 1

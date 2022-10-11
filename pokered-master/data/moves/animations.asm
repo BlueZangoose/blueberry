@@ -1098,6 +1098,10 @@ FistBarrageAnim:
 	db -1 ; end
 ;stringshot:
 WinkAnim:
+	battle_anim AMP_UP, SUBANIM_BOTH_HEART_MUSIC, 0, 6
+	battle_anim NO_MOVE, SE_BLINK_MON
+	battle_anim AMP_UP, SE_DARK_SCREEN_FLASH
+	db -1 ; end
 MightyRoarAnim:
 	battle_anim MIGHTY_ROAR, SUBANIM_0_STRING_SHOT, 0, 8
 	db -1 ; end

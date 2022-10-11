@@ -920,9 +920,13 @@ FlametailAnim:
 	db -1 ; end
 ;aurorabeam:
 WindchillAnim:
-	battle_anim WINDCHILL, SUBANIM_0_BEAM, 0, 3
+	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SKY_ATTACK, SUBANIM_0_ICE_FALL, 0, 6
+
+;	battle_anim WINDCHILL, SUBANIM_0_BEAM, 0, 3
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	db -1 ; end
 ;hyperbeam:
 DragonBlastAnim:

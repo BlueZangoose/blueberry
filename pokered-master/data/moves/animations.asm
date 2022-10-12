@@ -670,8 +670,11 @@ PsysqueezeAnim:
 	db -1 ; end
 ;hornattack:
 StingingHairAnim:
-	battle_anim STINGINGHAIR, SUBANIM_0_HORN_JAB_TWO, 0, 6
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim STINGINGHAIR, SUBANIM_0_STRING_SHOT, 0, 2
+	battle_anim STINGINGHAIR, SUBANIM_0_STRING_SHOT, 0, 2
+
+;	battle_anim STINGINGHAIR, SUBANIM_0_HORN_JAB_TWO, 0, 6
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 ;furyattack:
 TantrumAnim:

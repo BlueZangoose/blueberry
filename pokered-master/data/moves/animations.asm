@@ -1479,7 +1479,11 @@ BuckAnim:
 	db -1 ; end
 ;boneclub:
 ShriekAnim:
-	battle_anim SHRIEK, SUBANIM_0_STAR_THRICE, 0, 8
+	battle_anim VILE_STENCH, SUBANIM_1_SHOUT, 1, 8
+	battle_anim NO_MOVE, SUBANIM_1_SHOUT, 1, 8
+	battle_anim NO_MOVE, SUBANIM_1_SHOUT, 1, 8
+
+;	battle_anim SHRIEK, SUBANIM_0_STAR_THRICE, 0, 8
 	db -1 ; end
 ;fireblast:
 AirCoolingAnim:

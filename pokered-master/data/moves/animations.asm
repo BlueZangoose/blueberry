@@ -872,7 +872,9 @@ DustbathAnim:
 	db -1 ; end
 ;watergun:
 SliceAnim:
-	battle_anim SLICE, SUBANIM_0_WATER_DROPLETS, 0, 6
+	battle_anim CUT, SUBANIM_0_SLICE, 0, 6
+
+;	battle_anim SLICE, SUBANIM_0_WATER_DROPLETS, 0, 6
 	db -1 ; end
 ;hydropump:
 JabAnim:

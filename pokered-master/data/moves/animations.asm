@@ -962,7 +962,11 @@ DragonBlastAnim:
 	db -1 ; end
 ;peck:
 StarfireAnim:
-	battle_anim STARFIRE, SUBANIM_0_STAR_TWICE, 0, 8
+	battle_anim AIR_COOLING, SUBANIM_1_FLAME_STAR, 1, 8
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 1, 8
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 1, 8
+
+;	battle_anim STARFIRE, SUBANIM_0_STAR_TWICE, 0, 8
 	db -1 ; end
 ;drillpeck:
 LanceChargeAnim:
@@ -1347,9 +1351,12 @@ RollOverAnim:
 	db -1 ; end
 ;confuseray:
 SporeSprayAnim:
-	battle_anim SPORE_SPRAY, SE_DARK_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_TOSS, 1, 6
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim SPORE_SPRAY, SUBANIM_1_SAND, 1, 6
+	battle_anim NO_MOVE, SUBANIM_0_CIRCLES_FALLING, 0, 6
+
+;	battle_anim SPORE_SPRAY, SE_DARK_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_TOSS, 1, 6
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;withdraw:
 VortexAnim:

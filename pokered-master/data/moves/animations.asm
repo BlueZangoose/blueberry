@@ -329,6 +329,10 @@ ChilltailAnim:
 	db -1 ; end
 SandblastAnim:
 ShedSkinAnim:
+	battle_anim PARASTING, SE_SQUISH_MON_PIC
+	battle_anim SAND_ARMOR, SUBANIM_0_SHELL, 0, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+	db -1 ; end
 SlimeCoatAnim:
 	battle_anim BUCK, SUBANIM_0_STATUS_POISONED, 0, 6
 	battle_anim NO_MOVE, SUBANIM_0_STATUS_POISONED, 0, 6

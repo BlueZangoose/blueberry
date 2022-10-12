@@ -344,6 +344,13 @@ EmberskinAnim:
 	battle_anim PSYCHIC_SONG, SUBANIM_1_FLAMES, 1, 6
 	db -1 ; end
 StaticFluffAnim:
+	battle_anim INJECT, SUBANIM_0_STATUS_PARALYZED, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_STATUS_PARALYZED, 0, 6
+	battle_anim POISONPOLLEN, SUBANIM_1_BARRIER, 1, 10
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SUBANIM_1_LIGHTNING_BALL, 1, 1
+	db -1 ; end
 ChloroburstAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
 	battle_anim FIST_BARRAGE, SE_SHOOT_MANY_BALLS_UPWARD

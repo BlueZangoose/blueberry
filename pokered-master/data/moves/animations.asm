@@ -1619,7 +1619,9 @@ SapAnim:
 	db -1 ; end
 ;lovelykiss:
 SleepingGasAnim:
-	battle_anim SLEEPING_GAS, SUBANIM_BOTH_HEART_MUSIC, 0, 6
+	battle_anim PSYSHIELD, SUBANIM_1_CLOUD_TOSS, 1, 9
+
+;	battle_anim SLEEPING_GAS, SUBANIM_BOTH_HEART_MUSIC, 0, 6
 	db -1 ; end
 ;skyattack:
 SkyAttackAnim:

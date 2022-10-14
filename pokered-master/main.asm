@@ -356,7 +356,7 @@ INCLUDE "data/battle_anims/subanimations.asm"
 INCLUDE "data/battle_anims/frame_blocks.asm"
 ;INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
-INCLUDE "engine/items/tm_prices.asm"
+;INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "bank1F", ROMX		;new
 INCLUDE "gfx/fishing.asm"
@@ -364,6 +364,7 @@ INCLUDE "engine/movie/evolution.asm"
 INCLUDE "gfx/trade.asm"
 INCLUDE "engine/overworld/cut2.asm"
 INCLUDE "engine/overworld/dust_smoke.asm"
+INCLUDE "engine/items/tm_prices.asm"
 
 SECTION "bank20", ROMX		;new
 INCLUDE "engine/battle/move_effects/NEW_status_countereffect.asm"

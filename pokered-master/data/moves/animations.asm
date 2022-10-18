@@ -440,6 +440,9 @@ ZephyrAnim:
 	db -1 ; end
 SurprisePnchAnim:
 SwiftSlashAnim:
+	battle_anim WHIRLWIND, SUBANIM_0_SLICE_BOTH_SIDES, 0, 2
+	battle_anim WHIRLWIND, SUBANIM_0_SLICE, 0, 2
+	db -1 ; end
 BoulderSlamAnim:
 	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION

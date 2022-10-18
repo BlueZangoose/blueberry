@@ -1025,23 +1025,33 @@ CloseCircuitAnim:
 	db -1 ; end
 ;seismictoss:
 SeismicRockAnim:
-	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
-	battle_anim MULTISLAP, SUBANIM_1_SPHERE_BIG, 1, 1
-	battle_anim NO_MOVE, SE_HIDE_ENEMY_MON_PIC
-	battle_anim NO_MOVE, SE_SLIDE_MON_OFF
-	battle_anim SEISMIC_ROCK, SUBANIM_1_SPHERE_BIG_RISE, 1, 2
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_SHOW_MON_PIC
-	battle_anim SEISMIC_ROCK, SUBANIM_1_SPHERE_BIG_FALL, 1, 1
-	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
-	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+	battle_anim RAPIDS_RUSH, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 2
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG_FALL, 1, 1
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG, 1, 1
+	battle_anim STONE_FIST, SE_SHAKE_SCREEN
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG_RISE, 1, 1
+
+;	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
+;	battle_anim MULTISLAP, SUBANIM_1_SPHERE_BIG, 1, 1
+;	battle_anim NO_MOVE, SE_HIDE_ENEMY_MON_PIC
+;	battle_anim NO_MOVE, SE_SLIDE_MON_OFF
+;	battle_anim SEISMIC_ROCK, SUBANIM_1_SPHERE_BIG_RISE, 1, 2
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+;	battle_anim SEISMIC_ROCK, SUBANIM_1_SPHERE_BIG_FALL, 1, 1
+;	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
+;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
 	db -1 ; end
 ;strength:
 StrengthAnim:
-	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_RESET_MON_POSITION
-	battle_anim FLAMEBITE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim LEAF_TRAP, SUBANIM_0_ROCKS_LIFT, 0, 4
+	battle_anim NO_MOVE, SUBANIM_1_CLOUD_TOSS, 0, 3
+	battle_anim LEAF_TRAP, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 3
+
+;	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+;	battle_anim FLAMEBITE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;absorb:
 LeechBiteAnim:

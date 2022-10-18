@@ -460,6 +460,11 @@ BoulderSlamAnim:
 	db -1 ; end
 RockfallAnim:
 SlingStoneAnim:
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim WARMUP, SE_SLIDE_MON_UP
+	battle_anim RAPIDS_RUSH, SUBANIM_1_CLOUD_TOSS, 0, 8
+	battle_anim RAPIDS_RUSH, SUBANIM_1_STAR_BIG, 1, 6
+	db -1 ; end
 SeedShotAnim:
 	battle_anim PARASITEROOT, SUBANIM_1_SEED_TOSS, 1, 4
 	battle_anim NO_MOVE, SUBANIM_0_STAR_HIGH, 0, 6

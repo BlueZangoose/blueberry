@@ -1115,7 +1115,11 @@ ChargePouchAnim:
 	db -1 ; end
 ;poisonpowder:
 ToxicGasAnim:
-	battle_anim TOXIC_GAS, SUBANIM_0_CIRCLES_FALLING, 0, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim TOXIC_GAS, SUBANIM_0_ROCKS_FALL_ENEMY, 1, 12
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	
+;	battle_anim TOXIC_GAS, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
 ;stunspore:
 ParastingAnim:

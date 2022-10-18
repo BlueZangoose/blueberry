@@ -899,8 +899,13 @@ JabAnim:
 	db -1 ; end
 ;surf:
 SurfAnim:
-	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
-	battle_anim JAB, SUBANIM_0_WATER_COLUMNS, 0, 6
+	battle_anim JAB, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_STAR_DESCENDING, 0, 6
+
+;	battle_anim JAB, SUBANIM_0_WATER_COLUMNS, 0, 6
+
+;	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
+;	battle_anim JAB, SUBANIM_0_WATER_COLUMNS, 0, 6
 	db -1 ; end
 ;icebeam:
 ElectroshockAnim:

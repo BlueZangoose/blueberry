@@ -429,6 +429,9 @@ IceBoulderAnim:
 WingStrikeAnim:
 MantisSlashAnim:
 WaterjetAnim:
+	battle_anim SLICE, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 0, 1
+	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 1	
+	db -1 ; end
 BoulderRollAnim:
 	battle_anim POLLEN_ARMOR, SE_SLIDE_MON_DOWN
 	battle_anim MEGAVOLT, SUBANIM_1_CLOUD_TOSS, 0, 6

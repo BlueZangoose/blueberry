@@ -1254,10 +1254,22 @@ WaterCannonAnim:
 	db -1 ; end
 ;meditate:
 WarmupAnim:
-	battle_anim WARMUP, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim WARMUP, SE_SLIDE_MON_DOWN
+	battle_anim WARMUP, SE_SLIDE_MON_UP
+	battle_anim WARMUP, SE_SLIDE_MON_DOWN
+	battle_anim WARMUP, SE_SLIDE_MON_UP
+	battle_anim WARMUP, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WARMUP, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WARMUP, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim WARMUP, SE_RESET_MON_POSITION
+
+;	battle_anim WARMUP, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;agility:
 AmpUpAnim:

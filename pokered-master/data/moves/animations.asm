@@ -1420,11 +1420,16 @@ SporeSprayAnim:
 	db -1 ; end
 ;withdraw:
 VortexAnim:
-	battle_anim POLLEN_ARMOR, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
-	battle_anim NO_MOVE, SUBANIM_0_SHELL, 0, 6
+	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+	battle_anim WHIRLWIND, SUBANIM_1_BARRIER, 1, 6
+	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
-	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+
+;	battle_anim POLLEN_ARMOR, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+;	battle_anim NO_MOVE, SUBANIM_0_SHELL, 0, 6
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 ;defensecurl:
 PollenArmorAnim:

@@ -455,6 +455,9 @@ BoulderSlamAnim:
 RockfallAnim:
 SlingStoneAnim:
 SeedShotAnim:
+	battle_anim PARASITEROOT, SUBANIM_1_SEED_TOSS, 1, 4
+	battle_anim NO_MOVE, SUBANIM_0_STAR_HIGH, 0, 6
+	db -1 ; end
 DisarmAnim:
 	battle_anim MANTIS_STYLE, SUBANIM_0_BIRDIES_CIRCLING_ENEMY, 1, 6
 	battle_anim BLACK_GAS, SUBANIM_0_ROCKS_FALL_ENEMY, 1, 1

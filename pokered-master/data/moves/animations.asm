@@ -689,8 +689,11 @@ StingingHairAnim:
 	db -1 ; end
 ;furyattack:
 TantrumAnim:
-	battle_anim TANTRUM, SUBANIM_0_HORN_JAB_THREE, 0, 2
-	battle_anim NO_MOVE, SUBANIM_0_HORN_JAB_THREE, 0, 2
+	battle_anim PSIONIC_SLAM, SUBANIM_1_SHOUT, 1, 6
+	battle_anim NO_MOVE, SE_BOUNCE_UP_AND_DOWN
+
+;	battle_anim TANTRUM, SUBANIM_0_HORN_JAB_THREE, 0, 2
+;	battle_anim NO_MOVE, SUBANIM_0_HORN_JAB_THREE, 0, 2
 	db -1 ; end
 ;horndrill:
 KOKickAnim:

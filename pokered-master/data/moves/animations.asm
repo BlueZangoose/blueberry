@@ -328,6 +328,9 @@ ChilltailAnim:
 	battle_anim NO_MOVE, SUBANIM_0_ICE_RISE, 0, 16
 	db -1 ; end
 SandblastAnim:
+	battle_anim DOUSE, SUBANIM_1_SAND, 1, 16
+	battle_anim DETONATE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	db -1 ; end
 ShedSkinAnim:
 	battle_anim PARASTING, SE_SQUISH_MON_PIC
 	battle_anim SAND_ARMOR, SUBANIM_0_SHELL, 0, 6

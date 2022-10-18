@@ -288,6 +288,9 @@ SandBombAnim:
 	battle_anim TOXIC_GAS, SUBANIM_0_ROCKS_FALL_ENEMY, 1, 6
 	db -1 ; end
 SnowBreathAnim:
+	battle_anim TALON_ATTACK, SUBANIM_0_WATER_BUBBLES, 0, 8
+	battle_anim PARASTING, SUBANIM_0_CIRCLES_FALLING, 0, 8
+	db -1 ; end
 DustKickAnim:
 	battle_anim DOUSE, SUBANIM_1_SAND, 1, 6
 ;	battle_anim DOUSE, SUBANIM_0_ROCKS_LIFT, 1, 1

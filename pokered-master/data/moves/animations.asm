@@ -823,6 +823,9 @@ FrostbiteAnim:
 ;bite:
 VenomBiteAnim:
 	battle_anim VENOMBITE, SUBANIM_0_STAR_THRICE, 0, 8
+	battle_anim PARASTING, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+
+;	battle_anim VENOMBITE, SUBANIM_0_STAR_THRICE, 0, 8
 	db -1 ; end
 ;growl:
 CuteBarkAnim:

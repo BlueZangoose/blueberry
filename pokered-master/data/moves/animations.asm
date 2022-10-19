@@ -671,7 +671,12 @@ EarthSpikesAnim:
 	db -1 ; end
 ;megakick:
 WildfireAnim:
-	battle_anim WILDFIRE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim ION_BEAM, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 1, 3
+	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 1, 3
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 1, 12
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 1, 12
+
+;	battle_anim WILDFIRE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;jumpkick:
 JumpKickAnim:

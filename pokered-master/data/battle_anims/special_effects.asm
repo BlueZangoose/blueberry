@@ -7,7 +7,7 @@ AnimationIdSpecialEffects:
 	; animation id, effect routine address
 ;	anim_special_effect DRUMBEAK,              AnimationFlashScreen				; changed, was mega punch
 	anim_special_effect SHELL_SMACK,           AnimationFlashScreen				; changed, was guillotine
-	anim_special_effect WILDFIRE,              AnimationFlashScreen				; was mega kick
+;	anim_special_effect WILDFIRE,              AnimationFlashScreen				; was mega kick
 	anim_special_effect PSYSQUEEZE,            AnimationFlashScreen				; changed, was headbutt
 ;	anim_special_effect PUPPY_EYES,            TailWhipAnimationUnused			; changed, was tail whip
 	anim_special_effect CUTE_BARK,             DoGrowlSpecialEffects			; changed, was growl

@@ -459,6 +459,10 @@ BoulderSlamAnim:
 	battle_anim LEAF_CAMO, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 RockfallAnim:
+	battle_anim RAPIDS_RUSH, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 2
+	battle_anim LEAF_TRAP, SE_SHAKE_SCREEN
+	battle_anim RAPIDS_RUSH, SUBANIM_0_ROCKS_FALL_ENEMY, 0, 2
+	db -1 ; end
 SlingStoneAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
 	battle_anim WARMUP, SE_SLIDE_MON_UP

@@ -1706,7 +1706,17 @@ TransformAnim:
 	db -1 ; end
 ;bubble:
 MoonfrostAnim:
-	battle_anim MOONFROST, SUBANIM_0_WATER_BUBBLES, 0, 22
+	battle_anim MOONFROST, SE_DARKEN_MON_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim MOONFROST, SUBANIM_1_SPHERE_BIG, 1, 22
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim MOONFROST, SE_WAVY_SCREEN
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG_RISE, 1, 1
+	battle_anim MOONFROST, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim MOONFROST, SUBANIM_0_WATER_BUBBLES, 0, 22
 	db -1 ; end
 ;dizzypunch:
 SpookyEnergyAnim:

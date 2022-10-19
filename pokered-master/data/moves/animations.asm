@@ -1276,7 +1276,15 @@ FallingStarAnim:
 	db -1 ; end
 ;hypnosis:
 WaterCannonAnim:
-	battle_anim WATER_CANNON, SE_FLASH_SCREEN_LONG
+	battle_anim JAB, SUBANIM_0_BEAM, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 4
+
+;	battle_anim JAB, SUBANIM_1_FLAME_BEAM, 0, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+
+;	battle_anim WATER_CANNON, SE_FLASH_SCREEN_LONG
 	db -1 ; end
 ;meditate:
 WarmupAnim:

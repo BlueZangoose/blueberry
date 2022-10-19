@@ -228,5 +228,4 @@ Moves:
 	move	DUST_KICK,			ACC_DOWN_SIDE_EFFECT_50,		20,		GROUND,			100,	25	;	new
 	move	SNOW_BREATH,		SPD_DOWN_SIDE_EFFECT_50,		55,		ICE,			95,		10	;	new
 	move	SAND_BOMB,			SPD_DOWN_SIDE_EFFECT_50,		90,		GROUND,			90,		10	;	new
-;	move	WATER_CANNON,		SPD_DOWN_SIDE_EFFECT_30,		105,	WATER,			80,		5	;	new
 	assert_table_length NUM_ATTACKS

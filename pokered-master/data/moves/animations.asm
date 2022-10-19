@@ -634,8 +634,18 @@ WhirlwindAnim:
 	db -1 ; end
 ;fly:
 VanishAnim:
-	battle_anim VANISH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
-	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim VANISH, SE_DARK_SCREEN_FLASH
+	battle_anim VANISH, SE_FLASH_MON_PIC
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+	battle_anim VANISH, SE_BLINK_MON
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+	battle_anim VANISH, SE_DELAY_ANIMATION_10
+
+;	battle_anim VANISH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 ;bind:
 EarthTrapAnim:

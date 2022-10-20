@@ -1210,9 +1210,12 @@ MegavoltAnim:
 	db -1 ; end
 ;thunderwave:
 PoisonPollenAnim:
-	battle_anim POISONPOLLEN, SUBANIM_1_LIGHTNING_BALL, 1, 2
-	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 2
-	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 4
+	battle_anim TOXIC_GAS, SUBANIM_1_SAND, 1, 6
+	battle_anim TOXIC_GAS, SUBANIM_1_SEED_LAND, 1, 10
+
+;	battle_anim POISONPOLLEN, SUBANIM_1_LIGHTNING_BALL, 1, 2
+;	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 2
+;	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 4
 	db -1 ; end
 ;thunder:
 PracticePnchAnim:
@@ -1277,7 +1280,11 @@ FallingStarAnim:
 ;hypnosis:
 WaterCannonAnim:
 	battle_anim JAB, SUBANIM_0_BEAM, 0, 6
-	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 4
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6
+
+;	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 4
 
 ;	battle_anim JAB, SUBANIM_1_FLAME_BEAM, 0, 6
 ;	battle_anim NO_MOVE, SUBANIM_1_FLAME_STAR, 0, 6

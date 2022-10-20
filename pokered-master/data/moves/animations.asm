@@ -625,7 +625,10 @@ MudBulletsAnim:
 	db -1 ; end
 ;wingattack:
 PierceStingAnim:
-	battle_anim PIERCE_STING, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim POISON_STING, SUBANIM_0_HORN_JAB_TWO, 0, 6
+	battle_anim POISON_STING, SUBANIM_0_STAR_HIGH, 0, 6
+
+;	battle_anim PIERCE_STING, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;whirlwind:
 WhirlwindAnim:

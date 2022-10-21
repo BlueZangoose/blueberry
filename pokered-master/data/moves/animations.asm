@@ -298,6 +298,11 @@ DustKickAnim:
 	battle_anim LEAF_CHOMP, SUBANIM_0_STAR_HIGH, 0, 6
 	db -1 ; end
 MudslideAnim:
+	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+	battle_anim FISSURE, SUBANIM_0_CIRCLES_FALLING, 1, 6
+	battle_anim FISSURE, SE_SHAKE_SCREEN
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
 SupercoolAnim:
 	battle_anim POSSESSION, SUBANIM_0_ICE_RISE, 0, 24
 	db -1 ; end

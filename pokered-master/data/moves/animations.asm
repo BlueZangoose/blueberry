@@ -321,6 +321,9 @@ FoamSprayAnim:
 	battle_anim MOONFROST, SUBANIM_0_WATER_DROPLETS, 0, 6
 	db -1 ; end
 TarSlapAnim:
+	battle_anim RED_MOLD, SUBANIM_1_SAND, 1, 6
+	battle_anim ICE_TUNNEL, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	db -1 ; end
 WyrmtailAnim:
 	battle_anim LAVA_GEYSER, SUBANIM_0_STAR_THRICE, 0, 4
 	battle_anim GHOSTFIRE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 8

@@ -1846,7 +1846,11 @@ StoneFistAnim:
 	db -1 ; end
 ;hyperfang:
 RapidsRushAnim:
-	battle_anim RAPIDS_RUSH, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim SURF, SUBANIM_0_WATER_COLUMNS, 0, 2
+	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 2
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+
+;	battle_anim RAPIDS_RUSH, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 ;sharpen:
 RaiseHacklesAnim:

@@ -818,7 +818,9 @@ CurrentFlowAnim:
 	db -1 ; end
 ;pinmissile:
 MultikickAnim:
-	battle_anim MULTIKICK, SUBANIM_0_STAR_TWICE, 0, 3
+	battle_anim ROAR, SUBANIM_0_STAR_THRICE, 0, 8
+
+;	battle_anim MULTIKICK, SUBANIM_0_STAR_TWICE, 0, 3
 	db -1 ; end
 ;leer:
 FrostbiteAnim:

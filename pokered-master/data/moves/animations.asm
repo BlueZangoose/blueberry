@@ -1533,10 +1533,20 @@ HazeAnim:
 	db -1 ; end
 ;reflect:
 MoonVeilAnim:
-	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
-	battle_anim MOON_VEIL, SUBANIM_1_BARRIER, 1, 6
-	battle_anim MOON_VEIL, SUBANIM_1_BARRIER, 1, 6
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim SPOOKYENERGY, SE_SLIDE_ENEMY_MON_OFF
+	battle_anim SPOOKYENERGY, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG_FALL, 1, 3
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG, 1, 1
+	battle_anim HEMOSAP, SE_FLASH_SCREEN_LONG
+	battle_anim NO_MOVE, SE_FLASH_SCREEN_LONG
+	battle_anim NO_MOVE, SUBANIM_1_SPHERE_BIG_RISE, 1, 3
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
+
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+;	battle_anim MOON_VEIL, SUBANIM_1_BARRIER, 1, 6
+;	battle_anim MOON_VEIL, SUBANIM_1_BARRIER, 1, 6
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;focusenergy:
 FossilZealAnim:

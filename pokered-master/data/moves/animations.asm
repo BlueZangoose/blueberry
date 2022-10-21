@@ -1234,8 +1234,14 @@ InjectAnim:
 	db -1 ; end
 ;thunderbolt:
 MegavoltAnim:
-	battle_anim MEGAVOLT, SUBANIM_1_LIGHTNING_BALL, 1, 1
-	battle_anim MEGAVOLT, SUBANIM_1_LIGHTNING_BALL, 1, 1
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim PRACTICEPNCH, SUBANIM_1_LIGHTNING, 1, 2
+	battle_anim NO_MOVE, SUBANIM_1_LIGHTNING, 1, 2
+	battle_anim GHOSTFIRE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim MEGAVOLT, SUBANIM_1_LIGHTNING_BALL, 1, 1
+;	battle_anim MEGAVOLT, SUBANIM_1_LIGHTNING_BALL, 1, 1
 	db -1 ; end
 ;thunderwave:
 PoisonPollenAnim:

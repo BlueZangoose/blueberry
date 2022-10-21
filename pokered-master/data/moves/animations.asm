@@ -818,7 +818,8 @@ CurrentFlowAnim:
 	db -1 ; end
 ;pinmissile:
 MultikickAnim:
-	battle_anim ROAR, SUBANIM_0_STAR_THRICE, 0, 8
+	battle_anim ROAR, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim ROAR, SE_DELAY_ANIMATION_10
 
 ;	battle_anim MULTIKICK, SUBANIM_0_STAR_TWICE, 0, 3
 	db -1 ; end
@@ -1705,8 +1706,11 @@ BlackGasAnim:
 	db -1 ; end
 ;barrage:
 MultislapAnim:
-	battle_anim MULTISLAP, SUBANIM_1_CIRCLE_BLACK_TOSS, 1, 3
-	battle_anim NO_MOVE, SUBANIM_0_STAR_HIGH, 0, 5
+	battle_anim BLADE_STRIKE, SUBANIM_0_STAR_TWICE, 0, 6
+	battle_anim BLADE_STRIKE, SE_DELAY_ANIMATION_10
+
+;	battle_anim MULTISLAP, SUBANIM_1_CIRCLE_BLACK_TOSS, 1, 3
+;	battle_anim NO_MOVE, SUBANIM_0_STAR_HIGH, 0, 5
 	db -1 ; end
 ;leechlife:
 SapAnim:

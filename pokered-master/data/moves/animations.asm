@@ -605,7 +605,10 @@ EchoSongAnim:
 	db -1 ; end
 ;vicegrip:
 SupersapAnim:
-	battle_anim SUPERSAP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
+	battle_anim PARASITEROOT, SUBANIM_0_HORN_JAB_THREE, 0, 6
+	battle_anim SAP, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 0, 6
+
+;	battle_anim SUPERSAP, SUBANIM_0_SLICE_BOTH_SIDES, 0, 8
 	db -1 ; end
 ;guillotine:
 ShellSmackAnim:
@@ -1742,11 +1745,14 @@ MultislapAnim:
 	db -1 ; end
 ;leechlife:
 SapAnim:
-	battle_anim SAP, SUBANIM_0_STAR_THRICE, 0, 8
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 0, 6
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 0, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim PARASITEROOT, SUBANIM_1_SEED_TOSS, 1, 6
+	battle_anim SAP, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 0, 6
+
+;	battle_anim SAP, SUBANIM_0_STAR_THRICE, 0, 8
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 0, 6
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 0, 6
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
 	db -1 ; end
 ;lovelykiss:
 SleepingGasAnim:

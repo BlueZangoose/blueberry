@@ -1516,8 +1516,13 @@ PollenArmorAnim:
 	db -1 ; end
 ;barrier:
 StoneShellAnim:
-	battle_anim STONE_SHELL, SUBANIM_1_BARRIER, 1, 6
-	battle_anim STONE_SHELL, SUBANIM_1_BARRIER, 1, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim ICE_TUNNEL, SUBANIM_0_ROCKS_LIFT, 0, 6
+	battle_anim LENS_SHIFT, SUBANIM_0_SHELL, 0, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+
+;	battle_anim STONE_SHELL, SUBANIM_1_BARRIER, 1, 6
+;	battle_anim STONE_SHELL, SUBANIM_1_BARRIER, 1, 6
 	db -1 ; end
 ;lightscreen:
 PsyshieldAnim:

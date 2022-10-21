@@ -1412,10 +1412,15 @@ BladeMasteryAnim:
 	db -1 ; end
 ;recover:
 RegenerateAnim:
-	battle_anim REGENERATE, SE_BLINK_MON
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim REGENERATE, SE_SHOOT_MANY_BALLS_UPWARD
+	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 0, 8
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim REGENERATE, SE_BLINK_MON
+;	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;harden:
 SandArmorAnim:

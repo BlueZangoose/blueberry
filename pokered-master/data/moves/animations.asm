@@ -612,7 +612,13 @@ SupersapAnim:
 	db -1 ; end
 ;guillotine:
 ShellSmackAnim:
-	battle_anim SHELL_SMACK, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim POLLEN_ARMOR, SUBANIM_0_SHELL, 0, 6
+	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+
+;	battle_anim SHELL_SMACK, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
 	db -1 ; end
 ;razorwind:
 RazorWindAnim:
@@ -632,7 +638,7 @@ CutAnim:
 ;gust:
 MudBulletsAnim:
 	battle_anim RED_MOLD, SUBANIM_1_CIRCLE_BLACK_TOSS, 1, 4
-;	battle_anim NO_MOVE, SUBANIM_0_STAR, 0, 6
+	battle_anim NO_MOVE, SUBANIM_0_STAR, 0, 6
 	battle_anim RED_MOLD, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 4
 
 ;	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6

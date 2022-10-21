@@ -746,8 +746,19 @@ KOKickAnim:
 	db -1 ; end
 ;tackle:
 ScorchAnim:
-	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim PSYCHIC_SONG, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SPORE_SPRAY, SE_WAVY_SCREEN
+	battle_anim SLEEPERHOLD, SE_DARKEN_MON_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	db -1 ; end
 ;bodyslam:
 AcridWaterAnim:

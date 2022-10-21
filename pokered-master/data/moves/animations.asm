@@ -928,9 +928,12 @@ PsychicSongAnim:
 	db -1 ; end
 ;flamethrower:
 SleeperholdAnim:
-	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_BEAM, 1, 6
-	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_COLUMN_1, 1, 6
-	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_COLUMN_2, 1, 6
+	battle_anim SLEEPERHOLD, SUBANIM_0_STAR_THRICE, 0, 24
+	battle_anim BURY_ROOTS, SUBANIM_0_STATUS_SLEEP_ENEMY, 0, 12
+
+;	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_BEAM, 1, 6
+;	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_COLUMN_1, 1, 6
+;	battle_anim SLEEPERHOLD, SUBANIM_1_FLAME_COLUMN_2, 1, 6
 	db -1 ; end
 ;mist:
 DustbathAnim:

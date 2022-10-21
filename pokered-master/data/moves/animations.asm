@@ -1269,8 +1269,11 @@ IceTunnelAnim:
 	db -1 ; end
 ;toxic:
 RedMoldAnim:
-	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
-	battle_anim RED_MOLD, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	battle_anim CLAW_SWIPE, SUBANIM_0_CIRCLES_FALLING, 0, 12
+	battle_anim POSSESSION, SUBANIM_1_SEED_LAND, 1, 12
+
+;	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
+;	battle_anim RED_MOLD, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db -1 ; end
 ;confusion:
 DeliriumAnim:

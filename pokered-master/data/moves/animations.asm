@@ -620,8 +620,12 @@ CutAnim:
 	db -1 ; end
 ;gust:
 MudBulletsAnim:
-	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
-	battle_anim NO_MOVE, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim RED_MOLD, SUBANIM_1_CIRCLE_BLACK_TOSS, 1, 4
+;	battle_anim NO_MOVE, SUBANIM_0_STAR, 0, 6
+	battle_anim RED_MOLD, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 4
+
+;	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 ;wingattack:
 PierceStingAnim:

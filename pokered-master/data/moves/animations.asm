@@ -1279,7 +1279,9 @@ LeafTrapAnim:
 ;earthquake:
 TremorAnim:
 	battle_anim TREMOR, SE_SHAKE_SCREEN
-	battle_anim TREMOR, SE_SHAKE_SCREEN
+
+;	battle_anim TREMOR, SE_SHAKE_SCREEN
+;	battle_anim TREMOR, SE_SHAKE_SCREEN
 	db -1 ; end
 ;fissure:
 FissureAnim:

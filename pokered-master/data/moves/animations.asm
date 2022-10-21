@@ -1892,9 +1892,14 @@ BuryRootsAnim:
 	db -1 ; end
 ;rockslide:
 StoneFistAnim:
-	battle_anim STONE_FIST, SUBANIM_0_ROCKS_LIFT, 0, 4
-	battle_anim STONE_FIST, SUBANIM_0_ROCKS_TOSS, 0, 3
-	battle_anim RAPIDS_RUSH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim PSYCHIC_SONG, SUBANIM_0_ROCKS_LIFT, 0, 4
+	battle_anim NO_MOVE, SUBANIM_0_ROCKS_TOSS, 0, 4
+	battle_anim RAPIDS_RUSH, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+
+;	battle_anim STONE_FIST, SUBANIM_0_ROCKS_LIFT, 0, 4
+;	battle_anim STONE_FIST, SUBANIM_0_ROCKS_TOSS, 0, 3
+;	battle_anim RAPIDS_RUSH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;hyperfang:
 RapidsRushAnim:

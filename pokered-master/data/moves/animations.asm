@@ -1628,7 +1628,8 @@ MonkeyAroundAnim:
 	db -1 ; end
 ;mirrormove:
 MindReaderAnim:
-	battle_anim MINDREADER, SUBANIM_0_STAR_TWICE, 0, 8
+;This move's animation never gets used, so why it had one in the first place, I have no idea.
+;	battle_anim MINDREADER, SUBANIM_0_STAR_TWICE, 0, 8
 	db -1 ; end
 ;selfdestruct:
 DetonateAnim:

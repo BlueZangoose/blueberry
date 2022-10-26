@@ -1892,7 +1892,10 @@ JumpscareAnim:
 	db -1 ; end
 ;acidarmor:
 LensShiftAnim:
-	battle_anim LENS_SHIFT, SE_SLIDE_MON_DOWN_AND_HIDE
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim SPOOKYENERGY, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 0, 12
+
+;	battle_anim LENS_SHIFT, SE_SLIDE_MON_DOWN_AND_HIDE
 	db -1 ; end
 ;crabhammer:
 IceSpikeAnim:

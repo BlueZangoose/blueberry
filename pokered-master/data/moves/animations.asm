@@ -388,6 +388,9 @@ BurrowAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
 NectarDrinkAnim:
+	battle_anim HYPERSAP, SUBANIM_0_EGG_SHAKING, 0, 6
+	battle_anim HYPERSAP, SE_SPIRAL_BALLS_INWARD
+	db -1 ; end
 TerrifyAnim:
 PostureAnim:
 PursueAnim:

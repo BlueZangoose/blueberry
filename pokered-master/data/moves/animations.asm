@@ -702,7 +702,7 @@ JoltAnim:
 	battle_anim INJECT, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 6
-	battle_anim NO_MOVE, SE_SHAKE_ENEMY_HUD
+	battle_anim NO_MOVE, SUBANIM_0_BIND, 0, 6
 
 ;	battle_anim JOLT, SUBANIM_1_STAR_BIG, 1, 8
 	db -1 ; end

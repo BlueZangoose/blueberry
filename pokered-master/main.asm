@@ -358,7 +358,9 @@ INCLUDE "data/battle_anims/frame_blocks.asm"
 ;INCLUDE "engine/overworld/elevator.asm"
 ;INCLUDE "engine/items/tm_prices.asm"
 
-SECTION "bank1F", ROMX		;new
+SECTION "bank1F", ROMX
+;new, used to store files that were previously INCLUDEd in different banks.
+;All files here can be found commented out in their original banks.
 INCLUDE "gfx/trade.asm"
 INCLUDE "engine/overworld/cut2.asm"
 INCLUDE "engine/overworld/dust_smoke.asm"
@@ -367,10 +369,16 @@ INCLUDE "engine/movie/evolution.asm"
 INCLUDE "engine/overworld/elevator.asm"
 INCLUDE "engine/items/tm_prices.asm"
 
-SECTION "bank20", ROMX		;new
+SECTION "bank20", ROMX
+;new, used for the battle engine
 INCLUDE "engine/battle/move_effects/NEW_status_countereffect.asm"
 INCLUDE "engine/battle/move_effects/NEW_burn_effect.asm"
 INCLUDE "engine/battle/move_effects/NEW_type_change_effect.asm"
 INCLUDE "engine/battle/move_effects/NEW_cure_status_effect.asm"
 INCLUDE "engine/battle/move_effects/NEW_stat_modifier_side_effect.asm"
 INCLUDE "engine/battle/move_effects/NEW_boost_side_effect.asm"
+
+
+SECTION "bank21", ROMX
+;new, used to store animation data that no longer fits in Bank 1E.
+INCLUDE "engine/battle/animation_subfiles/play_applying_attack_sound.asm"

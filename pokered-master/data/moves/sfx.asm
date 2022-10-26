@@ -32,7 +32,7 @@ MoveSoundTable:
 	db SFX_BATTLE_18,          $00, $80 ; PSYSQUEEZE	; changed, was headbutt
 	db SFX_BATTLE_1E,          $00, $60 ; STINGINGHAIR	; changed, was horn attack
 	db SFX_BATTLE_1E,          $01, $40 ; TANTRUM, was fury attack
-	db SFX_KO_KICK,         $00, $a0 ; KO_KICK	; changed, was horn drill
+	db SFX_KO_KICK,            $00, $a0 ; KO_KICK	; changed, was horn drill
 	db SFX_SUPER_EFFECTIVE,    $10, $a0 ; SCORCH, was tackle
 	db SFX_BATTLE_20,          $00, $c0 ; ACRID_WATER	; was body slam
 	db SFX_BATTLE_14,          $10, $60 ; GRIND	; changed, was wrap

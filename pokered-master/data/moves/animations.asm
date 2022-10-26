@@ -683,7 +683,11 @@ EarthTrapAnim:
 	db -1 ; end
 ;slam:
 MagmaBreathAnim:
-	battle_anim MAGMA_BREATH, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim ION_BEAM, SUBANIM_1_FLAME_BEAM, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAME_BEAM, 1, 6
+	battle_anim NO_MOVE, SUBANIM_1_FLAMES, 1, 6
+
+;	battle_anim MAGMA_BREATH, SUBANIM_0_STAR_THRICE, 0, 6
 	db -1 ; end
 ;vinewhip:
 AcidSpitAnim:

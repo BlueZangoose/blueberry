@@ -1544,10 +1544,12 @@ VortexAnim:
 	db -1 ; end
 ;defensecurl:
 PollenArmorAnim:
-	battle_anim POLLEN_ARMOR, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 0, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim TOXIC_GAS, SE_SHOOT_MANY_BALLS_UPWARD
+
+;	battle_anim POLLEN_ARMOR, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 0, 6
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;barrier:
 StoneShellAnim:

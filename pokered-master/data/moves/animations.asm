@@ -2042,7 +2042,12 @@ PressureCutAnim:
 	db -1 ; end
 ;slash:
 PebblestrikeAnim:
-	battle_anim PEBBLESTRIKE, SUBANIM_0_SCRATCHES, 0, 6
+	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SUBANIM_1_CLOUD_TOSS, 0, 2
+	battle_anim PSYSQUEEZE, SUBANIM_1_STAR_BIG, 1, 6
+
+;	battle_anim PEBBLESTRIKE, SUBANIM_0_SCRATCHES, 0, 6
 	db -1 ; end
 ;substitute:
 ShadowCloneAnim:

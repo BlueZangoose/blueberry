@@ -1919,7 +1919,16 @@ SpookyEnergyAnim:
 	db -1 ; end
 ;spore:
 ShroomToxinAnim:
-	battle_anim SHROOM_TOXIN, SUBANIM_0_CIRCLES_FALLING, 0, 6
+	battle_anim SHROOM_TOXIN, SUBANIM_0_WATER_DROPLETS, 0, 6
+	battle_anim SHROOM_TOXIN, SE_DARKEN_MON_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SHROOM_TOXIN, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SHROOM_TOXIN, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim SHROOM_TOXIN, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
 ;flash:
 FlashAnim:

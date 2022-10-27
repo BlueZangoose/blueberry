@@ -19,7 +19,7 @@ AnimationIdSpecialEffects:
 	anim_special_effect MEGAVOLT,              FlashScreenEveryEightFrameBlocks	; changed, was thunderbolt
 ;	anim_special_effect MOON_VEIL,             AnimationFlashScreen				; changed, was reflect
 	anim_special_effect DETONATE,              DoExplodeSpecialEffects			; changed, was selfdestruct. Hides mon at the end of the animation maybe.
-	anim_special_effect SHROOM_TOXIN,          AnimationFlashScreen				; changed, was spore
+;	anim_special_effect SHROOM_TOXIN,          AnimationFlashScreen				; changed, was spore
 	anim_special_effect OVERLOAD,              DoExplodeSpecialEffects			; changed, was explosion
 	anim_special_effect STONE_FIST,            DoStoneFistSpecialEffects		; changed, was rock slide
 	anim_special_effect TRADE_BALL_DROP_ANIM,  TradeHidePokemon

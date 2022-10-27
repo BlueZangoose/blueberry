@@ -410,6 +410,8 @@ DigAnim:
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 FlowAnim:
+	battle_anim SPORE_SPRAY, SE_WATER_DROPLETS_EVERYWHERE
+	db -1 ; end
 HeadwindAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_OFF
 	battle_anim PSYSHIELD, SUBANIM_1_TORNADO, 1, 1

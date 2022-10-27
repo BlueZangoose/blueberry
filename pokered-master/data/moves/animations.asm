@@ -1265,9 +1265,12 @@ DragonRageAnim:
 	db -1 ; end
 ;firespin:
 TanglevineAnim:
-	battle_anim TANGLEVINE, SUBANIM_1_FLAME_COLUMN_1, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
+	battle_anim ACID_SPIT, SUBANIM_1_SEED_LAND, 1, 6
+	battle_anim ACID_SPIT, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
+
+;	battle_anim TANGLEVINE, SUBANIM_1_FLAME_COLUMN_1, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
 	db -1 ; end
 ;thundershock:
 InjectAnim:

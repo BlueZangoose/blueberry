@@ -445,6 +445,10 @@ IceBoulderAnim:
 	db -1 ; end
 WingStrikeAnim:
 MantisSlashAnim:
+	battle_anim PEBBLESTRIKE, SUBANIM_0_SLICE, 0, 4
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim PEBBLESTRIKE, SUBANIM_0_SLICE_BOTH_SIDES, 0, 4
+	db -1 ; end
 WaterjetAnim:
 	battle_anim SLICE, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 0, 1
 	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 1	

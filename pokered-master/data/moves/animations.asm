@@ -1258,10 +1258,12 @@ DragonfireAnim:
 	battle_anim PSYCHIC_SONG, SUBANIM_1_FLAME_COLUMN_3, 1, 8
 	db -1 ; end
 DragonRageAnim:
-	battle_anim DRAGON_RAGE, SUBANIM_1_FLAME_BEAM, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_1, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
+
+
+;	battle_anim DRAGON_RAGE, SUBANIM_1_FLAME_BEAM, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_1, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
 	db -1 ; end
 ;firespin:
 TanglevineAnim:
@@ -1338,10 +1340,12 @@ TremorAnim:
 	db -1 ; end
 ;fissure:
 FissureAnim:
-	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_SHAKE_SCREEN
-	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+
+
+;	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+;	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
 	db -1 ; end
 ;dig:
 IceTunnelAnim:
@@ -1430,7 +1434,9 @@ QuickAttackAnim:
 	db -1 ; end
 ;rage:
 RageAnim:
-	battle_anim RAGE, SUBANIM_0_STAR_TWICE, 0, 6
+
+
+;	battle_anim RAGE, SUBANIM_0_STAR_TWICE, 0, 6
 	db -1 ; end
 ;teleport:
 TeleportAnim:
@@ -1445,13 +1451,17 @@ TeleportAnim:
 	db -1 ; end
 ;nightshade:
 NightShadeAnim:
-	battle_anim DELIRIUM, SE_FLASH_SCREEN_LONG
-	battle_anim NO_MOVE, SE_WAVY_SCREEN
+
+
+;	battle_anim DELIRIUM, SE_FLASH_SCREEN_LONG
+;	battle_anim NO_MOVE, SE_WAVY_SCREEN
 	db -1 ; end
 ;mimic:
 MimicAnim:
-	battle_anim MIMIC, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
-	battle_anim MIMIC, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 1, 6
+
+
+;	battle_anim MIMIC, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
+;	battle_anim MIMIC, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 1, 6
 	db -1 ; end
 ;screech:
 VileStenchAnim:

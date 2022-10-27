@@ -896,10 +896,12 @@ MultikickAnim:
 	db -1 ; end
 ;leer:
 FrostbiteAnim:
-	battle_anim PARASITEROOT, SE_DARK_SCREEN_PALETTE
-	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
-	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim TRANSFORM, SUBANIM_0_ICE_RISE, 0, 16
+
+;	battle_anim PARASITEROOT, SE_DARK_SCREEN_PALETTE
+;	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
+;	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;bite:
 VenomBiteAnim:

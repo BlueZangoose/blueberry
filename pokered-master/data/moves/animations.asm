@@ -502,6 +502,13 @@ DisarmAnim:
 	battle_anim FOCUS, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 10
 	db -1 ; end
 HyperBiteAnim:
+	battle_anim BLAZE, SE_SLIDE_MON_HALF_OFF
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim SHELL_SMACK, SUBANIM_0_STAR_THRICE, 0, 3
+	battle_anim SHELL_SMACK, SUBANIM_0_STAR_THRICE, 0, 3
+	battle_anim SHELL_SMACK, SUBANIM_0_STAR_THRICE, 0, 3
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
 DazzleAnim:
 	battle_anim HEMOSAP, SE_FLASH_SCREEN_LONG
 	battle_anim PSYCHIC_SONG, SUBANIM_0_STAR_HIGH, 0, 1

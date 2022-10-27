@@ -919,8 +919,8 @@ VenomBiteAnim:
 	db -1 ; end
 ;growl:
 CuteBarkAnim:
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+	battle_anim CUTE_BARK, SUBANIM_1_SHOUT, 1, 6
+	battle_anim CUTE_BARK, SUBANIM_1_SHOUT, 1, 6
 	battle_anim NO_MOVE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 0, 6
 	
 	;battle_anim CUTE_BARK, SUBANIM_BOTH_HEART_MUSIC, 1, 6
@@ -2005,10 +2005,15 @@ RapidsRushAnim:
 	db -1 ; end
 ;sharpen:
 RaiseHacklesAnim:
-	battle_anim RAISEHACKLES, SE_LIGHT_SCREEN_PALETTE
-	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
-	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim RAISEHACKLES, SE_BLINK_MON
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim RAISEHACKLES, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+
+;	battle_anim RAISEHACKLES, SE_LIGHT_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 1, 6
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;conversion:
 DashAttackAnim:

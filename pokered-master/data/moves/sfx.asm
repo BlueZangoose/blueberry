@@ -159,7 +159,8 @@ MoveSoundTable:
 	db SFX_BATTLE_21,          $12, $10 ; BURY_ROOTS	; changed, was rest
 	db SFX_BATTLE_36,          $f0, $20 ; STONE_FIST	; changed, was rock slide
 	db SFX_BATTLE_1E,          $12, $ff ; RAPIDS_RUSH	; changed, was hyper fang
-	db SFX_BATTLE_31,          $80, $04 ; RAISEHACKLES	; changed, was sharpen
+;	db SFX_BATTLE_31,          $80, $04 ; RAISEHACKLES	; changed, was sharpen
+	db SFX_BATTLE_31,          $b2, $00 ; RAISEHACKLES	; new
 	db SFX_BATTLE_33,          $f0, $10 ; DASH_ATTACK	; changed, was conversion
 	db SFX_BATTLE_29,          $f8, $ff ; BONE_STRIKE	; changed, was tri attack
 	db SFX_BATTLE_26,          $f0, $ff ; PRESSURE_CUT	; changed, was super fang

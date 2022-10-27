@@ -2243,6 +2243,8 @@ IsCryMove:
 	jr z, .CryMove
 	cp ROAR
 	jr z, .CryMove
+	cp RAISEHACKLES
+	jr z, .CryMove
 	and a ; clear carry
 	ret
 .CryMove

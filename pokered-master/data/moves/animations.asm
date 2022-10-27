@@ -637,9 +637,13 @@ RazorWindAnim:
 	db -1 ; end
 ;swordsdance:
 MantisStyleAnim:
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
 	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
-	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
-	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+
+;	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
+;	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
+;	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
 	db -1 ; end
 ;cut:
 CutAnim:

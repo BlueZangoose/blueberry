@@ -1557,21 +1557,23 @@ EagleEyeAnim:
 	db -1 ; end
 ;smokescreen:
 RollOverAnim:
-	battle_anim ROLL_OVER, SUBANIM_1_SAND, 1, 6
-	battle_anim NO_MOVE, SUBANIM_0_BALL_POOF_ENEMY, 0, 4
-	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim JUMPSCARE, SE_BOUNCE_UP_AND_DOWN
+
+;	battle_anim ROLL_OVER, SUBANIM_1_SAND, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_0_BALL_POOF_ENEMY, 0, 4
+;	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;confuseray:
 SporeSprayAnim:

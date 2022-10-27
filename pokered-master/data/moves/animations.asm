@@ -1113,9 +1113,12 @@ CrushAnim:
 	db -1 ; end
 ;lowkick:
 RockBulletAnim:
-	battle_anim ROCK_BULLET, SE_SLIDE_MON_OFF
+	battle_anim ROCK_BULLET, SUBANIM_1_CLOUD_TOSS, 0, 1
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
-	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+
+;	battle_anim ROCK_BULLET, SE_SLIDE_MON_OFF
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 ;counter:
 CloseCircuitAnim:

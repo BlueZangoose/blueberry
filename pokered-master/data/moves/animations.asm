@@ -1804,7 +1804,15 @@ FocusAnim:
 	db -1 ; end
 ;kinesis:
 HauntAnim:
-	battle_anim HAUNT, SUBANIM_0_STAR_TWICE, 0, 8
+	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim POSSESSION, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SQUISH_MON_PIC
+	battle_anim NO_MOVE, SUBANIM_0_SOUNDWAVE, 0, 12
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim HAUNT, SUBANIM_0_STAR_TWICE, 0, 8
 	db -1 ; end
 ;softboiled:
 SoftboiledAnim:

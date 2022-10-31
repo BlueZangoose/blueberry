@@ -1830,7 +1830,8 @@ SoftboiledAnim:
 	db -1 ; end
 ;hijumpkick:
 HiJumpKickAnim:
-	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+
+;	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;glare:
 CrabwalkAnim:
@@ -1890,10 +1891,11 @@ SleepingGasAnim:
 	db -1 ; end
 ;skyattack:
 SkyAttackAnim:
-	battle_anim SKY_ATTACK, SE_SQUISH_MON_PIC
-	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
-	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
-	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+
+;	battle_anim SKY_ATTACK, SE_SQUISH_MON_PIC
+;	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
+;	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 ;transform:
 TransformAnim:
@@ -1949,8 +1951,9 @@ FlashAnim:
 	db -1 ; end
 ;psywave:
 PsywaveAnim:
-	battle_anim POSSESSION, SUBANIM_0_SOUNDWAVE, 0, 6
-	battle_anim DELIRIUM, SE_WAVY_SCREEN
+
+;	battle_anim POSSESSION, SUBANIM_0_SOUNDWAVE, 0, 6
+;	battle_anim DELIRIUM, SE_WAVY_SCREEN
 	db -1 ; end
 ;splash:
 JumpscareAnim:

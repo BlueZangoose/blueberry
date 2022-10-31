@@ -393,6 +393,13 @@ NectarDrinkAnim:
 	db -1 ; end
 TerrifyAnim:
 PostureAnim:
+	battle_anim TRANSFORM, SE_SLIDE_MON_HALF_OFF
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
+	battle_anim TRANSFORM, SE_RESET_MON_POSITION
+	db -1 ; end
 PursueAnim:
 LightningAnim:
 	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE

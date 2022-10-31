@@ -453,6 +453,8 @@ IceBoulderAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
 WingStrikeAnim:
+	battle_anim LANCE_CHARGE, SUBANIM_0_SOUNDWAVE, 0, 1
+	db -1 ; end
 MantisSlashAnim:
 	battle_anim PEBBLESTRIKE, SUBANIM_0_SLICE, 0, 4
 	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
@@ -798,11 +800,19 @@ TantrumAnim:
 	db -1 ; end
 ;horndrill:
 KOKickAnim:
-	battle_anim KO_KICK, SUBANIM_1_STAR_BIG, 1, 2
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
+	battle_anim KO_KICK, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim ICE_SPIKE, SE_RESET_MON_POSITION
+
+;	battle_anim KO_KICK, SUBANIM_1_STAR_BIG, 1, 2
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 2
 	db -1 ; end
 ;tackle:
 ScorchAnim:
@@ -1806,8 +1816,15 @@ PsyblastAnim:
 	db -1 ; end
 ;amnesia:
 FocusAnim:
-	battle_anim FOCUS, SUBANIM_0_STATUS_CONFUSED, 0, 8
-	battle_anim FOCUS, SUBANIM_0_STATUS_CONFUSED, 0, 8
+	battle_anim AIR_COOLING, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
+	battle_anim NO_MOVE, SE_SHOOT_MANY_BALLS_UPWARD
+	battle_anim NO_MOVE, SE_DARK_SCREEN_FLASH
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim FOCUS, SUBANIM_0_STATUS_CONFUSED, 0, 8
+;	battle_anim FOCUS, SUBANIM_0_STATUS_CONFUSED, 0, 8
 	db -1 ; end
 ;kinesis:
 HauntAnim:

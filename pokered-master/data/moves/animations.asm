@@ -975,10 +975,13 @@ SonicBoomAnim:
 	db -1 ; end
 ;disable:
 SadSongAnim:
-	battle_anim PARASITEROOT, SE_DARK_SCREEN_PALETTE
-	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
-	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	battle_anim HEMOSAP, SUBANIM_BOTH_HEART_MUSIC, 1, 12
+	battle_anim HEMOSAP, SUBANIM_0_STAR_DESCENDING, 0, 12
+
+;	battle_anim PARASITEROOT, SE_DARK_SCREEN_PALETTE
+;	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
+;	battle_anim FROSTBITE, SE_DARK_SCREEN_FLASH
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;acid:
 StonetailAnim:
@@ -2016,7 +2019,12 @@ IceSpikeAnim:
 	db -1 ; end
 ;explosion:
 OverloadAnim:
-	battle_anim OVERLOAD, SUBANIM_1_SELFDESTRUCT, 1, 3
+	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
+	battle_anim OVERLOAD, SUBANIM_1_LIGHTNING_BALL, 1, 2
+	battle_anim OVERLOAD, SUBANIM_1_SELFDESTRUCT, 1, 2
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim OVERLOAD, SUBANIM_1_SELFDESTRUCT, 1, 3
 	db -1 ; end
 ;furyswipes:
 GravelShowerAnim:

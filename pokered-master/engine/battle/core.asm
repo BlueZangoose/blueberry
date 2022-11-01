@@ -6957,8 +6957,9 @@ HandleExplodingAnimation:
 	ld a, [wMoveMissed]
 	and a
 	ret nz
-	ld a, 5
+	ld a, 5		; The move whose animation you want to for the "hit". Default is 5, Mega Punch.
 	ld [wAnimationType], a
+	ld a, 89	; new line. The move whose animation you want to for the "hit".
 
 PlayMoveAnimation:
 	ld [wAnimationID], a

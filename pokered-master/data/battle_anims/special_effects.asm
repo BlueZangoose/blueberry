@@ -12,7 +12,7 @@ AnimationIdSpecialEffects:
 ;	anim_special_effect PUPPY_EYES,            TailWhipAnimationUnused			; changed, was tail whip
 	anim_special_effect CUTE_BARK,             DoGrowlSpecialEffects			; changed, was growl
 ;	anim_special_effect ECHO_SONG,             DoGrowlSpecialEffects			; new
-	anim_special_effect SAD_SONG,              AnimationFlashScreen				; changed, was disable
+;	anim_special_effect SAD_SONG,              AnimationFlashScreen				; changed, was disable
 	anim_special_effect ION_BEAM,              DoBlizzardSpecialEffects			; changed, was blizzard. KEPT for Ion Beam.
 ;	anim_special_effect FLAMETAIL,             AnimationFlashScreen				; changed, was bubblebeam
 	anim_special_effect DRAGON_BLAST,          FlashScreenEveryFourFrameBlocks	; changed, was hyper beam

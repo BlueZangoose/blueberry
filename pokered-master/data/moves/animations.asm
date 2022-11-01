@@ -392,6 +392,13 @@ NectarDrinkAnim:
 	battle_anim HYPERSAP, SE_SPIRAL_BALLS_INWARD
 	db -1 ; end
 TerrifyAnim:
+	battle_anim FALLING_STAR, SE_DARKEN_MON_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_SHAKE_SCREEN
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+	db -1 ; end
 PostureAnim:
 	battle_anim TRANSFORM, SE_SLIDE_MON_HALF_OFF
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION

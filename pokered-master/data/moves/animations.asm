@@ -408,6 +408,16 @@ PostureAnim:
 	battle_anim TRANSFORM, SE_RESET_MON_POSITION
 	db -1 ; end
 PursueAnim:
+	battle_anim FIN_SLAP, SE_MOVE_MON_HORIZONTALLY
+	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
+	battle_anim NO_MOVE, SE_SHAKE_ENEMY_HUD
+	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+
+;	battle_anim FIN_SLAP, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SUBANIM_0_SAFARI_BAIT, 0, 3
+;	battle_anim NO_MOVE, SUBANIM_0_SAFARI_ROCK, 0, 3
+;	battle_anim NO_MOVE, SE_RESET_MON_POSITION
+	db -1 ; end
 LightningAnim:
 	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
 	battle_anim PRACTICEPNCH, SUBANIM_1_LIGHTNING, 1, 4

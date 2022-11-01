@@ -651,7 +651,8 @@ ShellSmackAnim:
 	db -1 ; end
 ;razorwind:
 RazorWindAnim:
-	battle_anim RAZOR_WIND, SUBANIM_0_SLICE, 0, 4
+
+;	battle_anim RAZOR_WIND, SUBANIM_0_SLICE, 0, 4
 	db -1 ; end
 ;swordsdance:
 MantisStyleAnim:
@@ -686,8 +687,9 @@ PierceStingAnim:
 	db -1 ; end
 ;whirlwind:
 WhirlwindAnim:
-	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
-	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
+
+;	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
+;	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
 	db -1 ; end
 ;fly:
 VanishAnim:
@@ -751,7 +753,8 @@ WildfireAnim:
 	db -1 ; end
 ;jumpkick:
 JumpKickAnim:
-	battle_anim JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+
+;	battle_anim JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;rollingkick:
 OmenScreamAnim:
@@ -944,9 +947,10 @@ CuteBarkAnim:
 	db -1 ; end
 ;roar:
 RoarAnim:
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+
+;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
 	db -1 ; end
 ;sing:
 GemMissileAnim:
@@ -963,10 +967,11 @@ PossessionAnim:
 	db -1 ; end
 ;sonicboom:
 SonicBoomAnim:
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
-	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
+
+;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
+;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
 ;disable:
 SadSongAnim:
@@ -1647,9 +1652,10 @@ PsyshieldAnim:
 	db -1 ; end
 ;haze:
 HazeAnim:
-	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
-	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
-	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+;	battle_anim SURF, SE_WATER_DROPLETS_EVERYWHERE
+;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;reflect:
 MoonVeilAnim:
@@ -1981,7 +1987,14 @@ PsywaveAnim:
 	db -1 ; end
 ;splash:
 JumpscareAnim:
-	battle_anim JUMPSCARE, SE_BOUNCE_UP_AND_DOWN
+	battle_anim NO_MOVE, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+	battle_anim PARASITEROOT, SUBANIM_1_SHOUT, 1, 2
+	battle_anim NO_MOVE, SUBANIM_1_SHOUT, 1, 2
+	battle_anim NO_MOVE, SUBANIM_1_SHOUT, 1, 2
+
+;	battle_anim JUMPSCARE, SE_BOUNCE_UP_AND_DOWN
 	db -1 ; end
 ;acidarmor:
 LensShiftAnim:

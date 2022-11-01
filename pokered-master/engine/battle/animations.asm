@@ -2247,6 +2247,8 @@ IsCryMove:
 	jr z, .CryMove
 	cp ROLL_OVER
 	jr z, .CryMove
+	cp JUMPSCARE
+	jr z, .CryMove
 	and a ; clear carry
 	ret
 .CryMove

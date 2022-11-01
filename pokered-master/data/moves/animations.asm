@@ -1297,7 +1297,9 @@ WinkAnim:
 	battle_anim AMP_UP, SE_DARK_SCREEN_FLASH
 	db -1 ; end
 MightyRoarAnim:
-	battle_anim MIGHTY_ROAR, SUBANIM_0_STRING_SHOT, 0, 8
+	battle_anim MIGHTY_ROAR, SUBANIM_0_SOUNDWAVE, 0, 4
+
+;	battle_anim MIGHTY_ROAR, SUBANIM_0_STRING_SHOT, 0, 8
 	db -1 ; end
 ;dragonrage:
 DragonfireAnim:
@@ -1692,13 +1694,15 @@ BideAnim:
 	db -1 ; end
 ;metronome:
 MonkeyAroundAnim:
-	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_RESET_MON_POSITION
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim FOCUS, SE_RESET_MON_POSITION
+	battle_anim JUMPSCARE, SE_BOUNCE_UP_AND_DOWN
+
+;	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_RESET_MON_POSITION
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_MOVE_MON_HORIZONTALLY
+;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+;	battle_anim FOCUS, SE_RESET_MON_POSITION
 	db -1 ; end
 ;mirrormove:
 MindReaderAnim:

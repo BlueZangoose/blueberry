@@ -2242,13 +2242,13 @@ IsCryMove:
 	ld a, [wAnimationID]
 	cp CUTE_BARK
 	jr z, .CryMove
-	cp ROAR
-	jr z, .CryMove
 	cp RAISEHACKLES
 	jr z, .CryMove
 	cp ROLL_OVER
 	jr z, .CryMove
 	cp JUMPSCARE
+	jr z, .CryMove
+	cp MIGHTY_ROAR
 	jr z, .CryMove
 	and a ; clear carry
 	ret

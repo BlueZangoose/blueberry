@@ -1241,8 +1241,11 @@ HypersapAnim:
 	db -1 ; end
 ;leechseed:
 ParasiteRootAnim:
-	battle_anim PARASITEROOT, SUBANIM_1_SEED_TOSS, 1, 6
-	battle_anim PARASTING, SUBANIM_1_SEED_LAND, 1, 21
+	battle_anim PARASTING, SUBANIM_1_SEED_LAND, 1, 12
+	battle_anim BURNING_TAR, SUBANIM_0_BIND, 0, 12
+
+;	battle_anim PARASITEROOT, SUBANIM_1_SEED_TOSS, 1, 6
+;	battle_anim PARASTING, SUBANIM_1_SEED_LAND, 1, 21
 	db -1 ; end
 ;growth:
 BlazeAnim:

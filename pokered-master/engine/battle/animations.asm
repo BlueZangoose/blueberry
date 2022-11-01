@@ -420,7 +420,7 @@ MoveAnimation:
 	ld a, [wOptions]
 	bit BIT_BATTLE_ANIMATION, a
 	jr nz, .animationsDisabled
-	call ShareMoveAnimations
+;	call ShareMoveAnimations	;This has been removed because why would you want this???
 	call PlayAnimation
 	vc_hook_red FPA_004_End
 	vc_hook_blue FPA_011_End
@@ -446,28 +446,29 @@ MoveAnimation:
 	pop hl
 	ret
 
-ShareMoveAnimations:
+;This has been removed because why would you want this???
+;ShareMoveAnimations:
 ; some moves just reuse animations from status conditions
-	ldh a, [hWhoseTurn]
-	and a
-	ret z
-
-	; opponent's turn
-
-	ld a, [wAnimationID]
-
-	cp FOCUS
-	ld b, CONF_ANIM
-	jr z, .replaceAnim
-
-	cp BURY_ROOTS
-	ld b, SLP_ANIM
-	ret nz
-
-.replaceAnim
-	ld a, b
-	ld [wAnimationID], a
-	ret
+;	ldh a, [hWhoseTurn]
+;	and a
+;	ret z
+;
+;	; opponent's turn
+;
+;	ld a, [wAnimationID]
+;
+;	cp FOCUS
+;	ld b, CONF_ANIM
+;	jr z, .replaceAnim
+;
+;	cp BURY_ROOTS
+;	ld b, SLP_ANIM
+;	ret nz
+;
+;.replaceAnim
+;	ld a, b
+;	ld [wAnimationID], a
+;	ret
 
 PlayApplyingAttackAnimation:
 ; Generic animation that shows after the move's individual animation

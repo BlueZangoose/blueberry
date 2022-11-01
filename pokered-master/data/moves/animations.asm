@@ -1273,7 +1273,10 @@ ParastingAnim:
 	db -1 ; end
 ;sleeppowder:
 LullAnim:
-	battle_anim LULL, SUBANIM_0_CIRCLES_FALLING, 0, 6
+	battle_anim GEM_MISSILE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 0, 9
+	battle_anim NO_MOVE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 9
+
+;	battle_anim LULL, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
 ;petaldance:
 FistBarrageAnim:

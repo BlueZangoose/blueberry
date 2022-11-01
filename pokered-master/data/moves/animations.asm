@@ -853,7 +853,7 @@ GrindAnim:
 ;takedown:
 LeafCamoAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_DOWN
-	battle_anim LENS_SHIFT, SE_PETALS_FALLING
+	battle_anim LENS_SHIFT, SE_LEAVES_FALLING
 	battle_anim LENS_SHIFT, SUBANIM_BOTH_CIRCLE_SQUARE_CLOSING, 0, 6
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 
@@ -1133,9 +1133,6 @@ LanceChargeAnim:
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
-	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
-	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim NO_MOVE, SE_SHOW_ENEMY_MON_PIC
 
 ;	battle_anim LANCE_CHARGE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
@@ -1719,7 +1716,6 @@ DetonateAnim:
 	db -1 ; end
 ;eggbomb:
 GhostfireAnim:
-	battle_anim WATER_CANNON, SE_FLASH_SCREEN_LONG
 	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
 	battle_anim NO_MOVE, SUBANIM_1_FLAMES, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE

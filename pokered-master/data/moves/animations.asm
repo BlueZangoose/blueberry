@@ -378,6 +378,11 @@ ChloroburstAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ForgetAnim:
+	battle_anim HAUNT, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 16
+	battle_anim HAUNT, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 16
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim SPOOKYENERGY, SE_SHAKE_ENEMY_HUD
+	db -1 ; end
 BurrowAnim:
 	battle_anim NO_MOVE, SE_BLINK_MON
 	battle_anim POLLEN_ARMOR, SE_SLIDE_MON_DOWN

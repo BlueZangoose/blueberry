@@ -716,12 +716,20 @@ PierceStingAnim:
 ;	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
 ;	db -1 ; end
 ;fly:
-VanishAnim:
-	battle_anim VANISH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+VanishAnim:	;move hits
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	battle_anim VILE_STENCH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim VILE_STENCH, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim VANISH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
-VanishAnim2:
-	battle_anim ION_BEAM, SUBANIM_1_FLAME_BEAM, 1, 6
+VanishAnim2:	;pokemon hides
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim GRAVELSHOWER, SE_SQUISH_MON_PIC
+	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;bind:
 EarthTrapAnim:
@@ -1431,12 +1439,19 @@ FissureAnim:
 ;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
 	db -1 ; end
 ;dig:
-IceTunnelAnim:
-	battle_anim ICE_TUNNEL, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+IceTunnelAnim:	;move hits
+	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+	battle_anim ICE_SPIKE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim ICE_TUNNEL, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
-IceTunnelAnim2:
-	battle_anim CLAW_SWIPE, SUBANIM_0_CIRCLES_FALLING, 0, 12
+IceTunnelAnim2:	;pokemon hides
+	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
+	battle_anim AURA_IMPACT, SE_SLIDE_MON_DOWN
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;toxic:
 RedMoldAnim:

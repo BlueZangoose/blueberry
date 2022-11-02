@@ -12,12 +12,12 @@ MoveNames::
 	li "ECHO SONG"
 	li "SUPERSAP"
 	li "SHELL SMACK"	; changed, was guillotine
-	li "RAZOR WIND"
+;	li "RAZOR WIND"		; REMOVED
 	li "MANTIS STYLE"	; changed, was swords dance
 	li "CUT"
 	li "MUD BULLETS"
 	li "PIERCE STING"	; changed, was wing attack
-	li "WHIRLWIND"
+;	li "WHIRLWIND"	;	REMOVED
 	li "VANISH"	; changed, was fly
 	li "EARTH TRAP"	; changed, was bind
 	li "MAGMA BREATH"; was slam
@@ -25,7 +25,7 @@ MoveNames::
 	li "JOLT"	; changed, was stomp
 	li "EARTH SPIKES"
 	li "WILDFIRE"
-	li "JUMP KICK"
+;	li "JUMP KICK"	;	REMOVED
 	li "OMEN SCREAM"	; changed, was rolling kick
 	li "DOUSE"	; changed, was sand attack
 	li "PSYSQUEEZE"	; changed, was headbutt
@@ -39,7 +39,7 @@ MoveNames::
 	li "IGNITE"	; WAS THRASH
 	li "SCALE SLAM"	; changed, was double edge
 	li "PUPPY EYES"	; changed, was tail whip
-	li "POISON STING"
+;	li "POISON STING"	;	REMOVED
 	li "CURRENT FLOW"
 	li "MULTIKICK"
 	li "FROSTBITE"	; changed, was leer

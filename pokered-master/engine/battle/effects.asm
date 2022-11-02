@@ -1415,13 +1415,15 @@ ChargeEffect:
 	cp FLY_EFFECT
 	jr nz, .notFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
-	ld b, TELEPORT ; load Teleport's animation
+;	ld b, TELEPORT ; load Teleport's animation
+	ld b, 253 ; load #253 in data/moves/animations.asm (vanishanim2)
 .notFly
 	ld a, [de]
 	cp ICE_TUNNEL
 	jr nz, .notDigOrFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
-	ld b, ANIM_C0
+;	ld b, ANIM_C0
+	ld b, 254 ; load #254 in data/moves/animations.asm (IceTunnelAnim2)
 .notDigOrFly
 	xor a
 	ld [wAnimationType], a
@@ -1436,9 +1438,9 @@ ChargeMoveEffectText:
 	text_far _ChargeMoveEffectText
 	text_asm
 	ld a, [wChargeMoveNum]
-	cp RAZOR_WIND
-	ld hl, MadeWhirlwindText
-	jr z, .gotText
+;	cp RAZOR_WIND
+;	ld hl, MadeWhirlwindText
+;	jr z, .gotText
 	cp CHARGE_POUCH
 	ld hl, TookInSunlightText
 	jr z, .gotText

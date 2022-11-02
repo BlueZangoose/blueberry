@@ -12,12 +12,12 @@ AttackAnimationPointers:
 	dw EchoSongAnim
 	dw SupersapAnim
 	dw ShellSmackAnim	; changed, was guillotine
-	dw RazorWindAnim
+;	dw RazorWindAnim	; REMOVED
 	dw MantisStyleAnim
 	dw CutAnim
 	dw MudBulletsAnim
 	dw PierceStingAnim	; changed, was wing attack
-	dw WhirlwindAnim
+;	dw WhirlwindAnim	;	REMOVED
 	dw VanishAnim
 	dw EarthTrapAnim	; changed, was bind
 	dw MagmaBreathAnim	; was slam
@@ -25,7 +25,7 @@ AttackAnimationPointers:
 	dw JoltAnim			; changed, was stomp
 	dw EarthSpikesAnim
 	dw WildfireAnim
-	dw JumpKickAnim
+;	dw JumpKickAnim	;	REMOVED
 	dw OmenScreamAnim
 	dw DouseAnim		; changed, was sand attack
 	dw PsysqueezeAnim	; changed, was headbutt
@@ -39,7 +39,7 @@ AttackAnimationPointers:
 	dw IgniteAnim
 	dw ScaleSlamAnim	; changed, was double edge
 	dw PuppyEyesAnim	; changed, was tail whip
-	dw PoisonStingAnim
+;	dw PoisonStingAnim	;	REMOVED
 	dw CurrentFlowAnim
 	dw MultikickAnim
 	dw FrostbiteAnim	; changed, was leer
@@ -258,6 +258,8 @@ AttackAnimationPointers:
 	dw ThrowBaitAnim
 	assert_table_length NUM_ATTACK_ANIMS
 	dw ZigZagScreenAnim
+	dw VanishAnim2				; #253
+	dw IceTunnelAnim2			; #254
 
 ; each animation is a list of subanimations
 ; and/or special effects, terminated by -1
@@ -492,8 +494,8 @@ BoulderRollAnim:
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end
 ZephyrAnim:
-	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 4
-	battle_anim WHIRLWIND, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim SNOW_BREATH, SUBANIM_1_TORNADO, 1, 4
+	battle_anim SNOW_BREATH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 SurprisePnchAnim:
 	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
@@ -501,8 +503,8 @@ SurprisePnchAnim:
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC	
 	db -1 ; end
 SwiftSlashAnim:
-	battle_anim WHIRLWIND, SUBANIM_0_SLICE_BOTH_SIDES, 0, 2
-	battle_anim WHIRLWIND, SUBANIM_0_SLICE, 0, 2
+	battle_anim SNOW_BREATH, SUBANIM_0_SLICE_BOTH_SIDES, 0, 2
+	battle_anim SNOW_BREATH, SUBANIM_0_SLICE, 0, 2
 	db -1 ; end
 BoulderSlamAnim:
 	battle_anim PARASITEROOT, SE_MOVE_MON_HORIZONTALLY
@@ -574,7 +576,7 @@ AshAttackAnim:
 	db -1 ; end
 ;new:
 AirScytheAnim:
-	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
+	battle_anim SNOW_BREATH, SUBANIM_1_TORNADO, 1, 6
 	battle_anim CUT, SE_DARK_SCREEN_FLASH
 	battle_anim NO_MOVE, SUBANIM_0_SLICE, 0, 4
 	db -1 ; end
@@ -672,10 +674,10 @@ ShellSmackAnim:
 ;	battle_anim SHELL_SMACK, SUBANIM_0_SLICE_BOTH_SIDES, 0, 6
 	db -1 ; end
 ;razorwind:
-RazorWindAnim:
+;RazorWindAnim:
 
 ;	battle_anim RAZOR_WIND, SUBANIM_0_SLICE, 0, 4
-	db -1 ; end
+;	db -1 ; end
 ;swordsdance:
 MantisStyleAnim:
 	battle_anim NO_MOVE, SE_MOVE_MON_HORIZONTALLY
@@ -702,21 +704,24 @@ MudBulletsAnim:
 	db -1 ; end
 ;wingattack:
 PierceStingAnim:
-	battle_anim POISON_STING, SUBANIM_0_HORN_JAB_TWO, 0, 6
-	battle_anim POISON_STING, SUBANIM_0_STAR_HIGH, 0, 6
+	battle_anim ASH_ATTACK, SUBANIM_0_HORN_JAB_TWO, 0, 6
+	battle_anim ASH_ATTACK, SUBANIM_0_STAR_HIGH, 0, 6
 
 ;	battle_anim PIERCE_STING, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 ;whirlwind:
-WhirlwindAnim:
+;WhirlwindAnim:
 
 ;	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
 ;	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
-	db -1 ; end
+;	db -1 ; end
 ;fly:
 VanishAnim:
 	battle_anim VANISH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	db -1 ; end
+VanishAnim2:
+	battle_anim ION_BEAM, SUBANIM_1_FLAME_BEAM, 1, 6
 	db -1 ; end
 ;bind:
 EarthTrapAnim:
@@ -987,7 +992,6 @@ GemMissileAnim:
 PossessionAnim:
 	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
 	battle_anim BONE_STRIKE, SUBANIM_1_TRIANGLE_TOSS, 1, 16
-	battle_anim POSSESSION, SUBANIM_0_STAR_THRICE, 0, 20
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 
 ;	battle_anim POSSESSION, SUBANIM_0_SOUNDWAVE, 0, 6
@@ -1296,7 +1300,7 @@ ToxicGasAnim:
 	db -1 ; end
 ;stunspore:
 ParastingAnim:
-	battle_anim POISON_STING, SUBANIM_0_HORN_JAB_TWO, 0, 6
+	battle_anim ASH_ATTACK, SUBANIM_0_HORN_JAB_TWO, 0, 6
 	battle_anim NO_MOVE, SE_SHAKE_ENEMY_HUD
 
 ;	battle_anim PARASTING, SUBANIM_0_CIRCLES_FALLING, 0, 6
@@ -1355,8 +1359,8 @@ TanglevineAnim:
 	db -1 ; end
 ;thundershock:
 InjectAnim:
-	battle_anim POISON_STING, SUBANIM_0_HORN_JAB_TWO, 0, 6
-	battle_anim POISON_STING, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
+	battle_anim ASH_ATTACK, SUBANIM_0_HORN_JAB_TWO, 0, 6
+	battle_anim ASH_ATTACK, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 
 ;	battle_anim INJECT, SUBANIM_1_LIGHTNING_BALL, 1, 2
 	db -1 ; end
@@ -1430,6 +1434,9 @@ FissureAnim:
 IceTunnelAnim:
 	battle_anim ICE_TUNNEL, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
+	db -1 ; end
+IceTunnelAnim2:
+	battle_anim CLAW_SWIPE, SUBANIM_0_CIRCLES_FALLING, 0, 12
 	db -1 ; end
 ;toxic:
 RedMoldAnim:
@@ -1644,8 +1651,8 @@ SporeSprayAnim:
 ;withdraw:
 VortexAnim:
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
-	battle_anim WHIRLWIND, SUBANIM_1_BARRIER, 1, 6
-	battle_anim WHIRLWIND, SUBANIM_1_TORNADO, 1, 6
+	battle_anim SNOW_BREATH, SUBANIM_1_BARRIER, 1, 6
+	battle_anim SNOW_BREATH, SUBANIM_1_TORNADO, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 
 ;	battle_anim POLLEN_ARMOR, SE_LIGHT_SCREEN_PALETTE
@@ -1761,7 +1768,7 @@ EatPoisonAnim:
 	battle_anim FOCUS, SUBANIM_0_STATUS_POISONED, 0, 8
 	battle_anim FOCUS, SUBANIM_0_STATUS_POISONED, 0, 8
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim JUMP_KICK, SE_SPIRAL_BALLS_INWARD
+	battle_anim DUST_KICK, SE_SPIRAL_BALLS_INWARD
 
 ;	battle_anim BUCK, SUBANIM_1_BLOB_DRIP_ENEMY, 1, 6
 	db -1 ; end
@@ -1839,7 +1846,7 @@ SkullBashAnim:
 	db -1 ; end
 ;spikecannon:
 GrassBladesAnim:
-	battle_anim RAZOR_WIND, SUBANIM_1_LEAVES_TOSS, 1, 1
+	battle_anim SAND_BOMB, SUBANIM_1_LEAVES_TOSS, 1, 1
 	battle_anim KO_KICK, SUBANIM_1_LEAVES_TOSS, 1, 1
 
 ;	battle_anim GRASS_BLADES, SUBANIM_1_STAR_BIG_MOVING, 1, 4

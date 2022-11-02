@@ -13,12 +13,12 @@ MoveSoundTable:
 	db SFX_DAMAGE,             $00, $80 ; ECHO_SONG			;, was scratch
 	db SFX_BATTLE_0F,          $20, $40 ; SUPERSAP			;, was vicegrip
 	db SFX_BATTLE_0F,          $00, $80 ; SHELL_SMACK	; changed, was guillotine
-	db SFX_BATTLE_0E,          $00, $a0 ; RAZOR_WIND
+;	db SFX_BATTLE_0E,          $00, $a0 ; RAZOR_WIND	; REMOVED
 	db SFX_NOT_VERY_EFFECTIVE, $10, $c0 ; MANTIS_STYLE	; changed, was swords dance
 	db SFX_NOT_VERY_EFFECTIVE, $00, $a0 ; CUT
 	db SFX_BATTLE_12,          $00, $c0 ; MUD_BULLETS
 	db SFX_BATTLE_12,          $10, $a0 ; PIERCE_STING		; changed, was wing attack
-	db SFX_BATTLE_13,          $00, $e0 ; WHIRLWIND
+;	db SFX_BATTLE_13,          $00, $e0 ; WHIRLWIND	;	REMOVED
 	db SFX_NOT_VERY_EFFECTIVE, $20, $c0 ; VANISH	; changed, was fly
 	db SFX_BATTLE_14,          $00, $80 ; EARTH_TRAP	; changed, was bind
 	db SFX_BATTLE_22,          $00, $80 ; MAGMA_BREATH; was slam
@@ -26,7 +26,7 @@ MoveSoundTable:
 	db SFX_BATTLE_20,          $00, $80 ; JOLT	; changed, was stomp
 	db SFX_BATTLE_17,          $f0, $40 ; EARTH_SPIKES, was doublekick
 	db SFX_SUPER_EFFECTIVE,    $00, $80 ; WILDFIRE; was mega kick
-	db SFX_BATTLE_17,          $00, $80 ; JUMP_KICK
+;	db SFX_BATTLE_17,          $00, $80 ; JUMP_KICK	;	REMOVED
 	db SFX_BATTLE_21,          $10, $80 ; OMEN_SCREAM	; changed, was rolling kick
 	db SFX_BATTLE_1B,          $01, $a0 ; DOUSE	; changed, was sand attack
 	db SFX_BATTLE_18,          $00, $80 ; PSYSQUEEZE	; changed, was headbutt
@@ -40,7 +40,7 @@ MoveSoundTable:
 	db SFX_BATTLE_22,          $11, $c0 ; IGNITE	; WAS THRASH
 	db SFX_SUPER_EFFECTIVE,    $20, $c0 ; SCALE_SLAM	; changed, was double edge
 	db SFX_BATTLE_21,          $00, $80 ; PUPPY_EYES	; changed, was tail whip
-	db SFX_BATTLE_1B,          $00, $80 ; POISON_STING
+;	db SFX_BATTLE_1B,          $00, $80 ; POISON_STING	;	REMOVED
 	db SFX_BATTLE_1B,          $20, $c0 ; CURRENT_FLOW, was twineedle
 	db SFX_BATTLE_19,          $00, $80 ; MULTIKICK
 	db SFX_BATTLE_31,          $ff, $40 ; FROSTBITE	; changed, was leer
@@ -216,10 +216,10 @@ MoveSoundTable:
 	db SFX_BATTLE_1E,          $00, $80 ; LANDSLIDE
 	db SFX_BATTLE_1E,          $00, $80 ; SUPERCOOL
 	db SFX_BATTLE_1E,          $00, $80 ; MUDSLIDE
-	db SFX_BATTLE_1E,          $00, $80 ; ASH_ATTACK
-	db SFX_BATTLE_1E,          $00, $80 ; DUST_KICK
-	db SFX_BATTLE_1E,          $00, $80 ; SNOW_BREATH
-	db SFX_BATTLE_1E,          $00, $80 ; SAND_BOMB
-;	db SFX_BATTLE_1E,          $00, $80 ; WATER_CANNON
+	db SFX_BATTLE_1B,          $00, $80 ; ASH_ATTACK	;poison sting sfx
+	db SFX_BATTLE_17,          $00, $80 ; DUST_KICK	;jump kick sfx
+	db SFX_BATTLE_13,          $00, $e0 ; SNOW_BREATH	;whirlwind sfx
+	db SFX_BATTLE_0E,          $00, $a0 ; SAND_BOMB	;razor wind sfx
+;	db SFX_BATTLE_1E,          $00, $80 ; WATER_CANNON	; MOVE 256, TOO MANY MOVES
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

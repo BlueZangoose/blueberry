@@ -22,12 +22,12 @@ Moves:
 	move	ECHO_SONG,			TWO_TO_FIVE_ATTACKS_EFFECT,		12,		NORMAL,			100,	25	;	changed,	was	scratch
 	move	SUPERSAP,			DRAIN_HP_EFFECT,				55,		GRASS,			95,		15	;	changed,	was	vicegrip
 	move	SHELL_SMACK,		NO_ADDITIONAL_EFFECT,			65,		NORMAL,			95,		15	;	changed,	was	guillotine
-	move	RAZOR_WIND,			CHARGE_EFFECT,					80,		NORMAL,			75,		10
+;	move	RAZOR_WIND,			CHARGE_EFFECT,					80,		NORMAL,			75,		10	;	REMOVED
 	move	MANTIS_STYLE,		ATTACK_UP2_EFFECT,				0,		BUG,			100,	5	;	changed,	was	swords	dance
 	move	CUT,				NO_ADDITIONAL_EFFECT,			50,		BUG,			100,	20	;	changed,	was	cut
 	move	MUD_BULLETS,		TWO_TO_FIVE_ATTACKS_EFFECT,		10,		GROUND,			100,	25	;	changed,	was	gust
 	move	PIERCE_STING,		NO_ADDITIONAL_EFFECT,			40,		BUG,			95,		25	;	changed,	was	wing	attack
-	move	WHIRLWIND,			SWITCH_AND_TELEPORT_EFFECT,		0,		NORMAL,			85,		20
+;	move	WHIRLWIND,			SWITCH_AND_TELEPORT_EFFECT,		0,		NORMAL,			85,		20	;	REMOVED
 	move	VANISH,				FLY_EFFECT,						75,		GHOST,			95,		15	;	changed,	was	fly
 	move	EARTH_TRAP,			TRAPPING_EFFECT,				20,		GROUND,			65,		10	;	changed,	was	bind
 	move	MAGMA_BREATH,		BURN_SIDE_EFFECT_18,			120,	FIRE,			77,		5	;	changed,	was	slam
@@ -35,7 +35,7 @@ Moves:
 	move	JOLT,				FLINCH_SIDE_EFFECT_10,			45,		ELECTRIC,		100,	20	;	changed,	was	stomp
 	move	EARTH_SPIKES,		ATTACK_TWICE_EFFECT,			20,		GROUND,			100,	30	;	changed,	was	double	kick
 	move	WILDFIRE,			BURN_SIDE_EFFECT_10,			70,		FIRE,			90,		15	;	changed,	was	mega	kick
-	move	JUMP_KICK,			JUMP_KICK_EFFECT,				70,		FIGHTING,		95,		25
+;	move	JUMP_KICK,			JUMP_KICK_EFFECT,				70,		FIGHTING,		95,		25	;	REMOVED
 	move	OMEN_SCREAM,		FLINCH_SIDE_EFFECT_10,			95,		GHOST,			90,		10	;	changed,	was	rolling	kick
 	move	DOUSE,				SPEED_DOWN2_EFFECT,				0,		WATER,			100,	20	;	changed,	was	sand	attack
 	move	PSYSQUEEZE,			FLINCH_SIDE_EFFECT_10,			55,		PSYCHIC_TYPE,	100,	25	;	changed,	was	headbutt
@@ -49,7 +49,7 @@ Moves:
 	move	IGNITE,				CHANGE_TARGET_TYPE_EFFECT_FIRE,	0,		FIRE,			100,	20	;	changed,	was	thrash
 	move	SCALE_SLAM,			RECOIL_EFFECT,					115,	DRAGON,			95,		10	;	changed,	was	double	edge
 	move	PUPPY_EYES,			DEFENSE_DOWN1_EFFECT,			0,		NORMAL,			100,	30	;	changed,	was	tail	whip
-	move	POISON_STING,		POISON_SIDE_EFFECT1,			15,		POISON,			100,	35
+;	move	POISON_STING,		POISON_SIDE_EFFECT1,			15,		POISON,			100,	35	;	REMOVED
 	move	CURRENT_FLOW,		TWO_TO_FIVE_ATTACKS_EFFECT,		25,		ELECTRIC,		95,		15	;	changed,	was	twineedle
 	move	MULTIKICK,			TWO_TO_FIVE_ATTACKS_EFFECT,		18,		FIGHTING,		95,		20	;	changed,	was	pin	missile
 	move	FROSTBITE,			ATTACK_DOWN2_EFFECT,			0,		ICE,			100,	10	;	changed,	was	leer

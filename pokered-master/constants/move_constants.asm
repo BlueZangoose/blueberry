@@ -18,12 +18,12 @@
 	const ECHO_SONG			; 0a
 	const SUPERSAP			; 0b, was vicegrip
 	const SHELL_SMACK		; 0c				; changed, was guillotine
-	const RAZOR_WIND		; 0d
+;	const RAZOR_WIND		; 0d				; REMOVED
 	const MANTIS_STYLE		; 0e				; changed, was swords dance
 	const CUT				; 0f
 	const MUD_BULLETS		; 10
 	const PIERCE_STING		; 11				; changed, was wing attack
-	const WHIRLWIND			; 12
+;	const WHIRLWIND			; 12	;	REMOVED
 	const VANISH			; 13				; changed, was fly
 	const EARTH_TRAP		; 14				; changed, was bind
 	const MAGMA_BREATH		; 15			; was slam
@@ -31,7 +31,7 @@
 	const JOLT				; 17				; changed, was stomp
 	const EARTH_SPIKES		; 18
 	const WILDFIRE			; 19			; was mega kick
-	const JUMP_KICK			; 1a
+;	const JUMP_KICK			; 1a	;	REMOVED
 	const OMEN_SCREAM		; 1b				; changed, was rolling kick
 	const DOUSE				; 1c				; changed, was sand attack
 	const PSYSQUEEZE		; 1d				; changed, was headbutt
@@ -45,7 +45,7 @@
 	const IGNITE			; 25				; WAS THRASH
 	const SCALE_SLAM		; 26				; changed, was double edge
 	const PUPPY_EYES		; 27				; changed, was tail whip
-	const POISON_STING		; 28
+;	const POISON_STING		; 28	;	REMOVED
 	const CURRENT_FLOW		; 29
 	const MULTIKICK			; 2a
 	const FROSTBITE			; 2b				; changed, was leer

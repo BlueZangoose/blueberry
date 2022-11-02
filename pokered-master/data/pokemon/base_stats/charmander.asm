@@ -10,8 +10,7 @@
 	INCBIN "gfx/pokemon/front/charmander.pic", 0, 1 ; sprite dimensions
 	dw CharmanderPicFront, CharmanderPicBack
 
-	db OVERLOAD, DETONATE, CHLOROBURST, NO_MOVE ; level 1 learnset
-;	db SCORCH, CLAW_SWIPE, ECHO_SONG, CUTE_BARK ; level 1 learnset
+	db SCORCH, CLAW_SWIPE, EAT_POISON, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 
 	; tm/hm learnset

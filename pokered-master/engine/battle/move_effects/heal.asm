@@ -124,8 +124,24 @@ HealEffect_:
 	ld [de], a
 	ld [wHPBarNewHP], a
 .playAnim
-	ld hl, PlayCurrentMoveAnimation
+	;check for Eat Poison first
+	ldh a, [hWhoseTurn]	; 0 on player's turn, 1 on enemy's turn
+	and a
+	jp nz, .enemyTurn
+	jp .playerTurn
+.enemyTurn
+	ld de, wEnemyMoveNum
+	jr .checkEatPoison
+.playerTurn
+	ld de, wPlayerMoveNum
+.checkEatPoison
+	ld a, [de]
+	cp EAT_POISON
+	jr z, .skipAnimation
+	;Eat Poison check complete
+	ld hl, PlayCurrentMoveAnimation		;Eat Poison has to animate in CureStatusEffect_ in case the move is used at full health.
 	call EffectCallBattleCore
+.skipAnimation
 	ldh a, [hWhoseTurn]
 	and a
 	hlcoord 10, 9

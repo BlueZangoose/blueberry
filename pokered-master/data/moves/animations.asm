@@ -985,7 +985,12 @@ GemMissileAnim:
 	db -1 ; end
 ;supersonic:
 PossessionAnim:
-	battle_anim POSSESSION, SUBANIM_0_SOUNDWAVE, 0, 6
+	battle_anim NO_MOVE, SE_DARK_SCREEN_PALETTE
+	battle_anim BONE_STRIKE, SUBANIM_1_TRIANGLE_TOSS, 1, 16
+	battle_anim POSSESSION, SUBANIM_0_STAR_THRICE, 0, 20
+	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
+
+;	battle_anim POSSESSION, SUBANIM_0_SOUNDWAVE, 0, 6
 	db -1 ; end
 ;sonicboom:
 SonicBoomAnim:

@@ -145,6 +145,8 @@ DrawFrameBlock:
 	ld a, [wAnimationID]
 	cp CUTE_BARK
 	jr z, .resetFrameBlockDestAddr
+	cp ECHO_SONG					;new
+	jr z, .resetFrameBlockDestAddr	;new
 	call AnimationCleanOAM
 .resetFrameBlockDestAddr
 	ld hl, wOAMBuffer ; OAM buffer

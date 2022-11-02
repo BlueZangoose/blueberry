@@ -3638,7 +3638,8 @@ CheckPlayerStatusConditions:
 .ThrashingAboutCheck
 	bit THRASHING_ABOUT, [hl] ; is mon using thrash or petal dance?
 	jr z, .MultiturnMoveCheck
-	ld a, IGNITE	; WAS THRASH
+	ld a, 255	;255th move in the animations list (ThrashingMovesAnim)
+;	ld a, IGNITE	; WAS THRASH
 	ld [wPlayerMoveNum], a
 	ld hl, ThrashingAboutText
 	call PrintText
@@ -6238,7 +6239,8 @@ CheckEnemyStatusConditions:
 .checkIfThrashingAbout
 	bit THRASHING_ABOUT, [hl] ; is mon using thrash or petal dance?
 	jr z, .checkIfUsingMultiturnMove
-	ld a, IGNITE	; WAS THRASH
+	ld a, 255	;255th move in the animations list (ThrashingMovesAnim)
+;	ld a, IGNITE	; WAS THRASH
 	ld [wEnemyMoveNum], a
 	ld hl, ThrashingAboutText
 	call PrintText
@@ -6942,6 +6944,8 @@ HandleExplodingAnimation:
 .player
 	cp DETONATE
 	jr z, .isExplodingMove
+	cp CHLOROBURST
+	jr z, .isExplodingMove
 	cp OVERLOAD
 	ret nz
 .isExplodingMove
@@ -6957,9 +6961,9 @@ HandleExplodingAnimation:
 	ld a, [wMoveMissed]
 	and a
 	ret nz
-	ld a, 5		; The move whose animation you want to for the "hit". Default is 5, Mega Punch.
+	ld a, 0		; was 5. screen shake type.
 	ld [wAnimationType], a
-	ld a, 89	; new line. The move whose animation you want to for the "hit".
+	ld a, 0	; new line. The move whose animation you want to use for the "hit".
 
 PlayMoveAnimation:
 	ld [wAnimationID], a

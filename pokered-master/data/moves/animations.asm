@@ -260,6 +260,7 @@ AttackAnimationPointers:
 	dw ZigZagScreenAnim
 	dw VanishAnim2				; #253
 	dw IceTunnelAnim2			; #254
+	dw ThrashingMovesAnim		; #255
 
 ; each animation is a list of subanimations
 ; and/or special effects, terminated by -1
@@ -283,7 +284,10 @@ ENDM
 ZigZagScreenAnim:
 	battle_anim NO_MOVE, SE_WAVY_SCREEN
 	db -1 ; end
-
+ThrashingMovesAnim:
+	battle_anim BLADE_STRIKE, SUBANIM_0_STAR_THRICE, 0, 2
+	battle_anim BLADE_STRIKE, SUBANIM_0_STAR_THRICE, 0, 2
+	db -1 ; end
 SandBombAnim:
 	battle_anim FIST_BARRAGE, SUBANIM_0_BALL_TOSS_LOW, 0, 2
 	battle_anim DOUSE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 6
@@ -650,7 +654,6 @@ ArcSparkAnim:
 	db -1 ; end
 ;scratch:
 EchoSongAnim:
-	battle_anim POLLEN_ARMOR, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 3
 	battle_anim GEM_MISSILE, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 3
 	battle_anim POLLEN_ARMOR, SUBANIM_1_MUSIC_CIRCLING_ENEMY, 1, 3
 

@@ -2400,8 +2400,8 @@ CharmanderEvosMoves:
 	db EV_LEVEL, 16, CHARMELEON
 	db 0
 ; Learnset
-	db	1	,	SCORCH
-	db	1	,	CLAW_SWIPE
+;	db	1	,	SCORCH
+;	db	1	,	CLAW_SWIPE
 	db	7	,	ASH_ATTACK
 	db	10	,	TALON_ATTACK
 	db	14	,	FLAMETAIL

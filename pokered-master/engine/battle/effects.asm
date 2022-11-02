@@ -1116,8 +1116,9 @@ ThrashPetalDanceEffect:
 	inc a
 	inc a
 	ld [de], a ; set thrash/petal dance counter to 2 or 3 at random
-	ldh a, [hWhoseTurn]
-	add ANIM_B0
+	ld a, 0
+;	ldh a, [hWhoseTurn]	; old code, loading animation that plays before every thrashing move starts
+;	add ANIM_B0			; old code, loading animation that plays before every thrashing move starts
 	jp PlayBattleAnimation2
 
 SwitchAndTeleportEffect:

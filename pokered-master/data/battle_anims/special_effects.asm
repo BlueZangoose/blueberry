@@ -11,7 +11,7 @@ AnimationIdSpecialEffects:
 	anim_special_effect PSYSQUEEZE,            AnimationFlashScreen				; changed, was headbutt
 ;	anim_special_effect PUPPY_EYES,            TailWhipAnimationUnused			; changed, was tail whip
 	anim_special_effect CUTE_BARK,             DoGrowlSpecialEffects			; changed, was growl
-;	anim_special_effect ECHO_SONG,             DoGrowlSpecialEffects			; new
+	anim_special_effect ECHO_SONG,             DoGrowlSpecialEffects			; new
 ;	anim_special_effect SAD_SONG,              AnimationFlashScreen				; changed, was disable
 	anim_special_effect ION_BEAM,              DoBlizzardSpecialEffects			; changed, was blizzard. KEPT for Ion Beam.
 ;	anim_special_effect FLAMETAIL,             AnimationFlashScreen				; changed, was bubblebeam
@@ -21,6 +21,7 @@ AnimationIdSpecialEffects:
 	anim_special_effect DETONATE,              DoExplodeSpecialEffects			; changed, was selfdestruct. Hides mon at the end of the animation maybe.
 ;	anim_special_effect SHROOM_TOXIN,          AnimationFlashScreen				; changed, was spore
 	anim_special_effect OVERLOAD,              DoExplodeSpecialEffects			; changed, was explosion
+	anim_special_effect CHLOROBURST,           DoExplodeSpecialEffects			; changed, was explosion
 	anim_special_effect STONE_FIST,            DoStoneFistSpecialEffects		; changed, was rock slide
 	anim_special_effect TRADE_BALL_DROP_ANIM,  TradeHidePokemon
 	anim_special_effect TRADE_BALL_SHAKE_ANIM, TradeShakePokeball

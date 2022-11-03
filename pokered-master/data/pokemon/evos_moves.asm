@@ -377,7 +377,7 @@ GrimerEvosMoves:
 	db 0
 ; Learnset
 	db	1	,	ACID_SPIT
-	db	1	,	TOXIC_GAS
+	db	1	,	STONE_FIST
 	db	6	,	MUD_BULLETS
 	db	9	,	TAR_SLAP
 	db	18	,	BURNING_TAR
@@ -734,9 +734,9 @@ GravelerEvosMoves:
 	db EV_TRADE, 1, GOLEM
 	db 0
 ; Learnset
-	db	1	,	PEBBLESTRIKE
+	db	1	,	STONE_FIST
 	db	1	,	GRIND
-	db	12	,	STONE_SHELL
+	db	12	,	PEBBLESTRIKE
 	db	18	,	BOULDER_ROLL
 	db	24	,	BOULDER_SLAM
 	db	30	,	TREMOR
@@ -877,9 +877,9 @@ GolemEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db	1	,	PEBBLESTRIKE
+	db	1	,	STONE_FIST
 	db	1	,	GRIND
-	db	15	,	STONE_SHELL
+	db	15	,	PEBBLESTRIKE
 	db	22	,	BOULDER_ROLL
 	db	29	,	BOULDER_SLAM
 	db	36	,	TREMOR
@@ -1193,10 +1193,11 @@ DittoEvosMoves:
 	db	10	,	MINDREADER
 	db	20	,	DELIRIUM
 	db	30	,	GHOSTFIRE
-	db	40	,	TAR_SLAP
-	db	50	,	PSYSQUEEZE
-	db	60	,	SHADOW_CLONE
-	db	70	,	TRANSFORM
+	db	40	,	STONE_FIST
+	db	50	,	TAR_SLAP
+	db	60	,	PSYSQUEEZE
+	db	70	,	SHADOW_CLONE
+	db	80	,	TRANSFORM
 	db 0
 
 MeowthEvosMoves:
@@ -1914,7 +1915,7 @@ MukEvosMoves:
 	db 0
 ; Learnset
 	db	1	,	ACID_SPIT
-	db	1	,	TOXIC_GAS
+	db	1	,	STONE_FIST
 	db	9	,	MUD_BULLETS
 	db	14	,	TAR_SLAP
 	db	24	,	BURNING_TAR
@@ -2324,9 +2325,9 @@ GeodudeEvosMoves:
 	db EV_LEVEL, 25, GRAVELER
 	db 0
 ; Learnset
-	db	1	,	PEBBLESTRIKE
+	db	1	,	STONE_FIST
 	db	1	,	GRIND
-	db	10	,	STONE_SHELL
+	db	10	,	PEBBLESTRIKE
 	db	15	,	BOULDER_ROLL
 	db	20	,	BOULDER_SLAM
 	db	25	,	TREMOR

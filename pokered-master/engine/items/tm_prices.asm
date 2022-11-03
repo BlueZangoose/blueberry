@@ -16,10 +16,10 @@ GetMachinePrice::
 	swap a
 .highNybbleIsPrice
 	and $f0						; a is now a number from 0 to 15
-	ldh [hItemPrice + 1], a		; low byte of item price
+	ldh [hItemPrice + 1], a		; hItemPrice is 3 bytes. This is the middle byte
 	xor a
 	ldh [hItemPrice], a			; high byte of price
-	ldh [hItemPrice + 2], a
+	ldh [hItemPrice + 2], a		; low byte of price
 	ret
 
 INCLUDE "data/items/tm_prices.asm"

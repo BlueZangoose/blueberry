@@ -1,54 +1,55 @@
 TechnicalMachinePrices:
 ;	In	thousands	(nybbles).
 	nybble_array	TechnicalMachinePrices
-	nybble	3	;	TM01
-	nybble	2	;	TM02
-	nybble	2	;	TM03
-	nybble	1	;	TM04
-	nybble	3	;	TM05
-	nybble	4	;	TM06
-	nybble	2	;	TM07
-	nybble	4	;	TM08
-	nybble	3	;	TM09
-	nybble	4	;	TM10
-	nybble	2	;	TM11
+;Change: All TMs are now worth 1000 unless they're sold in a shop.
+	nybble	4	;	TM01
+	nybble	1	;	TM02
+	nybble	1	;	TM03
+	nybble	4	;	TM04
+	nybble	1	;	TM05
+	nybble	1	;	TM06
+	nybble	1	;	TM07
+	nybble	2	;	TM08
+	nybble	1	;	TM09
+	nybble	1	;	TM10
+	nybble	1	;	TM11
 	nybble	1	;	TM12
-	nybble	4	;	TM13
-	nybble	5	;	TM14
-	nybble	5	;	TM15
-	nybble	5	;	TM16
-	nybble	3	;	TM17
-	nybble	2	;	TM18
-	nybble	3	;	TM19
-	nybble	2	;	TM20
-	nybble	5	;	TM21
-	nybble	5	;	TM22
-	nybble	5	;	TM23
-	nybble	2	;	TM24
-	nybble	5	;	TM25
-	nybble	4	;	TM26
-	nybble	5	;	TM27
-	nybble	2	;	TM28
-	nybble	4	;	TM29
+	nybble	3	;	TM13
+	nybble	1	;	TM14
+	nybble	1	;	TM15
+	nybble	1	;	TM16
+	nybble	1	;	TM17
+	nybble	1	;	TM18
+	nybble	1	;	TM19
+	nybble	5	;	TM20
+	nybble	1	;	TM21
+	nybble	1	;	TM22
+	nybble	1	;	TM23
+	nybble	1	;	TM24
+	nybble	2	;	TM25
+	nybble	1	;	TM26
+	nybble	1	;	TM27
+	nybble	1	;	TM28
+	nybble	1	;	TM29
 	nybble	1	;	TM30
-	nybble	2	;	TM31
-	nybble	1	;	TM32
+	nybble	1	;	TM31
+	nybble	3	;	TM32
 	nybble	1	;	TM33
-	nybble	2	;	TM34
-	nybble	4	;	TM35
-	nybble	2	;	TM36
-	nybble	2	;	TM37
-	nybble	5	;	TM38
-	nybble	2	;	TM39
-	nybble	4	;	TM40
-	nybble	2	;	TM41
-	nybble	2	;	TM42
-	nybble	5	;	TM43
-	nybble	2	;	TM44
-	nybble	2	;	TM45
-	nybble	4	;	TM46
+	nybble	1	;	TM34
+	nybble	1	;	TM35
+	nybble	1	;	TM36
+	nybble	1	;	TM37
+	nybble	1	;	TM38
+	nybble	1	;	TM39
+	nybble	1	;	TM40
+	nybble	1	;	TM41
+	nybble	1	;	TM42
+	nybble	1	;	TM43
+	nybble	3	;	TM44
+	nybble	1	;	TM45
+	nybble	1	;	TM46
 	nybble	3	;	TM47
-;	nybble	4	;	TM48
-;	nybble	4	;	TM49
-;	nybble	2	;	TM50
+;	nybble	1	;	TM48
+;	nybble	1	;	TM49
+;	nybble	1	;	TM50
 	end_nybble_array	NUM_TMS

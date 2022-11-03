@@ -15,10 +15,10 @@ GetMachinePrice::
 	jr nc, .highNybbleIsPrice ; is TM id odd?
 	swap a
 .highNybbleIsPrice
-	and $f0
-	ldh [hItemPrice + 1], a
+	and $f0						; a is now a number from 0 to 15
+	ldh [hItemPrice + 1], a		; low byte of item price
 	xor a
-	ldh [hItemPrice], a
+	ldh [hItemPrice], a			; high byte of price
 	ldh [hItemPrice + 2], a
 	ret
 

@@ -6784,6 +6784,7 @@ CalculateModifiedStat:
 	ret
 
 ApplyBadgeStatBoosts:
+	ret			; THIS LINE DISABLES THE BADGE BOOSTS
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle

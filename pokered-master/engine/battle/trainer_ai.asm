@@ -683,22 +683,22 @@ AICheckIfHPBelowFraction:
 	ret
 
 AIUseXAttack:
-	ld b, $A
+	ld b, $7		;The # of the effect in effects_pointers.asm
 	ld a, X_ATTACK
 	jr AIIncreaseStat
 
 AIUseXDefend:
-	ld b, $B
+	ld b, $8		;The # of the effect in effects_pointers.asm
 	ld a, X_DEFEND
 	jr AIIncreaseStat
 
 AIUseXSpeed:
-	ld b, $C
+	ld b, $9		;The # of the effect in effects_pointers.asm
 	ld a, X_SPEED
 	jr AIIncreaseStat
 
 AIUseXSpecial:
-	ld b, $D
+	ld b, $A		;The # of the effect in effects_pointers.asm
 	ld a, X_SPECIAL
 	; fallthrough
 

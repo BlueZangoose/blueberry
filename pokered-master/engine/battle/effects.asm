@@ -1497,6 +1497,30 @@ DugAHoleText:
 	text_end
 
 TrappingEffect:
+	ld hl, wPlayerMoveType
+	ld de, wEnemyMonType1
+	ld bc, wEnemyMonType2
+	ldh a, [hWhoseTurn]
+	and a
+	jr z, .typeTest
+	ld hl, wEnemyMoveType
+	ld de, wBattleMonType1
+	ld bc, wBattleMonType2
+.typeTest					;tests to see if the trapping move is GROUND type and the target is FLYING type.
+	ld a, [hl]
+	cp a, GROUND
+	jr nz, .startTrapping
+	ld a, [de]
+	cp a, FLYING
+	jr z, .fail
+	ld a, [bc]
+	cp a, FLYING
+	jr nz, .startTrapping
+.fail
+	ld c, 50
+	call DelayFrames
+	jp PrintButItFailedText_
+.startTrapping
 	ld hl, wPlayerBattleStatus1
 	ld de, wPlayerNumAttacksLeft
 	ldh a, [hWhoseTurn]

@@ -35,6 +35,12 @@ TypeChangeEffect_:
 	jp .playerTypeChange		;player's turn
 ;effects that change the enemy's type
 .targetFire
+	;accuracy check
+	callfar MoveHitTest
+	ld a, [wMoveMissed]
+	and a
+	jr nz, .failed
+	;accuracy check end
 	ld b, FIRE
 	ld de, TargetTypeChangedText
 	ldh a, [hWhoseTurn]	; 0 on player's turn, 1 on enemy's turn
@@ -65,6 +71,9 @@ TypeChangeEffect_:
 	ld h, d
 	ld l, e
 	jp PrintText
+	ret
+.failed
+	callfar PrintMoveFailureText
 	ret
 
 UserTypeChangedText:

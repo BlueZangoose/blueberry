@@ -2417,8 +2417,8 @@ SquirtleEvosMoves:
 	db EV_LEVEL, 16, WARTORTLE
 	db 0
 ; Learnset
-	db	1	,	FOAM_SPRAY
-	db	1	,	JAW_SNAP
+;	db	1	,	FOAM_SPRAY
+;	db	1	,	JAW_SNAP
 	db	7	,	FLOW
 	db	10	,	SHELL_SMACK
 	db	14	,	WATERJET

@@ -34,12 +34,16 @@ CureStatusEffect_:
 	cp [hl]
 	jr nz, .fail
 	call RemoveAllStatus_
-	jpfar BoostSideEffect_			; needs to be completed - needs to boost speed and print text
+	ld hl, StatusCuredText
+	call PrintText
+	jpfar BoostSideEffect_
 .eatPoison
 	ld a, 1 << PSN
 	cp [hl]
 	jr nz, .fail
 	call RemoveAllStatus_
+	ld hl, StatusCuredText
+	call PrintText
 	jpfar HealEffect_				;HealEffect_ has a special clause specifically for Eat Poison, also has the text print
 .statusCured
 	ld hl, StatusCuredText

@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/charmander.pic", 0, 1 ; sprite dimensions
 	dw CharmanderPicFront, CharmanderPicBack
 
-	db AIR_COOLING, EAGLE_EYE, BLADEMASTERY, SHADOW_CLONE ; level 1 learnset
+	db BURY_ROOTS, GRAVELSHOWER, BLADEMASTERY, SHADOW_CLONE ; level 1 learnset
 ;	db SCORCH, CLAW_SWIPE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 

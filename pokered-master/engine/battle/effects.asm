@@ -781,31 +781,31 @@ UpdateStatDone:
 	ld de, wEnemyMoveNum
 	ld bc, wEnemyMonMinimized
 .playerTurn
-	ld a, [de]
-	cp EAGLE_EYE
+;	ld a, [de]
+;	cp EAGLE_EYE			;	this was Minimize before. Since we no longer use the Minimize sprite, we don't need to bother with this.
 	jr nz, .notMinimize
  ; if a substitute is up, slide off the substitute and show the mon pic before
  ; playing the minimize animation
-	bit HAS_SUBSTITUTE_UP, [hl]
-	push af
-	push bc
-	ld hl, HideSubstituteShowMonAnim
-	ld b, BANK(HideSubstituteShowMonAnim)
-	push de
-	call nz, Bankswitch
-	pop de
+;	bit HAS_SUBSTITUTE_UP, [hl]
+;	push af
+;	push bc
+;	ld hl, HideSubstituteShowMonAnim
+;	ld b, BANK(HideSubstituteShowMonAnim)
+;	push de
+;	call nz, Bankswitch
+;	pop de
 .notMinimize
 	call PlayCurrentMoveAnimation
-	ld a, [de]
-	cp EAGLE_EYE
-	jr nz, .applyBadgeBoostsAndStatusPenalties
-	pop bc
-	ld a, $1
-	ld [bc], a
-	ld hl, ReshowSubstituteAnim
-	ld b, BANK(ReshowSubstituteAnim)
-	pop af
-	call nz, Bankswitch
+;	ld a, [de]
+;	cp EAGLE_EYE
+;	jr nz, .applyBadgeBoostsAndStatusPenalties
+;	pop bc
+;	ld a, $1
+;	ld [bc], a
+;	ld hl, ReshowSubstituteAnim
+;	ld b, BANK(ReshowSubstituteAnim)
+;	pop af
+;	call nz, Bankswitch
 .applyBadgeBoostsAndStatusPenalties
 	ldh a, [hWhoseTurn]
 	and a

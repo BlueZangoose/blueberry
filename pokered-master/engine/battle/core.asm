@@ -3334,6 +3334,7 @@ MirrorMoveCheck:
 	call ApplyAttackToEnemyPokemon
 	call PrintCriticalOHKOText
 	callfar DisplayEffectiveness
+	call CheckDefrost		;	NEW; this was previously in FreezeBurnParalyzeEffect in effects.asm. The function is still in effects.asm.
 	ld a, 1
 	ld [wMoveDidntMiss], a
 .notDone

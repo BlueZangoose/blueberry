@@ -601,7 +601,18 @@ FrozenText:
 	text_end
 
 CheckDefrost:
-; any fire-type move that has a chance inflict burn (all but Fire Spin) will defrost a frozen target
+; previously; any fire-type move that has a chance inflict burn (all but Fire Spin) will defrost a frozen target
+;currently; should be any fire-type move can defrost if it hits. Called from core.asm. (should really be moved there, but eh)
+	ldh a, [hWhoseTurn]
+	and a
+	jp nz, .opponentAttacker
+.playerAttacker
+	ld a, [wEnemyMonStatus]
+	jp .checkDefrost
+.opponentAttacker
+	ld a, [wBattleMonStatus]
+	;fall through
+.checkDefrost
 	and 1 << FRZ ; are they frozen?
 	ret z ; return if so
 	ldh a, [hWhoseTurn]

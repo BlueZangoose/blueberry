@@ -644,18 +644,20 @@ StatModifierUpEffect:
 	ld de, wPlayerMoveEffect
 	ldh a, [hWhoseTurn]
 	and a
-	jr z, .statModifierUpEffect
+	jr z, .checkForChargeBoost
 	ld hl, wEnemyMonStatMods
 	ld de, wEnemyMoveEffect
-.statModifierUpEffect
+.checkForChargeBoost			; new code for charge pouch
 	ld a, [de]
-	sub ATTACK_UP1_EFFECT
-	cp EVASION_UP1_EFFECT + $3 - ATTACK_UP1_EFFECT ; covers all +1 effects
+	cp CHARGE_BOOST_EFFECT
+	jr nz, .statModifierUpEffect
+	ld a, 3			; 3 is the value for special
+	jr .incrementStatMod
+.statModifierUpEffect
+	sub ATTACK_UP1_EFFECT	; a is now 0-5 if +1 or significantly higher if +2
+	cp EVASION_UP1_EFFECT + $3 - ATTACK_UP1_EFFECT ; covers all +1 effects	;6th effect + 3 - 1st effect = 8
 	jr c, .incrementStatMod
 	sub ATTACK_UP2_EFFECT - ATTACK_UP1_EFFECT ; map +2 effects to equivalent +1 effect
-	cp 6						; new code for charge pouch
-	jr nc, .incrementStatMod		; new code for charge pouch
-	ld a, 3						; 3 is the value for special
 .incrementStatMod
 	ld c, a				; a is 0-5 (atk-def-spd-spc-acc-eva)
 	ld b, $0

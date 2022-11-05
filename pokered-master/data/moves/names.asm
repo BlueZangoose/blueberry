@@ -45,10 +45,10 @@ MoveNames::
 	li "FROSTBITE"	; changed, was leer
 	li "VENOMBITE"	; was bite
 	li "CUTE BARK"	; changed, was growl
-	li "ROAR"
+;	li "ROAR"	;	REMOVED
 	li "GEM MISSILE"	;	changed,	was	sing
 	li "POSSESSION"	; changed, was supersonic
-	li "SONICBOOM"
+;	li "SONICBOOM"	;	REMOVED
 	li "SAD SONG"	; changed, was disable
 	li "STONETAIL"	; changed, was acid
 	li "PSYCHIC SONG"	; was bite
@@ -81,7 +81,7 @@ MoveNames::
 	li "LULL"	; changed, was sleep powder
 	li "FIST BARRAGE"	; changed, was petal dance
 	li "MIGHTY ROAR"	; changed, was string shot
-	li "DRAGON RAGE"
+;	li "DRAGON RAGE"	;	REMOVED
 	li "TANGLEVINE"	; changed, was fire spin
 	li "INJECT"	; changed, was thundershock
 	li "MEGAVOLT"	; changed, was thunderbolt
@@ -89,7 +89,7 @@ MoveNames::
 	li "PRACTICEPNCH"	;	changed,	was	thunder
 	li "LEAF TRAP"
 	li "TREMOR"	; changed, was earthquake
-	li "FISSURE"
+;	li "FISSURE"	;	REMOVED
 	li "ICE TUNNEL"	; changed, was dig
 	li "RED MOLD"	; changed, was toxic
 	li "DELIRIUM"	; changed, was confusion
@@ -97,11 +97,11 @@ MoveNames::
 	li "WATER CANNON"	;changed,	was	hypnosis
 	li "WARMUP"	; changed, was meditate
 	li "AMP UP"	; changed, was agility
-	li "QUICK ATTACK"
-	li "RAGE"
+;	li "QUICK ATTACK"	;	REMOVED
+;	li "RAGE"	;	REMOVED
 	li "TELEPORT"
-	li "NIGHT SHADE"
-	li "MIMIC"
+;	li "NIGHT SHADE"	;	REMOVED
+;	li "MIMIC"	;	REMOVED
 	li "VILE STENCH"	; changed, was screech
 	li "BLADEMASTERY"	; changed, was double team
 	li "REGENERATE"	; changed, was recover
@@ -116,7 +116,7 @@ MoveNames::
 	li "BRAIN DRAIN"	; changed, was haze
 	li "MOON VEIL"	; changed, was reflect
 	li "FOSSIL ZEAL"	; changed, was focus energy
-	li "BIDE"
+;	li "BIDE"	;	REMOVED
 	li "MONKEYAROUND"	; changed, was metronome
 	li "MINDREADER"	; changed, was mirror move
 	li "DETONATE"	; changed, was selfdestruct
@@ -129,26 +129,26 @@ MoveNames::
 	li "DROPKICK"	; changed, was waterfall
 	li "BURNING TAR"	; changed, was clamp
 	li "AURA IMPACT"	; changed, was swift
-	li "SKULL BASH"
+;	li "SKULL BASH"	;	REMOVED
 	li "GRASS BLADES"
 	li "PSYBLAST"	; changed, was constrict
 	li "FOCUS"	; changed, was amnesia
 	li "HAUNT"	; changed, was kinesis
 	li "SOFTBOILED"
-	li "HI JUMP KICK"
+;	li "HI JUMP KICK"	;	REMOVED
 	li "CRABWALK"	; changed, was glare
 	li "HEMOSAP"
 	li "BLACK GAS"	; changed, was poison gas
 	li "MULTISLAP"
 	li "SAP"
 	li "SLEEPING GAS"	; changed, was lovely kiss
-	li "SKY ATTACK"
+;	li "SKY ATTACK"	;	REMOVED
 	li "TRANSFORM"
 	li "MOONFROST"	; changed, was bubble
 	li "SPOOKYENERGY"	; changed, was dizzy punch
 	li "SHROOM TOXIN"	; changed, was spore
 	li "FLASH"
-	li "PSYWAVE"
+;	li "PSYWAVE"	;	REMOVED
 	li "JUMPSCARE"	; changed, was splash
 	li "LENS SHIFT"	; changed, was acid armor
 	li "ICE SPIKE"	; changed, was crabhammer

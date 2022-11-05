@@ -51,10 +51,10 @@
 	const FROSTBITE			; 2b				; changed, was leer
 	const VENOMBITE			; 2c				; was bite
 	const CUTE_BARK			; 2d				; changed, was growl
-	const ROAR				; 2e
+;	const ROAR				; 2e	;	REMOVED
 	const GEM_MISSILE		; 2f				;	changed,	was	sing
 	const POSSESSION		; 30				; changed, was supersonic
-	const SONICBOOM			; 31
+;	const SONICBOOM			; 31	;	REMOVED
 	const SAD_SONG			; 32				; changed, was disable
 	const STONETAIL			; 33				; changed, was acid
 	const PSYCHIC_SONG		; 34				; was bite
@@ -87,7 +87,7 @@
 	const LULL				; 4f				; changed, was sleep powder
 	const FIST_BARRAGE		; 50				; changed, was petal dance
 	const MIGHTY_ROAR		; 51				; changed, was string shot
-	const DRAGON_RAGE		; 52
+;	const DRAGON_RAGE		; 52	;	REMOVED
 	const TANGLEVINE		; 53				; changed, was fire spin
 	const INJECT			; 54				; changed, was thundershock
 	const MEGAVOLT			; 55				; changed, was thunderbolt
@@ -95,7 +95,7 @@
 	const PRACTICEPNCH		; 57				;	changed,	was	thunder
 	const LEAF_TRAP			; 58, was rock throw
 	const TREMOR			; 59				; changed, was earthquake
-	const FISSURE			; 5a
+;	const FISSURE			; 5a	;	REMOVED
 	const ICE_TUNNEL		; 5b				; changed, was dig
 	const RED_MOLD			; 5c				; changed, was toxic
 	const DELIRIUM			; 5d				; changed, was confusion
@@ -103,11 +103,11 @@
 	const WATER_CANNON		; 5f				;changed,	was	hypnosis
 	const WARMUP			; 60				; changed, was meditate
 	const AMP_UP			; 61				; changed, was agility
-	const QUICK_ATTACK		; 62
-	const RAGE				; 63
+;	const QUICK_ATTACK		; 62	;	REMOVED
+;	const RAGE				; 63	;	REMOVED
 	const TELEPORT			; 64
-	const NIGHT_SHADE		; 65
-	const MIMIC				; 66
+;	const NIGHT_SHADE		; 65	;	REMOVED
+;	const MIMIC				; 66	;	REMOVED
 	const VILE_STENCH      	; 67				; changed, was screech
 	const BLADEMASTERY  	; 68				; changed, was double team
 	const REGENERATE      	; 69				; changed, was recover
@@ -122,7 +122,7 @@
 	const BRAIN_DRAIN		; 72				; changed, was haze
 	const MOON_VEIL			; 73				; changed, was reflect
 	const FOSSIL_ZEAL		; 74				; changed, was focus energy
-	const BIDE				; 75
+;	const BIDE				; 75	;	REMOVED
 	const MONKEYAROUND		; 76				; changed, was metronome
 	const MINDREADER		; 77				; changed, was mirror move
 	const DETONATE			; 78				; changed, was selfdestruct
@@ -135,26 +135,26 @@
 	const DROPKICK			; 7f				; changed, was waterfall
 	const BURNING_TAR		; 80				; changed, was clamp
 	const AURA_IMPACT		; 81				; changed, was swift
-	const SKULL_BASH		; 82
+;	const SKULL_BASH		; 82	;	REMOVED
 	const GRASS_BLADES		; 83
 	const PSYBLAST			; 84				; changed, was constrict
 	const FOCUS				; 85				; changed, was amnesia
 	const HAUNT				; 86				; changed, was kinesis
 	const SOFTBOILED		; 87
-	const HI_JUMP_KICK		; 88
+;	const HI_JUMP_KICK		; 88	;	REMOVED
 	const CRABWALK			; 89				; changed, was glare
 	const HEMOSAP			; 8a, was dream eater
 	const BLACK_GAS			; 8b				; changed, was poison gas
 	const MULTISLAP			; 8c
 	const SAP				; 8d, was leech life
 	const SLEEPING_GAS		; 8e				; changed, was lovely kiss
-	const SKY_ATTACK		; 8f
+;	const SKY_ATTACK		; 8f	;	REMOVED
 	const TRANSFORM			; 90
 	const MOONFROST			; 91				; changed, was bubble
 	const SPOOKYENERGY		; 92				; changed, was dizzy punch
 	const SHROOM_TOXIN		; 93				; changed, was spore
 	const FLASH				; 94
-	const PSYWAVE			; 95
+;	const PSYWAVE			; 95	;	REMOVED
 	const JUMPSCARE			; 96				; changed, was splash
 	const LENS_SHIFT		; 97				; changed, was acid armor
 	const ICE_SPIKE			; 98				; changed, was crabhammer

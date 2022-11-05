@@ -3587,54 +3587,55 @@ CheckPlayerStatusConditions:
 	jp .returnToHL ; if using a two-turn move, we need to recharge the first turn
 
 .BideCheck
-	ld hl, wPlayerBattleStatus1
-	bit STORING_ENERGY, [hl] ; is mon using bide?
-	jr z, .ThrashingAboutCheck
-	xor a
-	ld [wPlayerMoveNum], a
-	ld hl, wDamage
-	ld a, [hli]
-	ld b, a
-	ld c, [hl]
-	ld hl, wPlayerBideAccumulatedDamage + 1
-	ld a, [hl]
-	add c ; accumulate damage taken
-	ld [hld], a
-	ld a, [hl]
-	adc b
-	ld [hl], a
-	ld hl, wPlayerNumAttacksLeft
-	dec [hl] ; did Bide counter hit 0?
-	jr z, .UnleashEnergy
-	ld hl, ExecutePlayerMoveDone
-	jp .returnToHL ; unless mon unleashes energy, can't move this turn
-.UnleashEnergy
-	ld hl, wPlayerBattleStatus1
-	res STORING_ENERGY, [hl] ; not using bide any more
-	ld hl, UnleashedEnergyText
-	call PrintText
-	ld a, 1
-	ld [wPlayerMovePower], a
-	ld hl, wPlayerBideAccumulatedDamage + 1
-	ld a, [hld]
-	add a
-	ld b, a
-	ld [wDamage + 1], a
-	ld a, [hl]
-	rl a ; double the damage
-	ld [wDamage], a
-	or b
-	jr nz, .next
-	ld a, 1
-	ld [wMoveMissed], a
-.next
-	xor a
-	ld [hli], a
-	ld [hl], a
-	ld a, BIDE
-	ld [wPlayerMoveNum], a
-	ld hl, handleIfPlayerMoveMissed ; skip damage calculation, DecrementPP and MoveHitTest
-	jp .returnToHL
+	jr .ThrashingAboutCheck
+;	ld hl, wPlayerBattleStatus1
+;	bit STORING_ENERGY, [hl] ; is mon using bide?
+;	jr z, .ThrashingAboutCheck
+;	xor a
+;	ld [wPlayerMoveNum], a
+;	ld hl, wDamage
+;	ld a, [hli]
+;	ld b, a
+;	ld c, [hl]
+;	ld hl, wPlayerBideAccumulatedDamage + 1
+;	ld a, [hl]
+;	add c ; accumulate damage taken
+;	ld [hld], a
+;	ld a, [hl]
+;	adc b
+;	ld [hl], a
+;	ld hl, wPlayerNumAttacksLeft
+;	dec [hl] ; did Bide counter hit 0?
+;	jr z, .UnleashEnergy
+;	ld hl, ExecutePlayerMoveDone
+;	jp .returnToHL ; unless mon unleashes energy, can't move this turn
+;.UnleashEnergy
+;	ld hl, wPlayerBattleStatus1
+;	res STORING_ENERGY, [hl] ; not using bide any more
+;	ld hl, UnleashedEnergyText
+;	call PrintText
+;	ld a, 1
+;	ld [wPlayerMovePower], a
+;	ld hl, wPlayerBideAccumulatedDamage + 1
+;	ld a, [hld]
+;	add a
+;	ld b, a
+;	ld [wDamage + 1], a
+;	ld a, [hl]
+;	rl a ; double the damage
+;	ld [wDamage], a
+;	or b
+;	jr nz, .next
+;	ld a, 1
+;	ld [wMoveMissed], a
+;.next
+;	xor a
+;	ld [hli], a
+;	ld [hl], a
+;	ld a, BIDE
+;	ld [wPlayerMoveNum], a
+;	ld hl, handleIfPlayerMoveMissed ; skip damage calculation, DecrementPP and MoveHitTest
+;	jp .returnToHL
 
 .ThrashingAboutCheck
 	bit THRASHING_ABOUT, [hl] ; is mon using thrash or petal dance?
@@ -3674,17 +3675,18 @@ CheckPlayerStatusConditions:
 	jp .returnToHL
 
 .RageCheck
-	ld a, [wPlayerBattleStatus2]
-	bit USING_RAGE, a ; is mon using rage?
-	jp z, .checkPlayerStatusConditionsDone ; if we made it this far, mon can move normally this turn
-	ld a, RAGE
-	ld [wd11e], a
-	call GetMoveName
-	call CopyToStringBuffer
-	xor a
-	ld [wPlayerMoveEffect], a
-	ld hl, PlayerCanExecuteMove
-	jp .returnToHL
+jp .checkPlayerStatusConditionsDone
+;	ld a, [wPlayerBattleStatus2]
+;	bit USING_RAGE, a ; is mon using rage?
+;	jp z, .checkPlayerStatusConditionsDone ; if we made it this far, mon can move normally this turn
+;	ld a, RAGE
+;	ld [wd11e], a
+;	call GetMoveName
+;	call CopyToStringBuffer
+;	xor a
+;	ld [wPlayerMoveEffect], a
+;	ld hl, PlayerCanExecuteMove
+;	jp .returnToHL
 
 .returnToHL
 	xor a
@@ -4957,14 +4959,14 @@ ApplyAttackToEnemyPokemon:
 	ld a, [wPlayerMoveNum]
 	cp SEISMIC_ROCK
 	jr z, .storeDamage
-	cp NIGHT_SHADE
-	jr z, .storeDamage
-	ld b, SONICBOOM_DAMAGE ; 20
-	cp SONICBOOM
-	jr z, .storeDamage
-	ld b, DRAGON_RAGE_DAMAGE ; 40
-	cp DRAGON_RAGE
-	jr z, .storeDamage
+;	cp NIGHT_SHADE
+;	jr z, .storeDamage
+;	ld b, SONICBOOM_DAMAGE ; 20
+;	cp SONICBOOM
+;	jr z, .storeDamage
+;	ld b, DRAGON_RAGE_DAMAGE ; 40
+;	cp DRAGON_RAGE
+;	jr z, .storeDamage
 ; Psywave
 	ld a, [hl]
 	ld b, a
@@ -5076,15 +5078,15 @@ ApplyAttackToPlayerPokemon:
 	ld a, [wEnemyMoveNum]
 	cp SEISMIC_ROCK
 	jr z, .storeDamage
-	cp NIGHT_SHADE
-	jr z, .storeDamage
-	ld b, SONICBOOM_DAMAGE
-	cp SONICBOOM
-	jr z, .storeDamage
-	ld b, DRAGON_RAGE_DAMAGE
-	cp DRAGON_RAGE
-	jr z, .storeDamage
-; Psywave
+;	cp NIGHT_SHADE
+;	jr z, .storeDamage
+;	ld b, SONICBOOM_DAMAGE
+;	cp SONICBOOM
+;	jr z, .storeDamage
+;	ld b, DRAGON_RAGE_DAMAGE
+;	cp DRAGON_RAGE
+;	jr z, .storeDamage
+;; Psywave
 	ld a, [hl]
 	ld b, a
 	srl a
@@ -5222,45 +5224,45 @@ SubstituteBrokeText:
 
 ; this function raises the attack modifier of a pokemon using Rage when that pokemon is attacked
 HandleBuildingRage:
-; values for the player turn
-	ld hl, wEnemyBattleStatus2
-	ld de, wEnemyMonStatMods
-	ld bc, wEnemyMoveNum
-	ldh a, [hWhoseTurn]
-	and a
-	jr z, .next
-; values for the enemy turn
-	ld hl, wPlayerBattleStatus2
-	ld de, wPlayerMonStatMods
-	ld bc, wPlayerMoveNum
-.next
-	bit USING_RAGE, [hl] ; is the pokemon being attacked under the effect of Rage?
-	ret z ; return if not
-	ld a, [de]
-	cp $0d ; maximum stat modifier value
-	ret z ; return if attack modifier is already maxed
-	ldh a, [hWhoseTurn]
-	xor $01 ; flip turn for the stat modifier raising function
-	ldh [hWhoseTurn], a
-; temporarily change the target pokemon's move to $00 and the effect to the one
-; that causes the attack modifier to go up one stage
-	ld h, b
-	ld l, c
-	ld [hl], $00 ; null move number
-	inc hl
-	ld [hl], ATTACK_UP1_EFFECT
-	push hl
-	ld hl, BuildingRageText
-	call PrintText
-	call StatModifierUpEffect ; stat modifier raising function
-	pop hl
-	xor a
-	ldd [hl], a ; null move effect
-	ld a, RAGE
-	ld [hl], a ; restore the target pokemon's move number to Rage
-	ldh a, [hWhoseTurn]
-	xor $01 ; flip turn back to the way it was
-	ldh [hWhoseTurn], a
+;; values for the player turn
+;	ld hl, wEnemyBattleStatus2
+;	ld de, wEnemyMonStatMods
+;	ld bc, wEnemyMoveNum
+;	ldh a, [hWhoseTurn]
+;	and a
+;	jr z, .next
+;; values for the enemy turn
+;	ld hl, wPlayerBattleStatus2
+;	ld de, wPlayerMonStatMods
+;	ld bc, wPlayerMoveNum
+;.next
+;	bit USING_RAGE, [hl] ; is the pokemon being attacked under the effect of Rage?
+;	ret z ; return if not
+;	ld a, [de]
+;	cp $0d ; maximum stat modifier value
+;	ret z ; return if attack modifier is already maxed
+;	ldh a, [hWhoseTurn]
+;	xor $01 ; flip turn for the stat modifier raising function
+;	ldh [hWhoseTurn], a
+;; temporarily change the target pokemon's move to $00 and the effect to the one
+;; that causes the attack modifier to go up one stage
+;	ld h, b
+;	ld l, c
+;	ld [hl], $00 ; null move number
+;	inc hl
+;	ld [hl], ATTACK_UP1_EFFECT
+;	push hl
+;	ld hl, BuildingRageText
+;	call PrintText
+;	call StatModifierUpEffect ; stat modifier raising function
+;	pop hl
+;	xor a
+;	ldd [hl], a ; null move effect
+;	ld a, RAGE
+;	ld [hl], a ; restore the target pokemon's move number to Rage
+;	ldh a, [hWhoseTurn]
+;	xor $01 ; flip turn back to the way it was
+;	ldh [hWhoseTurn], a
 	ret
 
 BuildingRageText:
@@ -6188,55 +6190,56 @@ CheckEnemyStatusConditions:
 	ld hl, ExecuteEnemyMoveDone
 	jp .enemyReturnToHL ; if using a two-turn move, enemy needs to recharge the first turn
 .checkIfUsingBide
-	ld hl, wEnemyBattleStatus1
-	bit STORING_ENERGY, [hl] ; is mon using bide?
-	jr z, .checkIfThrashingAbout
-	xor a
-	ld [wEnemyMoveNum], a
-	ld hl, wDamage
-	ld a, [hli]
-	ld b, a
-	ld c, [hl]
-	ld hl, wEnemyBideAccumulatedDamage + 1
-	ld a, [hl]
-	add c ; accumulate damage taken
-	ld [hld], a
-	ld a, [hl]
-	adc b
-	ld [hl], a
-	ld hl, wEnemyNumAttacksLeft
-	dec [hl] ; did Bide counter hit 0?
-	jr z, .unleashEnergy
-	ld hl, ExecuteEnemyMoveDone
-	jp .enemyReturnToHL ; unless mon unleashes energy, can't move this turn
-.unleashEnergy
-	ld hl, wEnemyBattleStatus1
-	res STORING_ENERGY, [hl] ; not using bide any more
-	ld hl, UnleashedEnergyText
-	call PrintText
-	ld a, $1
-	ld [wEnemyMovePower], a
-	ld hl, wEnemyBideAccumulatedDamage + 1
-	ld a, [hld]
-	add a
-	ld b, a
-	ld [wDamage + 1], a
-	ld a, [hl]
-	rl a ; double the damage
-	ld [wDamage], a
-	or b
-	jr nz, .next
-	ld a, $1
-	ld [wMoveMissed], a
-.next
-	xor a
-	ld [hli], a
-	ld [hl], a
-	ld a, BIDE
-	ld [wEnemyMoveNum], a
-	call SwapPlayerAndEnemyLevels
-	ld hl, handleIfEnemyMoveMissed ; skip damage calculation, DecrementPP and MoveHitTest
-	jp .enemyReturnToHL
+	jp .checkIfThrashingAbout
+;	ld hl, wEnemyBattleStatus1
+;	bit STORING_ENERGY, [hl] ; is mon using bide?
+;	jr z, .checkIfThrashingAbout
+;	xor a
+;	ld [wEnemyMoveNum], a
+;	ld hl, wDamage
+;	ld a, [hli]
+;	ld b, a
+;	ld c, [hl]
+;	ld hl, wEnemyBideAccumulatedDamage + 1
+;	ld a, [hl]
+;	add c ; accumulate damage taken
+;	ld [hld], a
+;	ld a, [hl]
+;	adc b
+;	ld [hl], a
+;	ld hl, wEnemyNumAttacksLeft
+;	dec [hl] ; did Bide counter hit 0?
+;	jr z, .unleashEnergy
+;	ld hl, ExecuteEnemyMoveDone
+;	jp .enemyReturnToHL ; unless mon unleashes energy, can't move this turn
+;.unleashEnergy
+;	ld hl, wEnemyBattleStatus1
+;	res STORING_ENERGY, [hl] ; not using bide any more
+;	ld hl, UnleashedEnergyText
+;	call PrintText
+;	ld a, $1
+;	ld [wEnemyMovePower], a
+;	ld hl, wEnemyBideAccumulatedDamage + 1
+;	ld a, [hld]
+;	add a
+;	ld b, a
+;	ld [wDamage + 1], a
+;	ld a, [hl]
+;	rl a ; double the damage
+;	ld [wDamage], a
+;	or b
+;	jr nz, .next
+;	ld a, $1
+;	ld [wMoveMissed], a
+;.next
+;	xor a
+;	ld [hli], a
+;	ld [hl], a
+;	ld a, BIDE
+;	ld [wEnemyMoveNum], a
+;	call SwapPlayerAndEnemyLevels
+;	ld hl, handleIfEnemyMoveMissed ; skip damage calculation, DecrementPP and MoveHitTest
+;	jp .enemyReturnToHL
 .checkIfThrashingAbout
 	bit THRASHING_ABOUT, [hl] ; is mon using thrash or petal dance?
 	jr z, .checkIfUsingMultiturnMove
@@ -6272,17 +6275,18 @@ CheckEnemyStatusConditions:
 	jp nz, .enemyReturnToHL
 	jp .enemyReturnToHL
 .checkIfUsingRage
-	ld a, [wEnemyBattleStatus2]
-	bit USING_RAGE, a ; is mon using rage?
-	jp z, .checkEnemyStatusConditionsDone ; if we made it this far, mon can move normally this turn
-	ld a, RAGE
-	ld [wd11e], a
-	call GetMoveName
-	call CopyToStringBuffer
-	xor a
-	ld [wEnemyMoveEffect], a
-	ld hl, EnemyCanExecuteMove
-	jp .enemyReturnToHL
+	jp .checkEnemyStatusConditionsDone
+;	ld a, [wEnemyBattleStatus2]
+;	bit USING_RAGE, a ; is mon using rage?
+;	jp z, .checkEnemyStatusConditionsDone ; if we made it this far, mon can move normally this turn
+;	ld a, RAGE
+;	ld [wd11e], a
+;	call GetMoveName
+;	call CopyToStringBuffer
+;	xor a
+;	ld [wEnemyMoveEffect], a
+;	ld hl, EnemyCanExecuteMove
+;	jp .enemyReturnToHL
 .enemyReturnToHL
 	xor a ; set Z flag
 	ret

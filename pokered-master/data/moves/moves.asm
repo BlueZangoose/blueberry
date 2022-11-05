@@ -55,10 +55,10 @@ Moves:
 	move	FROSTBITE,			ATTACK_DOWN2_EFFECT,			0,		ICE,			100,	10	;	changed,	was	leer
 	move	VENOMBITE,			POISON_SIDE_EFFECT_40,			70,		POISON,			100,	10	;	changed,	was	bite
 	move	CUTE_BARK,			ATTACK_DOWN1_EFFECT,			0,		NORMAL,			100,	30	;	changed,	was	growl
-	move	ROAR,				SWITCH_AND_TELEPORT_EFFECT,		0,		NORMAL,			100,	20
+;	move	ROAR,				SWITCH_AND_TELEPORT_EFFECT,		0,		NORMAL,			100,	20	;	REMOVED
 	move	GEM_MISSILE,		DEF_UP_SIDE_EFFECT_20,			65,		ROCK,			100,	15	;	changed,	was	sing
 	move	POSSESSION,			CONFUSION_EFFECT,				0,		GHOST,			90,		10	;	changed,	was	supersonic
-	move	SONICBOOM,			SPECIAL_DAMAGE_EFFECT,			1,		NORMAL,			90,		20
+;	move	SONICBOOM,			SPECIAL_DAMAGE_EFFECT,			1,		NORMAL,			90,		20	;	REMOVED
 	move	SAD_SONG,			DISABLE_EFFECT,					0,		NORMAL,			100,	10	;	changed,	was	disable
 	move	STONETAIL,			DEF_DOWN_SIDE_EFFECT_30,		75,		ROCK,			95,		15	;	changed,	was	acid
 	move	PSYCHIC_SONG,		SLEEP_SIDE_EFFECT_14,			95,		PSYCHIC_TYPE,	95,		5	;	changed,	was	ember
@@ -91,7 +91,7 @@ Moves:
 	move	LULL,				SLEEP_EFFECT,					0,		PSYCHIC_TYPE,	50,		15	;	changed,	was	sleep	powder
 	move	FIST_BARRAGE,		THRASH_PETAL_DANCE_EFFECT,		115,	FIGHTING,		95,		10	;	changed,	was	petal	dance
 	move	MIGHTY_ROAR,		SPEED_DOWN1_EFFECT,				0,		NORMAL,			100,	30	;	changed,	was	string	shot
-	move	DRAGON_RAGE,		SPECIAL_DAMAGE_EFFECT,			1,		DRAGON,			100,	10
+;	move	DRAGON_RAGE,		SPECIAL_DAMAGE_EFFECT,			1,		DRAGON,			100,	10	;	REMOVED
 	move	TANGLEVINE,			TRAPPING_EFFECT,				20,		GRASS,			65,		15	;	changed,	was	fire	spin
 	move	INJECT,				POISON_SIDE_EFFECT_25,			35,		POISON,			100,	20	;	changed,	was	thundershock
 	move	MEGAVOLT,			MEGAVOLT_SIDE_EFFECT,			120,	ELECTRIC,		90,		5	;	changed,	was	thunderbolt
@@ -99,7 +99,7 @@ Moves:
 	move	PRACTICEPNCH,		ATK_UP_SIDE_EFFECT_50,			30,		FIGHTING,		100,	25	;	changed,	was	thunder
 	move	LEAF_TRAP,			DRAIN_HP_EFFECT,				100,	GRASS,			85,		5	;	changed,	was	rock	throw
 	move	TREMOR,				NO_ADDITIONAL_EFFECT,			80,		GROUND,			100,	10	;	changed,	was	earthquake
-	move	FISSURE,			OHKO_EFFECT,					1,		GROUND,			30,		5
+;	move	FISSURE,			OHKO_EFFECT,					1,		GROUND,			30,		5	;	REMOVED
 	move	ICE_TUNNEL,			CHARGE_EFFECT,					85,		ICE,			95,		15	;	changed,	was	dig
 	move	RED_MOLD,			POISON_EFFECT,					0,		GRASS,			85,		10	;	changed,	was	toxic
 	move	DELIRIUM,			CONFUSION_SIDE_EFFECT,			10,		PSYCHIC_TYPE,	100,	20	;	changed,	was	confusion
@@ -107,11 +107,11 @@ Moves:
 	move	WATER_CANNON,		SPD_DOWN_SIDE_EFFECT_30,		105,	WATER,			80,		5	;	changed,	was	hypnosis
 	move	WARMUP,				ATTACK_UP1_EFFECT,				0,		FIGHTING,		100,	30	;	changed,	was	meditate
 	move	AMP_UP,				SPEED_UP2_EFFECT,				0,		ELECTRIC,		100,	25	;	changed,	was	agility
-	move	QUICK_ATTACK,		NO_ADDITIONAL_EFFECT,			40,		NORMAL,			100,	30
-	move	RAGE,				RAGE_EFFECT,					20,		NORMAL,			100,	20
+;	move	QUICK_ATTACK,		NO_ADDITIONAL_EFFECT,			40,		NORMAL,			100,	30	;	REMOVED
+;	move	RAGE,				RAGE_EFFECT,					20,		NORMAL,			100,	20	;	REMOVED
 	move	TELEPORT,			NO_ADDITIONAL_EFFECT,			50,		PSYCHIC_TYPE,	100,	20	;	changed,	was	teleport
-	move	NIGHT_SHADE,		SPECIAL_DAMAGE_EFFECT,			0,		GHOST,			100,	15
-	move	MIMIC,				MIMIC_EFFECT,					0,		NORMAL,			100,	10
+;	move	NIGHT_SHADE,		SPECIAL_DAMAGE_EFFECT,			0,		GHOST,			100,	15	;	REMOVED
+;	move	MIMIC,				MIMIC_EFFECT,					0,		NORMAL,			100,	10	;	REMOVED
 	move	VILE_STENCH,		DEFENSE_DOWN2_EFFECT,			0,		POISON,			100,	10	;	changed,	was	screech
 	move	BLADEMASTERY,		ACCURACY_UP2_EFFECT,			0,		FIGHTING,		100,	15	;	changed,	was	double	team
 	move	REGENERATE,			HEAL_EFFECT,					0,		WATER,			100,	5	;	changed,	was	recover
@@ -126,7 +126,7 @@ Moves:
 	move	BRAIN_DRAIN,		HAZE_EFFECT,					0,		PSYCHIC_TYPE,	100,	10	;	changed,	was	haze
 	move	MOON_VEIL,			REFLECT_EFFECT,					0,		NORMAL,			100,	5	;	changed,	was	reflect
 	move	FOSSIL_ZEAL,		FOCUS_ENERGY_EFFECT,			0,		GHOST,			100,	10	;	changed,	was	focus	energy
-	move	BIDE,				BIDE_EFFECT,					0,		NORMAL,			100,	10
+;	move	BIDE,				BIDE_EFFECT,					0,		NORMAL,			100,	10	;	REMOVED
 	move	MONKEYAROUND,		METRONOME_EFFECT,				0,		NORMAL,			100,	40	;	changed,	was	metronome
 	move	MINDREADER,			MIRROR_MOVE_EFFECT,				0,		PSYCHIC_TYPE,	100,	20	;	changed,	was	mirror	move
 	move	DETONATE,			EXPLODE_EFFECT,					130,	FIRE,			100,	5	;	changed,	was	selfdestruct
@@ -139,26 +139,26 @@ Moves:
 	move	DROPKICK,			NO_ADDITIONAL_EFFECT,			55,		FLYING,			100,	15	;	changed,	was	waterfall
 	move	BURNING_TAR,		TRAPPING_EFFECT,				40,		FIRE,			65,		10	;	changed,	was	clamp
 	move	AURA_IMPACT,		SWIFT_EFFECT,					50,		FIGHTING,		100,	15	;	changed,	was	swift
-	move	SKULL_BASH,			CHARGE_EFFECT,					100,	NORMAL,			100,	15
+;	move	SKULL_BASH,			CHARGE_EFFECT,					100,	NORMAL,			100,	15	;	REMOVED
 	move	GRASS_BLADES,		TWO_TO_FIVE_ATTACKS_EFFECT,		13,		GRASS,			95,		20	;	changed,	was	spike	cannon
 	move	PSYBLAST,			ATK_DOWN_SIDE_EFFECT_10,		100,	PSYCHIC_TYPE,	95,		10	;	changed,	was	constrict
 	move	FOCUS,				SPECIAL_UP2_EFFECT,				0,		DRAGON,			100,	15	;	changed,	was	amnesia
 	move	HAUNT,				ACCURACY_DOWN2_EFFECT,			0,		GHOST,			100,	5	;	changed,	was	kinesis
 	move	SOFTBOILED,			NO_ADDITIONAL_EFFECT,			50,		NORMAL,			100,	20	;	changed,	was	softboiled
-	move	HI_JUMP_KICK,		JUMP_KICK_EFFECT,				85,		FIGHTING,		90,		20
+;	move	HI_JUMP_KICK,		JUMP_KICK_EFFECT,				85,		FIGHTING,		90,		20	;	REMOVED
 	move	CRABWALK,			CURE_STATUS_EFFECT,				0,		WATER,			100,	15	;	changed,	was	glare
 	move	HEMOSAP,			DREAM_EATER_EFFECT,				95,		POISON,			85,		15	;	changed,	was	dream	eater
 	move	BLACK_GAS,			BURN_SIDE_EFFECT_30,			65,		POISON,			100,	15	;	changed,	was	poison	gas
 	move	MULTISLAP,			TWO_TO_FIVE_ATTACKS_EFFECT,		15,		NORMAL,			100,	20	;	changed,	was	barrage
 	move	SAP,				DRAIN_HP_EFFECT,				35,		GRASS,			100,	25	;	changed,	was	leech	life
 	move	SLEEPING_GAS,		SLEEP_EFFECT,					0,		POISON,			50,		10	;	changed,	was	lovely	kiss
-	move	SKY_ATTACK,			CHARGE_EFFECT,					140,	FLYING,			90,		5
+;	move	SKY_ATTACK,			CHARGE_EFFECT,					140,	FLYING,			90,		5	;	REMOVED
 	move	TRANSFORM,			TRANSFORM_EFFECT,				0,		NORMAL,			100,	10	;	no	change
 	move	MOONFROST,			ATK_DOWN_SIDE_EFFECT_10,		90,		ICE,			100,	10	;	changed,	was	bubble
 	move	SPOOKYENERGY,		NO_ADDITIONAL_EFFECT,			52,		GHOST,			100,	25	;	changed,	was	dizzy	punch
 	move	SHROOM_TOXIN,		SLEEP_EFFECT,					0,		POISON,			100,	10	;	changed,	was	spore
 	move	FLASH,				NO_ADDITIONAL_EFFECT,			50,		ELECTRIC,		100,	20	;	changed,	was	flash
-	move	PSYWAVE,			SPECIAL_DAMAGE_EFFECT,			1,		PSYCHIC_TYPE,	80,		15
+;	move	PSYWAVE,			SPECIAL_DAMAGE_EFFECT,			1,		PSYCHIC_TYPE,	80,		15	;	REMOVED
 	move	JUMPSCARE,			SWIFT_EFFECT,					50,		GHOST,			100,	20	;	changed,	was	splash
 	move	LENS_SHIFT,			ACCURACY_UP1_EFFECT,			0,		BUG,			100,	15	;	changed,	was	acid	armor
 	move	ICE_SPIKE,			NO_ADDITIONAL_EFFECT,			80,		ICE,			100,	10	;	changed,	was	crabhammer

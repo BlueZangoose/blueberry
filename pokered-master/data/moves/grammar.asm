@@ -6,7 +6,7 @@ ExclamationPointMoveSets:
 
 ; set 1
 	db REGENERATE	; changed, was recover
-	db BIDE
+;	db BIDE
 	db DETONATE	; changed, was selfdestruct
 	db FOCUS	; changed, was amnesia
 	db 0 ; end set
@@ -15,7 +15,7 @@ ExclamationPointMoveSets:
 	db WARMUP	; changed, was meditate
 	db AMP_UP	; changed, was agility
 	db TELEPORT
-	db MIMIC
+;	db MIMIC
 	db BLADEMASTERY	; changed, was double team
 	db MULTISLAP
 	db 0 ; end set
@@ -36,7 +36,7 @@ ExclamationPointMoveSets:
 	db FROSTBITE	; changed, was leer
 	db VENOMBITE	; was bite
 	db CUTE_BARK	; changed, was growl
-	db ROAR
+;	db ROAR
 	db GEM_MISSILE	;	changed,	was	sing
 	db STARFIRE	; changed, was peck
 	db CLOSECIRCUIT	; changed, was counter
@@ -44,7 +44,7 @@ ExclamationPointMoveSets:
 	db LEECH_BITE	; was absorb
 	db MIGHTY_ROAR	; changed, was string shot
 	db TREMOR	; changed, was earthquake
-	db FISSURE
+;	db FISSURE
 	db ICE_TUNNEL	; changed, was dig
 	db RED_MOLD	; changed, was toxic
 	db VILE_STENCH	; changed, was screech

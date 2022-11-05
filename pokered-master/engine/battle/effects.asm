@@ -228,7 +228,9 @@ StatusSideEffect:
 	cp 1 << BRN			; 16
 	jp nz, :+
 	call HalveAttackDueToBurn ; halve attack of affected mon
-	ld a, ANIM_A9
+	ld c, 50
+	call DelayFrames
+	ld a, ANIM_C7
 	call PlayBattleAnimation
 	ld hl, BurnedText
 	call PrintText
@@ -237,7 +239,9 @@ StatusSideEffect:
 	cp 1 << FRZ
 	jp nz, :+
 	call ClearHyperBeam ; resets hyper beam (recharge) condition from target
-	ld a, ANIM_A9
+	ld c, 50
+	call DelayFrames
+	ld a, ANIM_C7
 	call PlayBattleAnimation
 	ld hl, FrozenText
 	call PrintText
@@ -245,7 +249,9 @@ StatusSideEffect:
 :;poison
 	cp 1 << PSN			; 8
 	jp nz, :+
-	ld a, ANIM_A9
+	ld c, 50
+	call DelayFrames
+	ld a, ANIM_C7
 	call PlayBattleAnimation
 	ld hl, PoisonedText
 	call PrintText
@@ -254,7 +260,9 @@ StatusSideEffect:
 	cp 1 << PAR
 	jp nz, :+
 	call QuarterSpeedDueToParalysis ; quarter speed of affected mon
-	ld a, ANIM_A9
+	ld c, 50
+	call DelayFrames
+	ld a, ANIM_C7
 	call PlayBattleAnimation
 	ld hl, ParalyzedMayNotAttackText
 	call PrintText
@@ -264,7 +272,9 @@ StatusSideEffect:
 	;jp nc, :+
 ; Couldn't get these two lines to work. Not needed as sleep is the only option remaining. If you fix them, uncomment the : below.
 	call ClearHyperBeam ; resets hyper beam (recharge) condition from target
-	ld a, SLP_ANIM
+	ld c, 50
+	call DelayFrames
+	ld a, ANIM_C7
 	call PlayBattleAnimation
 	ld hl, FellAsleepText
 	call PrintText
@@ -1230,9 +1240,9 @@ SwitchAndTeleportEffect:
 	ld hl, RanFromBattleText
 	cp TELEPORT
 	jr z, .printText
-	ld hl, RanAwayScaredText
-	cp ROAR
-	jr z, .printText
+;	ld hl, RanAwayScaredText
+;	cp ROAR
+;	jr z, .printText
 	ld hl, WasBlownAwayText
 .printText
 	jp PrintText
@@ -1458,12 +1468,12 @@ ChargeMoveEffectText:
 	cp CHARGE_POUCH
 	ld hl, TookInSunlightText
 	jr z, .gotText
-	cp SKULL_BASH
-	ld hl, LoweredItsHeadText
-	jr z, .gotText
-	cp SKY_ATTACK
-	ld hl, SkyAttackGlowingText
-	jr z, .gotText
+;	cp SKULL_BASH
+;	ld hl, LoweredItsHeadText
+;	jr z, .gotText
+;	cp SKY_ATTACK
+;	ld hl, SkyAttackGlowingText
+;	jr z, .gotText
 	cp VANISH
 	ld hl, FlewUpHighText
 	jr z, .gotText

@@ -45,10 +45,10 @@ AttackAnimationPointers:
 	dw FrostbiteAnim	; changed, was leer
 	dw VenomBiteAnim
 	dw CuteBarkAnim
-	dw RoarAnim
+;	dw RoarAnim	;	REMOVED
 	dw GemMissileAnim	;	changed,	was	sing
 	dw PossessionAnim	; changed, was supersonic
-	dw SonicBoomAnim
+;	dw SonicBoomAnim	;	REMOVED
 	dw SadSongAnim
 	dw StonetailAnim	; changed, was acid
 	dw PsychicSongAnim
@@ -81,7 +81,7 @@ AttackAnimationPointers:
 	dw LullAnim
 	dw FistBarrageAnim
 	dw MightyRoarAnim	; changed, was string shot
-	dw DragonRageAnim
+;	dw DragonRageAnim	;	REMOVED
 	dw TanglevineAnim	; changed, was fire spin
 	dw InjectAnim
 	dw MegavoltAnim
@@ -89,7 +89,7 @@ AttackAnimationPointers:
 	dw PracticePnchAnim	;	changed,	was	thunder
 	dw LeafTrapAnim
 	dw TremorAnim
-	dw FissureAnim
+;	dw FissureAnim	;	REMOVED
 	dw IceTunnelAnim	; changed, was dig
 	dw RedMoldAnim
 	dw DeliriumAnim		; changed, was confusion
@@ -97,11 +97,11 @@ AttackAnimationPointers:
 	dw WaterCannonAnim	;changed,	was	hypnosis
 	dw WarmupAnim		; changed, was meditate
 	dw AmpUpAnim
-	dw QuickAttackAnim
-	dw RageAnim
+;	dw QuickAttackAnim	;	REMOVED
+;	dw RageAnim	;	REMOVED
 	dw TeleportAnim
-	dw NightShadeAnim
-	dw MimicAnim
+;	dw NightShadeAnim	;	REMOVED
+;	dw MimicAnim	;	REMOVED
 	dw VileStenchAnim
 	dw BladeMasteryAnim
 	dw RegenerateAnim
@@ -116,7 +116,7 @@ AttackAnimationPointers:
 	dw HazeAnim
 	dw MoonVeilAnim
 	dw FossilZealAnim	; changed, was focus energy
-	dw BideAnim
+;	dw BideAnim	;	REMOVED
 	dw MonkeyAroundAnim	; changed, was metronome
 	dw MindReaderAnim	; changed, was mirror move
 	dw DetonateAnim		; changed, was selfdestruct
@@ -129,26 +129,26 @@ AttackAnimationPointers:
 	dw DropkickAnim
 	dw BurningTarAnim
 	dw AuraImpactAnim	; changed, was swift
-	dw SkullBashAnim
+;	dw SkullBashAnim	;	REMOVED
 	dw GrassBladesAnim
 	dw PsyblastAnim		; changed, was constrict
 	dw FocusAnim
 	dw HauntAnim
 	dw SoftboiledAnim
-	dw HiJumpKickAnim
+;	dw HiJumpKickAnim	;	REMOVED
 	dw CrabwalkAnim		; changed, was glare
 	dw HemosapAnim
 	dw BlackGasAnim
 	dw MultislapAnim
 	dw SapAnim
 	dw SleepingGasAnim	; changed, was lovely kiss
-	dw SkyAttackAnim
+;	dw SkyAttackAnim	;	REMOVED
 	dw TransformAnim
 	dw MoonfrostAnim	; changed, was bubble
 	dw SpookyEnergyAnim
 	dw ShroomToxinAnim	; changed, was spore
 	dw FlashAnim
-	dw PsywaveAnim
+;	dw PsywaveAnim	;	REMOVED
 	dw JumpscareAnim	; changed, was splash
 	dw LensShiftAnim
 	dw IceSpikeAnim		; changed, was crabhammer
@@ -305,8 +305,8 @@ DustKickAnim:
 	db -1 ; end
 MudslideAnim:
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
-	battle_anim FISSURE, SUBANIM_0_CIRCLES_FALLING, 1, 6
-	battle_anim FISSURE, SE_SHAKE_SCREEN
+	battle_anim CORRODE, SUBANIM_0_CIRCLES_FALLING, 1, 6
+	battle_anim CORRODE, SE_SHAKE_SCREEN
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 SupercoolAnim:
@@ -387,7 +387,7 @@ ForgetAnim:
 	battle_anim HAUNT, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 16
 	battle_anim HAUNT, SUBANIM_0_STATUS_CONFUSED_ENEMY, 0, 16
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim SPOOKYENERGY, SE_SHAKE_ENEMY_HUD
+	battle_anim SPOOKYENERGY, SE_BLINK_ENEMY_MON
 	db -1 ; end
 BurrowAnim:
 	battle_anim NO_MOVE, SE_BLINK_MON
@@ -421,7 +421,7 @@ PostureAnim:
 PursueAnim:
 	battle_anim FIN_SLAP, SE_MOVE_MON_HORIZONTALLY
 	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
-	battle_anim NO_MOVE, SE_SHAKE_ENEMY_HUD
+	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
 	battle_anim NO_MOVE, SE_RESET_MON_POSITION
 
 ;	battle_anim FIN_SLAP, SE_MOVE_MON_HORIZONTALLY
@@ -461,7 +461,7 @@ ClearMindAnim:
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 FlyAnim:
-	battle_anim SKY_ATTACK, SE_SQUISH_MON_PIC
+	battle_anim WYRMTAIL, SE_SQUISH_MON_PIC
 	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
 	battle_anim PARASITEROOT, SUBANIM_0_STAR_THRICE, 0, 6
 	battle_anim PARASITEROOT, SE_SHOW_MON_PIC
@@ -502,7 +502,7 @@ ZephyrAnim:
 	battle_anim SNOW_BREATH, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	db -1 ; end
 SurprisePnchAnim:
-	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+	battle_anim SUPERCOOL, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_0_STAR_HIGH, 0, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC	
 	db -1 ; end
@@ -736,7 +736,7 @@ VanishAnim2:	;pokemon hides
 	db -1 ; end
 ;bind:
 EarthTrapAnim:
-	battle_anim FISSURE, SE_DARKEN_MON_PALETTE
+	battle_anim CORRODE, SE_DARKEN_MON_PALETTE
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
@@ -816,7 +816,7 @@ DouseAnim:
 ;headbutt:
 PsysqueezeAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
-	battle_anim QUICK_ATTACK, SE_WAVY_SCREEN
+	battle_anim SUPERCOOL, SE_WAVY_SCREEN
 	battle_anim PSYSQUEEZE, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
 	battle_anim NO_MOVE, SUBANIM_0_STAR, 0, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
@@ -954,8 +954,8 @@ CurrentFlowAnim:
 	db -1 ; end
 ;pinmissile:
 MultikickAnim:
-	battle_anim ROAR, SUBANIM_0_STAR_THRICE, 0, 6
-	battle_anim ROAR, SE_DELAY_ANIMATION_10
+	battle_anim MUDSLIDE, SUBANIM_0_STAR_THRICE, 0, 6
+	battle_anim MUDSLIDE, SE_DELAY_ANIMATION_10
 
 ;	battle_anim MULTIKICK, SUBANIM_0_STAR_TWICE, 0, 3
 	db -1 ; end
@@ -984,12 +984,12 @@ CuteBarkAnim:
 	;battle_anim CUTE_BARK, SUBANIM_BOTH_HEART_MUSIC, 1, 6
 	db -1 ; end
 ;roar:
-RoarAnim:
+;RoarAnim:
 
-;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-	db -1 ; end
+;	battle_anim MUDSLIDE, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim MUDSLIDE, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim MUDSLIDE, SUBANIM_1_SHOUT, 1, 6
+;	db -1 ; end
 ;sing:
 GemMissileAnim:
 	battle_anim BONE_STRIKE, SUBANIM_0_SAFARI_ROCK, 0, 2
@@ -1010,8 +1010,8 @@ PossessionAnim:
 ;sonicboom:
 SonicBoomAnim:
 
-;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
-;	battle_anim ROAR, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim MUDSLIDE, SUBANIM_1_SHOUT, 1, 6
+;	battle_anim MUDSLIDE, SUBANIM_1_SHOUT, 1, 6
 ;	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
 ;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
 	db -1 ; end
@@ -1116,7 +1116,7 @@ IonBeamAnim:
 	db -1 ; end
 ;psybeam:
 PsionicSlamAnim:
-	battle_anim PSIONIC_SLAM, SE_SHAKE_ENEMY_HUD
+	battle_anim PSIONIC_SLAM, SE_BLINK_ENEMY_MON
 	battle_anim NO_MOVE, SE_SLIDE_ENEMY_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG, 1, 6
@@ -1137,7 +1137,7 @@ FlametailAnim:
 WindchillAnim:
 	battle_anim MUD_BULLETS, SUBANIM_1_TORNADO, 1, 6
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
-	battle_anim SKY_ATTACK, SUBANIM_0_ICE_FALL, 0, 6
+	battle_anim WYRMTAIL, SUBANIM_0_ICE_FALL, 0, 6
 
 ;	battle_anim WINDCHILL, SUBANIM_0_BEAM, 0, 3
 ;	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
@@ -1274,7 +1274,7 @@ ParasiteRootAnim:
 	db -1 ; end
 ;growth:
 BlazeAnim:
-	battle_anim DRAGON_RAGE, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 1, 4
+	battle_anim TAR_SLAP, SUBANIM_UNUSED_GEYSER_WATER_FIRE, 1, 4
 	battle_anim NO_MOVE, SUBANIM_UNUSED_BARRIER_WATER_FIRE, 1, 4
 ;	battle_anim BLAZE, SE_LIGHT_SCREEN_PALETTE
 ;	battle_anim NO_MOVE, SE_SPIRAL_BALLS_INWARD
@@ -1312,7 +1312,7 @@ ToxicGasAnim:
 ;stunspore:
 ParastingAnim:
 	battle_anim ASH_ATTACK, SUBANIM_0_HORN_JAB_TWO, 0, 6
-	battle_anim NO_MOVE, SE_SHAKE_ENEMY_HUD
+	battle_anim NO_MOVE, SE_BLINK_ENEMY_MON
 
 ;	battle_anim PARASTING, SUBANIM_0_CIRCLES_FALLING, 0, 6
 	db -1 ; end
@@ -1351,14 +1351,14 @@ DragonfireAnim:
 	battle_anim SPORE_SPRAY, SUBANIM_UNUSED_BARRIER_WATER_FIRE, 1, 5
 	battle_anim PSYCHIC_SONG, SUBANIM_1_FLAME_COLUMN_3, 1, 8
 	db -1 ; end
-DragonRageAnim:
+;DragonRageAnim:
 
 
-;	battle_anim DRAGON_RAGE, SUBANIM_1_FLAME_BEAM, 1, 6
+;	battle_anim TAR_SLAP, SUBANIM_1_FLAME_BEAM, 1, 6
 ;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_1, 1, 6
 ;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_2, 1, 6
 ;	battle_anim NO_MOVE, SUBANIM_1_FLAME_COLUMN_3, 1, 6
-	db -1 ; end
+;	db -1 ; end
 ;firespin:
 TanglevineAnim:
 	battle_anim ACID_SPIT, SUBANIM_1_SEED_LAND, 1, 6
@@ -1433,14 +1433,14 @@ TremorAnim:
 ;	battle_anim TREMOR, SE_SHAKE_SCREEN
 	db -1 ; end
 ;fissure:
-FissureAnim:
+;FissureAnim:
 
 
-;	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
+;	battle_anim CORRODE, SE_DARK_SCREEN_FLASH
 ;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
-;	battle_anim FISSURE, SE_DARK_SCREEN_FLASH
+;	battle_anim CORRODE, SE_DARK_SCREEN_FLASH
 ;	battle_anim NO_MOVE, SE_SHAKE_SCREEN
-	db -1 ; end
+;	db -1 ; end
 ;dig:
 IceTunnelAnim:	;move hits
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
@@ -1530,12 +1530,12 @@ AmpUpAnim:
 ;	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 	db -1 ; end
 ;quickattack:
-QuickAttackAnim:
+;QuickAttackAnim:
 
-;	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+;	battle_anim SUPERCOOL, SE_SLIDE_MON_OFF
 ;	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 ;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
-	db -1 ; end
+;	db -1 ; end
 ;rage:
 RageAnim:
 
@@ -1561,12 +1561,12 @@ NightShadeAnim:
 ;	battle_anim NO_MOVE, SE_WAVY_SCREEN
 	db -1 ; end
 ;mimic:
-MimicAnim:
+;MimicAnim:
 
 
-;	battle_anim MIMIC, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
-;	battle_anim MIMIC, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 1, 6
-	db -1 ; end
+;	battle_anim FOAM_SPRAY, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
+;	battle_anim FOAM_SPRAY, SUBANIM_BOTH_CIRCLE_SQUARE_TOSS_BACK, 1, 6
+;	db -1 ; end
 ;screech:
 VileStenchAnim:
 	battle_anim NO_MOVE, SE_DARKEN_MON_PALETTE
@@ -1701,8 +1701,8 @@ StoneShellAnim:
 ;lightscreen:
 PsyshieldAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
-	battle_anim MIMIC, SUBANIM_UNUSED_CIRCLE_SQUARE_HALFTOSS, 0, 12
-	battle_anim MIMIC, SUBANIM_1_BARRIER, 1, 12
+	battle_anim FOAM_SPRAY, SUBANIM_UNUSED_CIRCLE_SQUARE_HALFTOSS, 0, 12
+	battle_anim FOAM_SPRAY, SUBANIM_1_BARRIER, 1, 12
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 
 ;	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
@@ -1744,9 +1744,9 @@ FossilZealAnim:
 ;	battle_anim FOSSIL_ZEAL, SE_SPIRAL_BALLS_INWARD
 	db -1 ; end
 ;bide:
-BideAnim:
-	battle_anim BIDE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
-	db -1 ; end
+;BideAnim:
+;	battle_anim HYDROTAIL, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+;	db -1 ; end
 ;metronome:
 MonkeyAroundAnim:
 	battle_anim JUMPSCARE, SE_BOUNCE_UP_AND_DOWN
@@ -1853,15 +1853,15 @@ BurningTarAnim:
 AuraImpactAnim:
 	battle_anim NO_MOVE, SE_LIGHT_SCREEN_PALETTE
 	battle_anim SPORE_SPRAY, SUBANIM_1_STAR_BIG_TOSS, 1, 2
-	battle_anim QUICK_ATTACK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim SUPERCOOL, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_RESET_SCREEN_PALETTE
 
 ;	battle_anim AURA_IMPACT, SUBANIM_1_STARS_SMALL_TOSS, 1, 3
 	db -1 ; end
 ;skullbash:
-SkullBashAnim:
-	battle_anim SKULL_BASH, SUBANIM_1_STAR_BIG, 1, 6
-	db -1 ; end
+;SkullBashAnim:
+;	battle_anim LANDSLIDE, SUBANIM_1_STAR_BIG, 1, 6
+;	db -1 ; end
 ;spikecannon:
 GrassBladesAnim:
 	battle_anim SAND_BOMB, SUBANIM_1_LEAVES_TOSS, 1, 1
@@ -1981,13 +1981,13 @@ SleepingGasAnim:
 ;	battle_anim SLEEPING_GAS, SUBANIM_BOTH_HEART_MUSIC, 0, 6
 	db -1 ; end
 ;skyattack:
-SkyAttackAnim:
+;SkyAttackAnim:
 
-;	battle_anim SKY_ATTACK, SE_SQUISH_MON_PIC
+;	battle_anim WYRMTAIL, SE_SQUISH_MON_PIC
 ;	battle_anim NO_MOVE, SE_SHOOT_BALLS_UPWARD
 ;	battle_anim HI_JUMP_KICK, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 ;	battle_anim NO_MOVE, SE_SHOW_MON_PIC
-	db -1 ; end
+;	db -1 ; end
 ;transform:
 TransformAnim:
 	battle_anim TRANSFORM, SUBANIM_BOTH_CIRCLES_SQUARES_CENTERING_ENEMY, 1, 6
@@ -2142,7 +2142,7 @@ RaiseHacklesAnim:
 	db -1 ; end
 ;conversion:
 DashAttackAnim:
-	battle_anim QUICK_ATTACK, SE_SLIDE_MON_OFF
+	battle_anim SUPERCOOL, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 
@@ -2154,7 +2154,7 @@ DashAttackAnim:
 ;triattack:
 BoneStrikeAnim:
 	battle_anim MANTIS_STYLE, SUBANIM_1_SWORDS_CIRCLING, 1, 6
-	battle_anim ROAR, SUBANIM_1_STAR_BIG, 1, 8
+	battle_anim MUDSLIDE, SUBANIM_1_STAR_BIG, 1, 8
 	battle_anim JOLT, SUBANIM_1_STAR_BIG, 1, 8
 
 ;	battle_anim BONE_STRIKE, SE_DARK_SCREEN_FLASH

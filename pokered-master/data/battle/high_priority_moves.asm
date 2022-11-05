@@ -1,5 +1,5 @@
 HighPriorityMoves:
-	db QUICK_ATTACK
+;	db QUICK_ATTACK
 	db SWIFT_SLASH
 	db SURPRISEPNCH
 	db ZEPHYR

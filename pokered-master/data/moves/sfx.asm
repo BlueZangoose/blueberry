@@ -46,10 +46,10 @@ MoveSoundTable:
 	db SFX_BATTLE_31,          $ff, $40 ; FROSTBITE	; changed, was leer
 	db SFX_BATTLE_1E,          $00, $80 ; VENOMBITE	; was bite
 	db SFX_BATTLE_0B,          $00, $c0 ; CUTE_BARK	; changed, was growl
-	db SFX_BATTLE_0B,          $00, $40 ; ROAR
+;	db SFX_BATTLE_0B,          $00, $40 ; ROAR	;	REMOVED
 	db SFX_BATTLE_35,          $00, $80 ; GEM_MISSILE	;	changed,	was	sing
 	db SFX_BATTLE_27,          $40, $60 ; POSSESSION	; changed, was supersonic
-	db SFX_BATTLE_27,          $00, $80 ; SONICBOOM
+;	db SFX_BATTLE_27,          $00, $80 ; SONICBOOM	;	REMOVED
 	db SFX_BATTLE_27,          $ff, $40 ; SAD_SONG	; changed, was disable
 	db SFX_BATTLE_2A,          $80, $c0 ; STONETAIL	; changed, was acid
 	db SFX_BATTLE_19,          $10, $a0 ; PSYCHIC_SONG	; was bite
@@ -82,7 +82,7 @@ MoveSoundTable:
 	db SFX_BATTLE_1C,          $01, $c0 ; LULL	; changed, was sleep powder
 	db SFX_BATTLE_13,          $14, $c0 ; FIST_BARRAGE	; changed, was petal dance
 	db SFX_BATTLE_1B,          $02, $a0 ; MIGHTY_ROAR	; changed, was string shot
-	db SFX_BATTLE_29,          $f0, $80 ; DRAGON_RAGE
+;	db SFX_BATTLE_29,          $f0, $80 ; DRAGON_RAGE	;	REMOVED
 	db SFX_BATTLE_29,          $20, $c0 ; TANGLEVINE	; changed, was fire spin
 	db SFX_BATTLE_2F,          $00, $20 ; INJECT	; changed, was thundershock
 	db SFX_BATTLE_2F,          $20, $80 ; MEGAVOLT	; changed, was thunderbolt
@@ -90,7 +90,7 @@ MoveSoundTable:
 	db SFX_BATTLE_26,          $00, $80 ; PRACTICEPNCH	;	changed,	was	thunder
 	db SFX_BATTLE_14,          $01, $e0 ; LEAF_TRAP, was rock throw
 	db SFX_BATTLE_29,          $0f, $e0 ; TREMOR	; changed, was earthquake
-	db SFX_BATTLE_29,          $11, $20 ; FISSURE
+;	db SFX_BATTLE_29,          $11, $20 ; FISSURE	;	REMOVED
 	db SFX_DAMAGE,             $10, $40 ; ICE_TUNNEL	; changed, was dig
 	db SFX_BATTLE_0F,          $10, $c0 ; RED_MOLD	; changed, was toxic
 	db SFX_BATTLE_14,          $00, $20 ; DELIRIUM	; changed, was confusion
@@ -98,11 +98,11 @@ MoveSoundTable:
 	db SFX_BATTLE_35,          $11, $18 ; WATER_CANNON	;changed,	was	hypnosis
 	db SFX_BATTLE_09,          $20, $c0 ; WARMUP	; changed, was meditate
 	db SFX_FAINT_FALL,         $20, $c0 ; AMP_UP	; changed, was agility
-	db SFX_BATTLE_25,          $00, $10 ; QUICK_ATTACK
-	db SFX_BATTLE_26,          $f0, $20 ; RAGE
+;	db SFX_BATTLE_25,          $00, $10 ; QUICK_ATTACK	;	REMOVED
+;	db SFX_BATTLE_26,          $f0, $20 ; RAGE	;	REMOVED
 	db SFX_BATTLE_33,          $f0, $c0 ; TELEPORT
-	db SFX_NOT_VERY_EFFECTIVE, $f0, $e0 ; NIGHT_SHADE
-	db SFX_BATTLE_09,          $f0, $40 ; MIMIC
+;	db SFX_NOT_VERY_EFFECTIVE, $f0, $e0 ; NIGHT_SHADE	;	REMOVED
+;	db SFX_BATTLE_09,          $f0, $40 ; MIMIC	;	REMOVED
 	db SFX_BATTLE_31,          $00, $80 ; VILE_STENCH	; changed, was screech
 	db SFX_BATTLE_33,          $80, $40 ; BLADEMASTERY	; changed, was double team
 	db SFX_BATTLE_33,          $00, $80 ; REGENERATE	; changed, was recover
@@ -117,7 +117,7 @@ MoveSoundTable:
 	db SFX_BATTLE_0F,          $f8, $10 ; BRAIN_DRAIN	; changed, was haze
 	db SFX_NOT_VERY_EFFECTIVE, $f0, $10 ; MOON_VEIL	; changed, was reflect
 	db SFX_BATTLE_25,          $00, $80 ; FOSSIL_ZEAL	; changed, was focus energy
-	db SFX_BATTLE_18,          $00, $c0 ; BIDE
+;	db SFX_BATTLE_18,          $00, $c0 ; BIDE	;	REMOVED
 	db SFX_BATTLE_32,          $c0, $ff ; MONKEYAROUND	; changed, was metronome
 	db SFX_BATTLE_09,          $f2, $20 ; MINDREADER	; changed, was mirror move
 	db SFX_BATTLE_34,          $00, $80 ; DETONATE	; changed, was selfdestruct
@@ -130,26 +130,26 @@ MoveSoundTable:
 	db SFX_BATTLE_25,          $2f, $80 ; DROPKICK	; changed, was waterfall
 	db SFX_BATTLE_0F,          $1f, $ff ; BURNING_TAR	; changed, was clamp
 	db SFX_BATTLE_2B,          $1f, $60 ; AURA_IMPACT	; changed, was swift
-	db SFX_BATTLE_26,          $1e, $20 ; SKULL_BASH
+;	db SFX_BATTLE_26,          $1e, $20 ; SKULL_BASH	;	REMOVED
 	db SFX_BATTLE_26,          $1f, $18 ; GRASS_BLADES, was spike cannon
 	db SFX_BATTLE_14,          $0f, $80 ; PSYBLAST	; changed, was constrict
 	db SFX_BATTLE_09,          $f8, $10 ; FOCUS	; changed, was amnesia
 	db SFX_FAINT_FALL,         $18, $20 ; HAUNT	; changed, was kinesis
 	db SFX_BATTLE_32,          $08, $40 ; SOFTBOILED
-	db SFX_BATTLE_17,          $01, $e0 ; HI_JUMP_KICK
+;	db SFX_BATTLE_17,          $01, $e0 ; HI_JUMP_KICK	;	REMOVED
 	db SFX_NOT_VERY_EFFECTIVE, $09, $ff ; CRABWALK	; changed, was glare
 	db SFX_BATTLE_35,          $42, $01 ; HEMOSAP, was dream eater
 	db SFX_BATTLE_1C,          $00, $ff ; BLACK_GAS	; changed, was poison gas
 	db SFX_BATTLE_32,          $08, $e0 ; MULTISLAP, was barrage
 	db SFX_BATTLE_24,          $00, $80 ; SAP, was leech life
 	db SFX_BATTLE_09,          $88, $10 ; SLEEPING_GAS	; changed, was lovely kiss
-	db SFX_BATTLE_25,          $48, $ff ; SKY_ATTACK
+;	db SFX_BATTLE_25,          $48, $ff ; SKY_ATTACK	;	REMOVED
 	db SFX_FAINT_FALL,         $ff, $ff ; TRANSFORM
 	db SFX_BATTLE_24,          $ff, $10 ; MOONFROST	; changed, was bubble
 	db SFX_FAINT_FALL,         $ff, $04 ; SPOOKYENERGY	; changed, was dizzy punch
 	db SFX_BATTLE_1C,          $01, $ff ; SHROOM_TOXIN	; changed, was spore
 	db SFX_BATTLE_13,          $f8, $ff ; FLASH
-	db SFX_BATTLE_0C,          $f0, $f0 ; PSYWAVE
+;	db SFX_BATTLE_0C,          $f0, $f0 ; PSYWAVE	;	REMOVED
 	db SFX_BATTLE_0F,          $08, $10 ; JUMPSCARE	; changed, was splash
 	db SFX_BATTLE_0D,          $f0, $ff ; LENS_SHIFT	; changed, was acid armor
 	db SFX_SUPER_EFFECTIVE,    $f0, $ff ; ICE_SPIKE	; changed, was crabhammer
@@ -208,14 +208,14 @@ MoveSoundTable:
 	db SFX_BATTLE_1E,          $00, $80 ; SHED_SKIN
 	db SFX_BATTLE_1E,          $00, $80 ; SANDBLAST
 	db SFX_BATTLE_1E,          $00, $80 ; CHILLTAIL
-	db SFX_BATTLE_1E,          $00, $80 ; CORRODE
-	db SFX_BATTLE_1E,          $00, $80 ; WYRMTAIL
-	db SFX_BATTLE_1E,          $00, $80 ; TAR_SLAP
-	db SFX_BATTLE_1E,          $00, $80 ; FOAM_SPRAY
-	db SFX_BATTLE_1E,          $00, $80 ; HYDROTAIL
-	db SFX_BATTLE_1E,          $00, $80 ; LANDSLIDE
-	db SFX_BATTLE_1E,          $00, $80 ; SUPERCOOL
-	db SFX_BATTLE_1E,          $00, $80 ; MUDSLIDE
+	db SFX_BATTLE_29,          $11, $20 ; CORRODE		; FISSURE SFX
+	db SFX_BATTLE_25,          $48, $ff ; WYRMTAIL		; SKY ATTACK
+	db SFX_BATTLE_29,          $f0, $80 ; TAR_SLAP		; DRAGON RAGE
+	db SFX_BATTLE_09,          $f0, $40 ; FOAM_SPRAY	; MIMIC SFX
+	db SFX_BATTLE_18,          $00, $c0 ; HYDROTAIL		; BIDE SFX
+	db SFX_BATTLE_26,          $1e, $20 ; LANDSLIDE		; SKULL BASH SFX
+	db SFX_BATTLE_25,          $00, $10 ; SUPERCOOL		; QUICK ATTACK SFX
+	db SFX_BATTLE_0B,          $00, $40 ; MUDSLIDE		;roar sfx
 	db SFX_BATTLE_1B,          $00, $80 ; ASH_ATTACK	;poison sting sfx
 	db SFX_BATTLE_17,          $00, $80 ; DUST_KICK	;jump kick sfx
 	db SFX_BATTLE_13,          $00, $e0 ; SNOW_BREATH	;whirlwind sfx

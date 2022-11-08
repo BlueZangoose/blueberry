@@ -1,9 +1,17 @@
+;_TM35PreReceiveText::
+;	text "Tch-tch-tch!"
+;	line "I made a cool TM!"
+;
+;	para "It can cause all"
+;	line "kinds of fun!"
+;	prompt
+	
 _TM35PreReceiveText::
-	text "Tch-tch-tch!"
-	line "I made a cool TM!"
+	text "P...p...please..."
+	line "T-take this TM..."
 
-	para "It can cause all"
-	line "kinds of fun!"
+	para "It haunts m-my"
+	line "dreams..."
 	prompt
 
 _ReceivedTM35Text::
@@ -13,20 +21,36 @@ _ReceivedTM35Text::
 	text "!@"
 	text_end
 
-_TM35ExplanationText::
-	text "Tch-tch-tch!"
-	line "That's the sound"
-	cont "of a METRONOME!"
+;_TM35ExplanationText::
+;	text "Tch-tch-tch!"
+;	line "That's the sound"
+;	cont "of a METRONOME!"
+;
+;	para "It tweaks your"
+;	line "#MON's brain"
+;	cont "into using moves"
+;	cont "it doesn't know!"
+;	done
 
-	para "It tweaks your"
-	line "#MON's brain"
-	cont "into using moves"
-	cont "it doesn't know!"
+_TM35ExplanationText::
+	text "OMEN SCREAM..."
+	line "Keep that TM away"
+	cont "from m-me..."
+
+	para "I heard it when"
+	line "I worked in the"
+	cont "old mansion..."
+	cont "That #MON's..."
 	done
 
+;_TM35NoRoomText::
+;	text "Your pack is"
+;	line "crammed full!"
+;	done
+
 _TM35NoRoomText::
-	text "Your pack is"
-	line "crammed full!"
+	text "P...please..."
+	line "Make space..."
 	done
 
 _Lab3Text2::

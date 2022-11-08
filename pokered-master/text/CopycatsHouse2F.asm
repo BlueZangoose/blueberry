@@ -36,16 +36,16 @@ _ReceivedTM31Text::
 _TM31ExplanationText1::
 	text_start
 
-	para "TM31 contains my"
-	line "favorite, MIMIC!"
+	para "TM19 contains my"		;was tm31
+	line "favorite, VANISH!"
 
-	para "Use it on a good"
-	line "#MON!@"
+	para "Why should it be"
+	line "something else?@"
 	text_end
 
 _TM31ExplanationText2::
 	text "<PLAYER>: Hi!"
-	line "Thanks for TM31!"
+	line "Thanks for TM19!"
 
 	para "<PLAYER>: Pardon?"
 

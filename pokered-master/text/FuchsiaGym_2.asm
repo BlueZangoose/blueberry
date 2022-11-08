@@ -1,22 +1,33 @@
+;_KogaPostBattleAdviceText::
+;	text "When afflicted by"
+;	line "TOXIC, #MON"
+;	cont "suffer more and"
+;	cont "more as battle"
+;	cont "progresses!"
+;
+;	para "It will surely"
+;	line "terrorize foes!"
+;	done
+	
 _KogaPostBattleAdviceText::
-	text "When afflicted by"
-	line "TOXIC, #MON"
-	cont "suffer more and"
-	cont "more as battle"
-	cont "progresses!"
+	text "BLACK GAS is"
+	line "an acidic move!"
+	cont "Despite being"
+	cont "POISON-type,"
+	cont "it can burn!"
 
 	para "It will surely"
 	line "terrorize foes!"
 	done
 
 _KogaSoulBadgeInfoText::
-	text "Now that you have"
+	text "Although you have"
 	line "the SOULBADGE,"
-	cont "the DEFENSE of"
-	cont "your #MON"
-	cont "increases!"
+	cont "it grants no"
+	cont "bonus to your"
+	cont "#MON!"
 
-	para "It also lets you"
+	para "But it lets you"
 	line "SURF outside of"
 	cont "battle!"
 
@@ -33,8 +44,8 @@ _ReceivedTM06Text::
 
 _TM06ExplanationText::
 	text_start
-	para "TM06 contains"
-	line "TOXIC!"
+	para "TM36 contains"
+	line "BLACK GAS!"
 
 	para "It is a secret"
 	line "technique over"

@@ -19,7 +19,7 @@ _BeforeReceivedTM34Text::
 
 _ReceivedTM34Text::
 	text "<PLAYER> received"
-	line "TM34!@"
+	line "TM43!@"		; was tm34
 	text_end
 
 _TM34ExplanationText::
@@ -38,12 +38,12 @@ _TM34ExplanationText::
 	cont "carefully!"
 
 	para "TM34 contains"
-	line "BIDE!"
+	line "SEISMIC ROCK!"
 
-	para "Your #MON will"
-	line "absorb damage in"
-	cont "battle then pay"
-	cont "it back double!"
+	para "It deals damage"
+	line "equal to your"
+	cont "#MON's level!"
+;	cont "it back double!"
 	done
 
 _TM34NoRoomText::
@@ -70,11 +70,11 @@ _BrockBoulerBadgeInfoText::
 	line "#MON LEAGUE"
 	cont "BADGE!"
 
-	para "Its bearer's"
-	line "#MON become"
-	cont "more powerful!"
+	para "It doesn't make"
+	line "your #MON"
+	cont "more powerful..."
 
-	para "The technique"
+	para "but the technique"
 	line "FLASH can now be"
 	cont "used any time!"
 	prompt

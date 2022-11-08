@@ -69,10 +69,11 @@ _ReceivedTM27Text::
 _TM27ExplanationText::
 	text_start
 
-	para "TM27 is FISSURE!"
-	line "It will take out"
-	cont "#MON with just"
-	cont "one hit!"
+	para "TM27 is SAND BOMB!"		;was tm27 fissure
+	line "It's a powerful"
+	cont "attack that can"
+	cont "cripple a"
+	cont "target's SPECIAL!"
 
 	para "I made it when I"
 	line "ran the GYM here,"

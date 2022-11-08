@@ -12,10 +12,10 @@ _LTSurgePostBattleAdviceText::
 
 _LTSurgeThunderBadgeInfoText::
 	text "The THUNDERBADGE"
-	line "cranks up your"
+	line "won't change your"
 	cont "#MON's SPEED!"
 
-	para "It also lets your"
+	para "But it lets your"
 	line "#MON FLY any"
 	cont "time, kid!"
 
@@ -33,8 +33,8 @@ _ReceivedTM24Text::
 _TM24ExplanationText::
 	text_start
 
-	para "TM24 contains"
-	line "THUNDERBOLT!"
+	para "TM05 contains"
+	line "LIGHTNING!"
 
 	para "Teach it to an"
 	line "electric #MON!"

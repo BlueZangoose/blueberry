@@ -22,8 +22,8 @@ _ReceivedVolcanoBadgeText::
 	text_end
 
 _BlainePostBattleAdviceText::
-	text "FIRE BLAST is the"
-	line "ultimate fire"
+	text "LAVA GEYSER is"
+	line "the ultimate fire"
 	cont "technique!"
 
 	para "Don't waste it on"
@@ -34,9 +34,9 @@ _BlaineVolcanoBadgeInfoText::
 	text "Hah!"
 
 	para "The VOLCANOBADGE"
-	line "heightens the"
-	cont "SPECIAL abilities"
-	cont "of your #MON!"
+	line "doesn't do"
+	cont "anything to"
+	cont "your #MON!"
 
 	para "Here, you can"
 	line "have this too!"
@@ -52,14 +52,14 @@ _ReceivedTM38Text::
 _TM38ExplanationText::
 	text_start
 
-	para "TM38 contains"
-	line "FIRE BLAST!"
+	para "TM12 contains"		;was tm38
+	line "LAVA GEYSER!"
 
 	para "Teach it to fire-"
 	line "type #MON!"
 
 	para "CHARMELEON or"
-	line "PONYTA would be"
+	line "ARCANINE would be"
 	cont "good bets!"
 	done
 

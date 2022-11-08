@@ -18,8 +18,8 @@ _MistyPreBattleText::
 	done
 
 _TM11ExplanationText::
-	text "TM11 teaches"
-	line "BUBBLEBEAM!"
+	text "TM46 teaches"		;was tm11
+	line "PRESSURE CUT!"
 
 	para "Use it on an"
 	line "aquatic #MON!"
@@ -47,7 +47,7 @@ _MistyCascadeBadgeInfoText::
 
 _ReceivedTM11Text::
 	text "<PLAYER> received"
-	line "TM11!@"
+	line "TM46!@"		;was tm11
 	text_end
 
 _TM11NoRoomText::

@@ -5,7 +5,7 @@ _CeruleanTrashedText_1d6ab::
 	para "Look what they"
 	line "did here!"
 
-	para "They stole a TM"
+	para "They stole an HM"
 	line "for teaching"
 	cont "#MON how to"
 	cont "DIG holes!"
@@ -20,7 +20,7 @@ _CeruleanTrashedText_1d6b0::
 
 	para "I decided to teach"
 	line "DIGLETT how to"
-	cont "DIG without a TM!"
+	cont "DIG with no HM!"
 	done
 
 _CeruleanHouseTrashedText2::

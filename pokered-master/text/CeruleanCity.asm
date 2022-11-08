@@ -70,7 +70,7 @@ _CeruleanCityText_196d9::
 
 _ReceivedTM28Text::
 	text "<PLAYER> recovered"
-	line "TM28!@"
+	line "HM06!@"
 	text_end
 
 _ReceivedTM28Text2::
@@ -96,7 +96,7 @@ _CeruleanCityText_196ee::
 
 _CeruleanCityText_196f3::
 	text "OK! I'll return"
-	line "the TM I stole!"
+	line "the HM I stole!"
 	prompt
 
 _CeruleanCityText3::
@@ -138,7 +138,7 @@ _CeruleanCityText6::
 
 _CeruleanCityText_19730::
 	text "OK! SLOWBRO!"
-	line "Use SONICBOOM!"
+	line "Use CHILLTAIL!"
 	cont "Come on, SLOWBRO"
 	cont "pay attention!"
 	done
@@ -150,7 +150,7 @@ _CeruleanCityText_19735::
 	done
 
 _CeruleanCityText_1973a::
-	text "SLOWBRO, WITHDRAW!"
+	text "SLOWBRO, PSYBLAST!"
 	line "No! That's wrong!"
 
 	para "It's so hard to"

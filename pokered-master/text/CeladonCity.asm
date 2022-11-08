@@ -47,14 +47,14 @@ _ReceivedTM41Text::
 	text_end
 
 _TM41ExplanationText::
-	text "TM41 teaches"
-	line "SOFTBOILED!"
+	text "TM38 teaches" ; was TM 41
+	line "HEMOSAP!"
 
-	para "Only one #MON"
-	line "can use it!"
+	para "It only works on"
+	line "poisoned #MON!"
 
-	para "That #MON is"
-	line "CHANSEY!"
+	para "It drains their"
+	line "health!"
 	done
 
 _TM41NoRoomText::
@@ -132,9 +132,9 @@ _CeladonCityText16::
 
 	para "GUARD SPEC."
 	line "protects #MON"
-	cont "against SPECIAL"
+	cont "against status"
 	cont "attacks such as"
-	cont "fire and water!"
+	cont "POSTURE!"
 
 	para "Get your items at"
 	line "CELADON DEPT."

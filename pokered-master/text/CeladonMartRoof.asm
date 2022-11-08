@@ -27,10 +27,10 @@ _CeladonMartRoofText_484fe::
 	para "@"
 	text_ram wStringBuffer
 	text " contains"
-	line "ICE BEAM!"
+	line "HEADWIND!" ;was tm13 ice beam
 
-	para "It can freeze the"
-	line "target sometimes!@"
+	para "It boosts your"
+	line "#MON's SPEED!@"
 	text_end
 
 _CeladonMartRoofText_48504::
@@ -57,10 +57,10 @@ _CeladonMartRoofText_4850f::
 	para "@"
 	text_ram wStringBuffer
 	text " contains"
-	line "ROCK SLIDE!"
+	line "RAISEHACKLES!"
 
-	para "It can spook the"
-	line "target sometimes!@"
+	para "It boosts your"
+	line "#MON's ATTACK!@"
 	text_end
 
 _CeladonMartRoofText_48515::
@@ -76,14 +76,14 @@ _CeladonMartRoofText_48515::
 
 _ReceivedTM49Text::
 	text "<PLAYER> received"
-	line "TM49!@"
+	line "TM28!@"
 	text_end
 
 _CeladonMartRoofText_48520::
 	text_start
 
-	para "TM49 contains"
-	line "BONE_STRIKE!@"
+	para "TM28 contains"
+	line "SAND ARMOR!@"
 	text_end
 
 _CeladonMartRoofText_48526::

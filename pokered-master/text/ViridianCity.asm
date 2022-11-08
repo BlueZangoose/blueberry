@@ -66,31 +66,31 @@ _ViridianCityText_19191::
 	done
 
 _ViridianCityText_191ca::
-	text "Yawn!"
-	line "I must have dozed"
-	cont "off in the sun."
+	text "Wow!"			; was tm42 dream eater
+	line "How did I get"
+	cont "here?"
 
-	para "I had this dream"
-	line "about a DROWZEE"
-	cont "eating my dream."
-	cont "What's this?"
-	cont "Where did this TM"
-	cont "come from?"
+	para "I was teaching"
+	line "my PSYDUCK"
+	cont "a new move..."
+	cont "But then I was"
+	cont "suddenly trapped"
+	cont "in here?"
 
-	para "This is spooky!"
+	para "This is risky!"
 	line "Here, you can"
-	cont "have this TM."
+	cont "have this HM."
 	prompt
 
 _ReceivedTM42Text::
 	text "<PLAYER> received"
-	line "TM42!@"
+	line "HM07!@"		; was tm42 dream eater
 	text_end
 
 _TM42Explanation::
-	text "TM42 contains"
-	line "HEMOSAP..."
-	cont "...Snore..."
+	text "HM07 contains"
+	line "TELEPORT!"
+	cont "Be careful!"
 	done
 
 _TM42NoRoomText::

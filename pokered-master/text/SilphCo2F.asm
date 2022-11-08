@@ -17,13 +17,13 @@ _ReceivedTM36Text::
 	text_end
 
 _TM36ExplanationText::
-	text "TM36 is"
-	line "SELFDESTRUCT!"
+	text "TM44 is"		;was tm36
+	line "STONETAIL!"
 
-	para "It's powerful, but"
-	line "the #MON that"
-	cont "uses it faints!"
-	cont "Be careful."
+	para "It has a chance"
+	line "to lower the"
+	cont "target #MON's"
+	cont "defense."
 	done
 
 _TM36NoRoomText::

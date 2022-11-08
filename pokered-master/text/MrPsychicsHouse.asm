@@ -1,8 +1,15 @@
+;_TM29PreReceiveText::
+;	text "...Wait! Don't"
+;	line "say a word!"
+;
+;	para "You wanted this!"
+;	prompt
+	
 _TM29PreReceiveText::
-	text "...Wait! Don't"
-	line "say a word!"
+	text "Prepare to be"
+	line "DAZZLED!"
 
-	para "You wanted this!"
+	para "What a sight!"
 	prompt
 
 _ReceivedTM29Text::
@@ -13,11 +20,11 @@ _ReceivedTM29Text::
 	text_end
 
 _TM29ExplanationText::
-	text "TM29 is PSYCHIC!"
+	text "TM42 is DAZZLE!"		; was tm29
 
-	para "It can lower the"
-	line "target's SPECIAL"
-	cont "abilities."
+	para "It can make the"
+	line "target flinch!"
+;	cont "abilities."
 	done
 
 _TM29NoRoomText::

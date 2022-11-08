@@ -138,8 +138,13 @@ _SaffronCityText22::
 	line "OFFICE BUILDING"
 	done
 
+;_SaffronCityText24::
+;	text "MR.PSYCHIC's"
+;	line "HOUSE"
+;	done
+
 _SaffronCityText24::
-	text "MR.PSYCHIC's"
+	text "MR.DAZZLE's"
 	line "HOUSE"
 	done
 

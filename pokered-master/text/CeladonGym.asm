@@ -71,13 +71,13 @@ _ReceivedTM21Text::
 _TM21ExplanationText::
 	text_start
 
-	para "TM21 contains"
-	line "HYPERSAP."
+	para "TM23 contains" ; was TM21
+	line "CHLOROBURST."
 
-	para "Half the damage"
-	line "it inflicts is"
-	cont "drained to heal"
-	cont "your #MON!"
+	para "It has devastating"
+	line "power, but it"
+	cont "will cause your"
+	cont "#MON to faint."
 	done
 
 _TM21NoRoomText::

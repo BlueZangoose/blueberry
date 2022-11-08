@@ -15,10 +15,10 @@ _ReceivedTM18Text::
 	text_end
 
 _TM18ExplanationText::
-	text "TM18 is COUNTER!"
-	line "Not like the one"
-	cont "I'm leaning on,"
-	cont "mind you!"
+	text "TM10 is" ;was TM18
+	line "AURA IMPACT!"
+	cont "It's guaranteed to"
+	cont "hit its target!"
 	done
 
 _TM18NoRoomText::

@@ -4,23 +4,23 @@ _TM39PreReceiveText::
 	cont "in #MON TOWER."
 
 	para "You can have this"
-	line "TM. I don't need"
+	line "HM. I don't need"
 	cont "it any more..."
 	prompt
 
 _ReceivedTM39Text::
 	text "<PLAYER> received"
-	line "TM39!@"
+	line "HM08!@"		; was tm39
 	text_end
 
 _TM39ExplanationText::
-	text "TM39 is a move"
-	line "called SWIFT."
+	text "HM08 is the move"
+	line "SOFTBOILED."
 
-	para "It's very accurate,"
-	line "so use it during"
-	cont "battles you can't"
-	cont "afford to lose."
+	para "It can help you"
+	line "heal your #MON"
+	cont "outside of"
+	cont "battle."
 	done
 
 _TM39NoRoomText::

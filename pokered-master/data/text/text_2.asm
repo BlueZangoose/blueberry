@@ -1042,7 +1042,7 @@ _ConfusedNoMoreText::
 	line "confused no more!"
 	prompt
 
-_SavingEnergyText::
+_SavingEnergyText::			;appears to be unused
 	text "<USER>"
 	line "is saving energy!"
 	prompt

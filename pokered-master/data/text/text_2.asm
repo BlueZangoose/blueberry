@@ -475,10 +475,10 @@ TMNotebookText::
 
 	para "..."
 
-	para "There are 50 TMs"
+	para "There are 47 TMs"
 	line "in all."
 
-	para "There are also 5"
+	para "There are also 8"
 	line "HMs that can be"
 	cont "used repeatedly."
 
@@ -853,7 +853,7 @@ _HurtByBurnText::
 	prompt
 
 _HurtByLeechSeedText::
-	text "LEECH SEED saps"
+	text "PARASITEROOT saps"
 	line "<USER>!"
 	prompt
 

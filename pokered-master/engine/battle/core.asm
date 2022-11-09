@@ -3964,6 +3964,11 @@ PrintMoveFailureText:
 	jr z, .playersTurn
 	ld de, wEnemyMoveEffect
 .playersTurn
+	ld a, [wSkipFailText]		;testing to see if we skip the fail text
+	and a
+	ld a, 0
+	ld [wSkipFailText], a
+	ret nz						;return it we skip the fail text
 	ld hl, DoesntAffectMonText
 	ld a, [wDamageMultipliers]
 	and $7f
@@ -5646,6 +5651,9 @@ MoveHitTest:
 	call DelayFrames	;new
 	ld hl, ProtectedByDustText;new
 	call PrintText		;new
+	xor a
+	inc a
+	ld [wSkipFailText], a
 	;fall through
 .moveMissed
 	xor a

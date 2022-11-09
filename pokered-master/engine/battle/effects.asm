@@ -1859,6 +1859,11 @@ ConditionalPrintButItFailed:
 	ret nz ; return if the side effect failed, yet the attack was successful
 
 PrintButItFailedText_:
+	ld a, [wSkipFailText]		;testing to see if we skip the fail text
+	and a
+	ld a, 0
+	ld [wSkipFailText], a
+	ret nz						;return it we skip the fail text
 	ld hl, ButItFailedText
 	jp PrintText
 

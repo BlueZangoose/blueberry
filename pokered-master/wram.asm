@@ -1252,6 +1252,8 @@ wCriticalHitOrOHKO:: db
 
 wMoveMissed:: db
 
+wSkipFailText:: db		;new, used if you skip the generic "but it failed" text because you already printed something else
+
 ; always 0
 wPlayerStatsToDouble:: db
 

@@ -4022,7 +4022,7 @@ KeptGoingAndCrashedText:
 	text_far _KeptGoingAndCrashedText
 	text_end
 
-UnaffectedText:
+UnaffectedText:				;used for OHKO moves
 	text_far _UnaffectedText
 	text_end
 
@@ -5596,7 +5596,7 @@ MoveHitTest:
 ; function is not called when those moves are used
 	ld a, [wEnemyBattleStatus2]
 	bit PROTECTED_BY_MIST, a ; is mon protected by mist?
-	jp nz, .moveMissed
+	jp nz, .moveProtectedByDust
 .skipEnemyMistCheck
 	ld a, [wPlayerBattleStatus2]
 	bit USING_X_ACCURACY, a ; is the player using X Accuracy?
@@ -5617,7 +5617,7 @@ MoveHitTest:
 ; similar to enemy mist check
 	ld a, [wPlayerBattleStatus2]
 	bit PROTECTED_BY_MIST, a ; is mon protected by mist?
-	jp nz, .moveMissed
+	jp nz, .moveProtectedByDust
 .skipPlayerMistCheck
 	ld a, [wEnemyBattleStatus2]
 	bit USING_X_ACCURACY, a ; is the enemy using X Accuracy?
@@ -5641,6 +5641,12 @@ MoveHitTest:
 	cp b
 	jr nc, .moveMissed
 	ret
+.moveProtectedByDust
+	ld c, 50			;new
+	call DelayFrames	;new
+	ld hl, ProtectedByDustText;new
+	call PrintText		;new
+	;fall through
 .moveMissed
 	xor a
 	ld hl, wDamage ; zero the damage
@@ -5659,6 +5665,10 @@ MoveHitTest:
 	ld hl, wPlayerBattleStatus1
 	res USING_TRAPPING_MOVE, [hl] ; end multi-turn attack e.g. wrap
 	ret
+
+ProtectedByDustText:
+	text_far _ProtectedByDustText
+	text_end
 
 ; values for player turn
 CalcHitChance:

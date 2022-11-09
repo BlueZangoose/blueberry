@@ -2266,7 +2266,8 @@ RattataEvosMoves:
 	db EV_LEVEL, 20, RATICATE
 	db 0
 ; Learnset
-	db	1	,	JAW_SNAP
+;	db	1	,	JAW_SNAP
+	db	1	,	HAUNT
 	db	1	,	DUSTBATH
 	db	5	,	JUMPSCARE
 	db	10	,	ROLL_OVER

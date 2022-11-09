@@ -327,8 +327,9 @@ _ReflectGainedArmorText::
 	prompt
 
 _ShroudedInMistText::
-	text "<USER>'s"
-	line "shrouded in mist!"
+	text "Dust protects"
+	line "<USER>"
+	cont "from stat moves!"
 	prompt
 
 _SuckedHealthText::

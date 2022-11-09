@@ -1866,6 +1866,14 @@ ButItFailedText:
 	text_far _ButItFailedText
 	text_end
 
+PrintAlreadyDustyText_:	;new - dustbath
+	ld hl, AlreadyDustyText
+	jp PrintText
+
+AlreadyDustyText:	;new - dustbath
+	text_far _AlreadyDustyText
+	text_end
+
 PrintDidntAffectText:
 	ld hl, DidntAffectText
 	jp PrintText

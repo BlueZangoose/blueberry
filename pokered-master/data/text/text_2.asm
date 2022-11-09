@@ -1129,9 +1129,19 @@ _KeptGoingAndCrashedText::
 	cont "crashed!"
 	prompt
 
-_UnaffectedText::
+_UnaffectedText::			;used for OHKO moves
 	text "<TARGET>'s"
 	line "unaffected!"
+	prompt
+
+_AlreadyDustyText::
+	text "<USER>'S"
+	line "already dusty!"
+	prompt
+
+_ProtectedByDustText::
+	text "<TARGET> is"
+	line "shielded by dust!"
 	prompt
 
 _DoesntAffectMonText::

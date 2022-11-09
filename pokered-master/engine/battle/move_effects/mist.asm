@@ -12,7 +12,9 @@ MistEffect_:
 	ld hl, ShroudedInMistText
 	jp PrintText
 .mistAlreadyInUse
-	jpfar PrintButItFailedText_
+	ld c, 50
+	call DelayFrames
+	jpfar PrintAlreadyDustyText_
 
 ShroudedInMistText:
 	text_far _ShroudedInMistText

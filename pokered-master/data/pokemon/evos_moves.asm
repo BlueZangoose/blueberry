@@ -2266,8 +2266,7 @@ RattataEvosMoves:
 	db EV_LEVEL, 20, RATICATE
 	db 0
 ; Learnset
-;	db	1	,	JAW_SNAP
-	db	1	,	HAUNT
+	db	1	,	JAW_SNAP
 	db	1	,	DUSTBATH
 	db	5	,	JUMPSCARE
 	db	10	,	ROLL_OVER
@@ -2402,8 +2401,8 @@ CharmanderEvosMoves:
 	db EV_LEVEL, 16, CHARMELEON
 	db 0
 ; Learnset
-;	db	1	,	SCORCH
-;	db	1	,	CLAW_SWIPE
+	db	1	,	SCORCH
+	db	1	,	CLAW_SWIPE
 	db	7	,	ASH_ATTACK
 	db	10	,	TALON_ATTACK
 	db	14	,	FLAMETAIL
@@ -2418,8 +2417,8 @@ SquirtleEvosMoves:
 	db EV_LEVEL, 16, WARTORTLE
 	db 0
 ; Learnset
-;	db	1	,	FOAM_SPRAY
-;	db	1	,	JAW_SNAP
+	db	1	,	FOAM_SPRAY
+	db	1	,	JAW_SNAP
 	db	7	,	FLOW
 	db	10	,	SHELL_SMACK
 	db	14	,	WATERJET

@@ -867,7 +867,9 @@ wRightGBMonSpecies:: db
 ; bit 6: tried pushing against boulder once (you need to push twice before it will move)
 wFlags_0xcd60:: db
 
-	ds 9
+wSkipFailText:: db		;new, used if you skip the generic "but it failed" text because you already printed something else
+
+	ds 8
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored
@@ -1251,8 +1253,6 @@ wTrainerNo:: db
 wCriticalHitOrOHKO:: db
 
 wMoveMissed:: db
-
-wSkipFailText:: db		;new, used if you skip the generic "but it failed" text because you already printed something else
 
 ; always 0
 wPlayerStatsToDouble:: db

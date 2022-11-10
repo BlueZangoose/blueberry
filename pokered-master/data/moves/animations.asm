@@ -256,11 +256,11 @@ AttackAnimationPointers:
 	dw HidePicAnim
 	dw ThrowRockAnim
 	dw ThrowBaitAnim
-	assert_table_length NUM_ATTACK_ANIMS
 	dw ZigZagScreenAnim
-	dw VanishAnim2				; #253
-	dw IceTunnelAnim2			; #254
-	dw ThrashingMovesAnim		; #255
+	dw VanishAnim2				; #239
+	dw IceTunnelAnim2			; #240
+	dw ThrashingMovesAnim		; #241
+	assert_table_length NUM_ATTACK_ANIMS
 
 ; each animation is a list of subanimations
 ; and/or special effects, terminated by -1

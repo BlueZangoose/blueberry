@@ -266,5 +266,9 @@ NUM_ATTACKS EQU const_value - 1
 	const HIDEPIC_ANIM		; monster disappears								; fd
 	const ROCK_ANIM			; throw rock										; fe
 	const BAIT_ANIM			; throw bait										; ff
+	const ZIGZAG_ANIM		;This constant is not used like this, it's just here because zigzag anim is at this value in animations.asm.
+	const VANISH_ANIM		; Vanish's first turn
+	const ICETUNNEL_ANIM	; Ice Tunnel's first turn
+	const THRASHING_ANIM	; Thrashing move's subsequent turns maybe? I don't remember.
 
 NUM_ATTACK_ANIMS EQU const_value - 1

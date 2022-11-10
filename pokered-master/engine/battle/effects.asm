@@ -1440,14 +1440,14 @@ ChargeEffect:
 	jr nz, .notFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
 ;	ld b, TELEPORT ; load Teleport's animation
-	ld b, 253 ; load #253 in data/moves/animations.asm (vanishanim2)
+	ld b, VANISH_ANIM		;dedicated anim for vanish's first turn
 .notFly
 	ld a, [de]
 	cp ICE_TUNNEL
 	jr nz, .notDigOrFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
 ;	ld b, ANIM_C0
-	ld b, 254 ; load #254 in data/moves/animations.asm (IceTunnelAnim2)
+	ld b, ICETUNNEL_ANIM	;dedicated anim for ice tunnel's first turn
 .notDigOrFly
 	xor a
 	ld [wAnimationType], a

@@ -105,7 +105,7 @@ _GreatlyRoseText::
 	text_end
 
 _ThrobbinglyRoseText::				;new
-	text "<SCROLL>throbbingly@"
+	text "<SCROLL>immensely@"
 	text_end
 
 _RoseText::
@@ -153,7 +153,7 @@ _MadeWhirlwindText::
 
 _TookInSunlightText::
 	text_start
-	line "took in sunlight!"
+	line "is charging up!"
 	prompt
 
 _LoweredItsHeadText::
@@ -168,12 +168,13 @@ _SkyAttackGlowingText::
 
 _FlewUpHighText::
 	text_start
-	line "flew up high!"
+	line "vanished...?!"
 	prompt
 
 _DugAHoleText::
 	text_start
-	line "dug a hole!"
+	line "dug a hole"
+	cont "in the ice!"
 	prompt
 
 _BecameConfusedText::

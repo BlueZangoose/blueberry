@@ -1878,7 +1878,23 @@ PrintAlreadyDustyText_:	;new - dustbath
 AlreadyDustyText:	;new - dustbath
 	text_far _AlreadyDustyText
 	text_end
+	
+PrintHasLightScreenUpText_:
+	ld hl, HasLightScreenUpText
+	jp PrintText
 
+HasLightScreenUpText:
+	text_far _HasLightScreenUpText
+	text_end
+
+PrintHasReflectUpText_:
+	ld hl, HasReflectUpText
+	jp PrintText
+
+HasReflectUpText:
+	text_far _HasReflectUpText
+	text_end
+	
 PrintDidntAffectText:
 	ld hl, DidntAffectText
 	jp PrintText

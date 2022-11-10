@@ -323,9 +323,22 @@ _LightScreenProtectedText::
 	cont "special attacks!"
 	prompt
 
-_ReflectGainedArmorText::
+_HasLightScreenUpText::
 	text "<USER>"
-	line "gained armor!"
+	line "already has a"
+	cont "PSYSHIELD!"
+	prompt
+
+_ReflectGainedArmorText::
+	text "<USER>'s"
+	line "protected against"
+	cont "physical attacks!"
+	prompt
+
+_HasReflectUpText::
+	text "<USER>'s"
+	line "already protected"
+	cont "by the moon!"
 	prompt
 
 _ShroudedInMistText::

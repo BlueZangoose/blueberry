@@ -11,13 +11,15 @@ ReflectLightScreenEffect_:
 	cp LIGHT_SCREEN_EFFECT
 	jr nz, .reflect
 	bit HAS_LIGHT_SCREEN_UP, [hl] ; is mon already protected by light screen?
-	jr nz, .moveFailed
+;	jr nz, .moveFailed
+	jr nz, .hasLightScreenUp
 	set HAS_LIGHT_SCREEN_UP, [hl] ; mon is now protected by light screen
 	ld hl, LightScreenProtectedText
 	jr .playAnim
 .reflect
 	bit HAS_REFLECT_UP, [hl] ; is mon already protected by reflect?
-	jr nz, .moveFailed
+;	jr nz, .moveFailed
+	jr nz, .hasReflectUp
 	set HAS_REFLECT_UP, [hl] ; mon is now protected by reflect
 	ld hl, ReflectGainedArmorText
 .playAnim
@@ -26,11 +28,22 @@ ReflectLightScreenEffect_:
 	call EffectCallBattleCore
 	pop hl
 	jp PrintText
-.moveFailed
+;.moveFailed
+;	ld c, 50
+;	call DelayFrames
+;	ld hl, PrintButItFailedText_
+;	jp EffectCallBattleCore
+.hasLightScreenUp
+	ld hl, PrintHasLightScreenUpText_
+	jr .finishFailing
+.hasReflectUp
+	ld hl, PrintHasReflectUpText_
+	;fall through
+.finishFailing
 	ld c, 50
 	call DelayFrames
-	ld hl, PrintButItFailedText_
 	jp EffectCallBattleCore
+	
 
 LightScreenProtectedText:
 	text_far _LightScreenProtectedText

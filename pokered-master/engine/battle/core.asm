@@ -5561,7 +5561,7 @@ MoveHitTest:
 	jr nz, .swiftCheck
 	ld a, [bc]
 	and (1 << PSN) ; is the target pokemon poisoned?
-	jp z, .moveMissed
+	jp z, .targetNotPoisoned
 .swiftCheck
 	ld a, [de]
 	cp SWIFT_EFFECT
@@ -5646,14 +5646,19 @@ MoveHitTest:
 	cp b
 	jr nc, .moveMissed
 	ret
+.targetNotPoisoned
+	ld hl, NeedsToBePoisonedText;new
+	jr .printCustomFailText
 .moveProtectedByDust
+	ld hl, ProtectedByDustText;new
+	jr .printCustomFailText
+.printCustomFailText		;requires failtext to be loaded into hl
 	ld c, 50			;new
 	call DelayFrames	;new
-	ld hl, ProtectedByDustText;new
 	call PrintText		;new
 	xor a
 	inc a
-	ld [wSkipFailText], a
+	ld [wSkipFailText], a	;set the skip-text bit so "but it failed!" isn't printed
 	;fall through
 .moveMissed
 	xor a
@@ -5676,6 +5681,10 @@ MoveHitTest:
 
 ProtectedByDustText:
 	text_far _ProtectedByDustText
+	text_end
+	
+NeedsToBePoisonedText:
+	text_far _NeedsToBePoisonedText
 	text_end
 
 ; values for player turn

@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/squirtle.pic", 0, 1 ; sprite dimensions
 	dw SquirtlePicFront, SquirtlePicBack
 
-	db DUSTBATH, ROLL_OVER, NO_MOVE, NO_MOVE ; level 1 learnset
+	db POISONPOLLEN, PARASTING, NO_MOVE, NO_MOVE ; level 1 learnset
 ;	db FOAM_SPRAY, JAW_SNAP, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 

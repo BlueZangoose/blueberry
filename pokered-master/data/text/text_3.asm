@@ -289,12 +289,13 @@ _StatusChangesEliminatedText::
 
 _StartedSleepingEffect::
 	text "<USER>"
-	line "started sleeping!"
+	line "planted roots and"
+	cont "started sleeping!"
 	done
 
 _FellAsleepBecameHealthyText::
 	text "<USER>"
-	line "fell asleep and"
+	line "planted roots and"
 	cont "became healthy!"
 	done
 
@@ -340,7 +341,13 @@ _SuckedHealthText::
 
 _DreamWasEatenText::
 	text "<TARGET>'s"
-	line "dream was eaten!"
+	line "toxins drained"
+	cont "health!"
+	prompt
+	
+_NeedsToBePoisonedText::
+	text "<TARGET>"
+	line "isn't poisoned!"
 	prompt
 	
 _TargetTypeChangedText::

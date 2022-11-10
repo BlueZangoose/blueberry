@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/charmander.pic", 0, 1 ; sprite dimensions
 	dw CharmanderPicFront, CharmanderPicBack
 
-	db ICE_TUNNEL, VANISH, CHARGE_POUCH, NO_MOVE ; level 1 learnset
+	db BURY_ROOTS, ROLL_OVER, NO_MOVE, NO_MOVE ; level 1 learnset
 ;	db SCORCH, CLAW_SWIPE, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_MEDIUM_SLOW ; growth rate
 

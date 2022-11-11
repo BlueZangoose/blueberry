@@ -14,7 +14,7 @@ FocusEnergyEffect_:
 .alreadyUsing
 	ld c, 50
 	call DelayFrames
-	jpfar PrintButItFailedText_
+	jpfar PrintIsAlreadyPumpedText_
 
 GettingPumpedText:
 	text_pause

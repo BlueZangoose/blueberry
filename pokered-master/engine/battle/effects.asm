@@ -1894,6 +1894,14 @@ PrintHasReflectUpText_:
 HasReflectUpText:
 	text_far _HasReflectUpText
 	text_end
+
+PrintIsAlreadyPumpedText_:
+	ld hl, IsAlreadyPumpedText
+	jp PrintText
+
+IsAlreadyPumpedText:
+	text_far _IsAlreadyPumpedText
+	text_end
 	
 PrintDidntAffectText:
 	ld hl, DidntAffectText

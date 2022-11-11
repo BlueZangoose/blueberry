@@ -259,12 +259,18 @@ _CoinsScatteredText::
 
 _GettingPumpedText::
 	text "<USER>'s"
-	line "getting pumped!"
+	line "fervor exposes"
+	cont "weak points!"
+	prompt
+
+_IsAlreadyPumpedText::
+	text "<USER>'s"
+	line "already zealous!"
 	prompt
 
 _WasSeededText::
-	text "<TARGET>"
-	line "was seeded!"
+	text "Roots dug into"
+	line "<TARGET>!"
 	prompt
 
 _EvadedAttackText::

@@ -75,7 +75,7 @@ _PoisonedText::
 
 _BadlyPoisonedText::
 	text "<TARGET>'s"
-	line "badly poisoned!"
+	line "rotting away!"
 	prompt
 
 _BurnedText::
@@ -112,6 +112,10 @@ _RoseText::
 	text " rose!"
 	prompt
 
+_CrabRoseText::
+	text " maxed out!"
+	prompt
+
 _MonsStatsFellText::
 	text "<TARGET>'s"
 	line "@"
@@ -125,6 +129,11 @@ _GreatlyFellText::
 
 _FellText::
 	text " fell!"
+	prompt
+
+_CantCounterText::
+	text "Couldn't counter"
+	line "that move!"
 	prompt
 
 _RanFromBattleText::
@@ -364,11 +373,26 @@ _DreamWasEatenText::
 	cont "health!"
 	prompt
 	
-_NeedsToBePoisonedText::
+_TargetNeedsToBePoisonedText::
 	text "<TARGET>"
 	line "isn't poisoned!"
 	prompt
-	
+
+_UserNeedsToBePoisonedText::
+	text "<USER>"
+	line "isn't poisoned!"
+	prompt
+
+_NeedsToBeParalyzedText::
+	text "<USER>"
+	line "isn't paralyzed!"
+	prompt
+
+_HasNoStatusText::
+	text "<USER>"
+	line "has no condition!"
+	prompt
+
 _TargetTypeChangedText::
 	text "<TARGET>'s"
 	line "type changed!"

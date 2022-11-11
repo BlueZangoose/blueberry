@@ -15,24 +15,19 @@ CureStatusEffect_:
 	xor a
 	cp [hl]
 	jr nc, .fail
-	push hl
-	push af
-	push de
-	callfar PlayCurrentMoveAnimation
-	pop de
-	pop af
-	pop hl
 	ld a, [de]
 	cp CRABWALK
 	jr z, .crabwalk
 	cp EAT_POISON
 	jr z, .eatPoison
+	call StatusCuredAnimation_
 	call RemoveAllStatus_
 	jr .statusCured
 .crabwalk
 	ld a, 1 << PAR
 	cp [hl]
-	jr nz, .fail
+	jr nz, .crabFail
+	call StatusCuredAnimation_
 	call RemoveAllStatus_
 	ld hl, StatusCuredText
 	call PrintText
@@ -41,6 +36,7 @@ CureStatusEffect_:
 	ld a, 1 << PSN
 	cp [hl]
 	jr nz, .fail
+	call StatusCuredAnimation_
 	call RemoveAllStatus_
 	ld hl, StatusCuredText
 	call PrintText
@@ -50,8 +46,20 @@ CureStatusEffect_:
 	jp PrintText
 .fail
 ;if not status, print fail text and return
+	ld a, [de]
+	cp CRABWALK
+	jr z, .crabFail
+	cp SHED_SKIN
+	jr z, .shedSkinFail
+	cp EAT_POISON
+	jr z, .eatPoisonFail
 	jpfar PrintButItFailedText_
-
+.crabFail
+	jpfar PrintNeedsToBeParalyzedText_
+.shedSkinFail
+	jpfar PrintHasNoStatusText_
+.eatPoisonFail
+	jpfar PrintUserNeedsToBePoisonedText_
 RemoveAllStatus_:		; cures status, reverts stat drops
 	ldh a, [hWhoseTurn]	; 0 on player's turn, 1 on enemy's turn
 	and a
@@ -119,3 +127,13 @@ RemoveAllStatus_:		; cures status, reverts stat drops
 StatusCuredText:
 	text_far _StatusCuredText
 	text_end
+
+StatusCuredAnimation_:
+	push hl
+	push af
+	push de
+	callfar PlayCurrentMoveAnimation
+	pop de
+	pop af
+	pop hl
+	ret

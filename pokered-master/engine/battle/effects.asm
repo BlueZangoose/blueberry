@@ -1871,6 +1871,7 @@ ButItFailedText:
 	text_far _ButItFailedText
 	text_end
 
+;dust bath
 PrintAlreadyDustyText_:	;new - dustbath
 	ld hl, AlreadyDustyText
 	jp PrintText
@@ -1878,7 +1879,8 @@ PrintAlreadyDustyText_:	;new - dustbath
 AlreadyDustyText:	;new - dustbath
 	text_far _AlreadyDustyText
 	text_end
-	
+
+;psyshield
 PrintHasLightScreenUpText_:
 	ld hl, HasLightScreenUpText
 	jp PrintText
@@ -1887,6 +1889,7 @@ HasLightScreenUpText:
 	text_far _HasLightScreenUpText
 	text_end
 
+;moon veil
 PrintHasReflectUpText_:
 	ld hl, HasReflectUpText
 	jp PrintText
@@ -1895,12 +1898,40 @@ HasReflectUpText:
 	text_far _HasReflectUpText
 	text_end
 
+;fossil zeal
 PrintIsAlreadyPumpedText_:
 	ld hl, IsAlreadyPumpedText
 	jp PrintText
 
 IsAlreadyPumpedText:
 	text_far _IsAlreadyPumpedText
+	text_end
+
+;crabwalk
+PrintNeedsToBeParalyzedText_:
+	ld hl, NeedsToBeParalyzedText
+	jp PrintText
+	
+NeedsToBeParalyzedText:
+	text_far _NeedsToBeParalyzedText
+	text_end
+
+;eat poison
+PrintUserNeedsToBePoisonedText_:
+	ld hl, UserNeedsToBePoisonedText
+	jp PrintText
+	
+UserNeedsToBePoisonedText:
+	text_far _UserNeedsToBePoisonedText
+	text_end
+
+;shed skin
+PrintHasNoStatusText_:
+	ld hl, HasNoStatusText
+	jp PrintText
+	
+HasNoStatusText:
+	text_far _HasNoStatusText
 	text_end
 	
 PrintDidntAffectText:

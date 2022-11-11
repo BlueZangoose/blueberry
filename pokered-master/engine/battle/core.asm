@@ -4827,12 +4827,12 @@ HandleCounterMove:
 	ld [wMoveMissed], a ; initialize the move missed variable to true (it is set to false below if the move hits)
 	ld a, [hl]
 	cp CLOSECIRCUIT
-	ret z ; miss if the opponent's last selected move is Counter.
+	jp z, .fail ; miss if the opponent's last selected move is Counter.
 	cp VORTEX
-	ret z
+	jp z, .fail
 	ld a, [de]
 	and a
-	ret z ; miss if the opponent's last selected move's Base Power is 0.
+	jp z, .fail ; miss if the opponent's last selected move's Base Power is 0.
 ; check if the move the target last selected was PHYSICAL type
 	inc de
 	ld a, [de]
@@ -4854,18 +4854,18 @@ HandleCounterMove:
 	jr z, .counterableType	
 ; if the move wasn't a counterable type, miss
 	xor a
-	ret
+	jr .fail
 .isSpecialCounter
 	ld a, $01
 	ld [wMoveMissed], a ; initialize the move missed variable to true (it is set to false below if the move hits)
 	ld a, [hl]
 	cp CLOSECIRCUIT
-	ret z ; miss if the opponent's last selected move is Counter.
+	jr z, .fail ; miss if the opponent's last selected move is Counter.
 	cp VORTEX
-	ret z
+	jr z, .fail
 	ld a, [de]
 	and a
-	ret z ; miss if the opponent's last selected move's Base Power is 0.
+	jr z, .fail ; miss if the opponent's last selected move's Base Power is 0.
 ; check if the move the target last selected was SPECIAL type
 	inc de
 	ld a, [de]
@@ -4885,29 +4885,29 @@ HandleCounterMove:
 	jr z, .counterableType	
 ; if the move wasn't a counterable type, miss
 	xor a
-	ret
+	jr .fail
 .isEffectCounter
 	ld a, $01
 	ld [wMoveMissed], a ; initialize the move missed variable to true (it is set to false below if the move hits)
 	ld a, [hl]
 	cp CLOSECIRCUIT
-	ret z 			; miss if the opponent's last selected move is Counter.
+	jr z, .fail 			; miss if the opponent's last selected move is Counter.
 	cp VORTEX
-	ret z 			; miss if the opponent's last selected move is Counter.
+	jr z, .fail 			; miss if the opponent's last selected move is Counter.
 	ld a, [de]		; opponent move base power
 	cp a, 1
-	ret c			; miss if the opponent's last selected move had base power less than 1.
+	jr c, .fail			; miss if the opponent's last selected move had base power less than 1.
 	ld a, 0					;	xor a is better but it sets z
 	ld [wMoveMissed], a
-	;call MoveHitTest		;	We need to implement this to check for accuracy and stuff, but we also need z to be 0, and it sets z to 1.
+	;call MoveHitTest		;	We need to implement this to check for accuracy and stuff, but we also need z to be 0, and it sets z to 1. We call it later.
 	ret
 .counterableType
 	ld hl, wDamage
 	ld a, [hli]
 	or [hl]
-	ret z ; If we made it here, Counter still misses if the last move used in battle did no damage to its target.
-	      ; wDamage is shared by both players, so Counter may strike back damage dealt by the Counter user itself
-	      ; if the conditions meet, even though 99% of the times damage will come from the target.
+	jr z, .fail ; If we made it here, Counter still misses if the last move used in battle did no damage to its target.
+				; wDamage is shared by both players, so Counter may strike back damage dealt by the Counter user itself
+				; if the conditions meet, even though 99% of the times damage will come from the target.
 ; if it did damage, double it
 	ld a, [hl]
 	add a
@@ -4926,6 +4926,16 @@ HandleCounterMove:
 	call MoveHitTest ; do the normal move hit test in addition to Counter's special rules
 	xor a
 	ret
+.fail
+	ld c, 50
+	call DelayFrames
+	ld hl, CantCounterText
+	call PrintText
+	ret
+
+CantCounterText:
+	text_far _CantCounterText
+	text_end
 
 ApplyAttackToEnemyPokemon:
 	ld a, [wPlayerMoveEffect]
@@ -5647,7 +5657,7 @@ MoveHitTest:
 	jr nc, .moveMissed
 	ret
 .targetNotPoisoned
-	ld hl, NeedsToBePoisonedText;new
+	ld hl, TargetNeedsToBePoisonedText;new
 	jr .printCustomFailText
 .moveProtectedByDust
 	ld hl, ProtectedByDustText;new
@@ -5683,8 +5693,8 @@ ProtectedByDustText:
 	text_far _ProtectedByDustText
 	text_end
 	
-NeedsToBePoisonedText:
-	text_far _NeedsToBePoisonedText
+TargetNeedsToBePoisonedText:
+	text_far _TargetNeedsToBePoisonedText
 	text_end
 
 ; values for player turn

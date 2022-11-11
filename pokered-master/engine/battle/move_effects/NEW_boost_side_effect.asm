@@ -198,7 +198,7 @@ MonsStatsRoseText_:
 	inc de
 	ret
 .crabwalkSkip
-	ld hl, GreatlyRoseText_
+	ld hl, CrabRoseText_
 	ret
 
 GreatlyRoseText_:
@@ -207,6 +207,9 @@ GreatlyRoseText_:
 ; fallthrough
 RoseText_:
 	text_far _RoseText
+	text_end
+CrabRoseText_:
+	text_far _CrabRoseText
 	text_end
 
 PrintStatText2_:				;this is duplicated from elsewhere. Very inefficient!

@@ -26,7 +26,7 @@ PlayApplyingAttackSound:
 	ld a, $50
 	ld b, $1
 	ld c, SFX_NOT_VERY_EFFECTIVE
-	jr nc, .playSound
+	jr nc, playSound
 ; neutral
 	ld a, $20
 	ld b, $30

@@ -37,7 +37,7 @@ _TM34ExplanationText::
 	cont "pick the #MON"
 	cont "carefully!"
 
-	para "TM34 contains"
+	para "TM43 contains"
 	line "SEISMIC ROCK!"
 
 	para "It deals damage"

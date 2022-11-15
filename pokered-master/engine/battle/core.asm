@@ -6995,12 +6995,12 @@ HandleExplodingAnimation:
 	ld a, [de]
 	bit INVULNERABLE, a ; fly/dig
 	ret nz
-	ld a, [hli]
-	cp GHOST
-	ret z
-	ld a, [hl]
-	cp GHOST
-	ret z
+;	ld a, [hli]
+;	cp GHOST			;previously nixed the megapunch animation if the target was ghost type
+;	ret z
+;	ld a, [hl]
+;	cp GHOST
+;	ret z
 	ld a, [wMoveMissed]
 	and a
 	ret nz

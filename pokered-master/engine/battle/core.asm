@@ -5400,6 +5400,8 @@ IncrementMovePP:
 
 ; function to adjust the base damage of an attack to account for type effectiveness
 AdjustDamageForMoveType:
+	ld a, 2
+	ld [wEffectivenessText], a		;set effectiveness to 2 (normal effectiveness)
 ; values for player turn
 	ld hl, wBattleMonType
 	ld a, [hli]
@@ -5449,7 +5451,7 @@ AdjustDamageForMoveType:
 	ld a, l
 	ld [wDamage + 1], a
 	ld hl, wDamageMultipliers
-	set 7, [hl]
+	set 7, [hl]			; leftmost bit. wDamageMultipliers is now 128 or higher.
 .skipSameTypeAttackBonus
 	ld a, [wMoveType]
 	ld b, a
@@ -5472,8 +5474,25 @@ AdjustDamageForMoveType:
 	push bc
 	inc hl
 	ld a, [wDamageMultipliers]
-	and $80
+	and $80		; subtract 128 from any value above 128
 	ld b, a
+	;new section: modify wEffectivenessText to be used later to print accurate effectiveness text
+	ld a, [hl] ; a = damage multiplier
+	cp SUPER_EFFECTIVE
+	jr nz, .notSuperEffective
+	ld a, [wEffectivenessText]
+	inc a
+	ld [wEffectivenessText], a
+	jr .effectivenessTextFinished
+.notSuperEffective
+	cp NOT_VERY_EFFECTIVE
+	jr nz, .effectivenessTextFinished
+	ld a, [wEffectivenessText]
+	dec a
+	ld [wEffectivenessText], a
+	jr .effectivenessTextFinished
+.effectivenessTextFinished
+	;new section ends
 	ld a, [hl] ; a = damage multiplier
 	ldh [hMultiplier], a
 	add b

@@ -868,8 +868,9 @@ wRightGBMonSpecies:: db
 wFlags_0xcd60:: db
 
 wSkipFailText:: db		;new, used if you skip the generic "but it failed" text because you already printed something else
+wEffectivenessText:: db		;new, used to judge which effectiveness text a move should use. Initialise to 2, dec for less effective, inc for more effective.
 
-	ds 8
+	ds 7 ; was 9
 
 ; This has overlapping related uses.
 ; When the player tries to use an item or use certain field moves, 0 is stored

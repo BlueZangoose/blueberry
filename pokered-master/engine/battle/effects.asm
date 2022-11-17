@@ -1439,14 +1439,12 @@ ChargeEffect:
 	cp FLY_EFFECT
 	jr nz, .notFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
-;	ld b, TELEPORT ; load Teleport's animation
 	ld b, VANISH_ANIM		;dedicated anim for vanish's first turn
 .notFly
 	ld a, [de]
 	cp ICE_TUNNEL
 	jr nz, .notDigOrFly
 	set INVULNERABLE, [hl] ; mon is now invulnerable to typical attacks (fly/dig)
-;	ld b, ANIM_C0
 	ld b, ICETUNNEL_ANIM	;dedicated anim for ice tunnel's first turn
 .notDigOrFly
 	xor a
@@ -1479,8 +1477,16 @@ ChargeMoveEffectText:
 	jr z, .gotText
 	cp ICE_TUNNEL
 	ld hl, DugAHoleText
+	jr z, .gotText
+	cp ION_BEAM
+	ld hl, IonBeamText
+	jr z, .gotText
 .gotText
 	ret
+
+IonBeamText:
+	text_far _IonBeamText
+	text_end
 
 MadeWhirlwindText:
 	text_far _MadeWhirlwindText

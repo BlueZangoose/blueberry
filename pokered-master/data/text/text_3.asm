@@ -160,6 +160,11 @@ _MadeWhirlwindText::
 	line "made a whirlwind!"
 	prompt
 
+_IonBeamText::
+	text_start
+	line "charged up!"
+	prompt
+
 _TookInSunlightText::
 	text_start
 	line "is charging up!"

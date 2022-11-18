@@ -24,11 +24,7 @@ _CeruleanHouse2Text_74e81::
 	done
 
 _CeruleanHouse2Text_74e96::
-	text "The ATTACK of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
+	text "It lets you"
 	line "use FLASH any"
 	cont "time you desire."
 	prompt
@@ -46,11 +42,7 @@ _CeruleanHouse2Text_74e9b::
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "The SPEED of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
+	text "It lets you"
 	line "use FLY outside"
 	cont "of battle."
 	prompt
@@ -68,11 +60,7 @@ _CeruleanHouse2Text_74ea5::
 	prompt
 
 _CeruleanHouse2Text_74eaa::
-	text "The DEFENSE of all"
-	line "#MON increases"
-	cont "a little bit."
-
-	para "It also lets you"
+	text "It lets you"
 	line "use SURF outside"
 	cont "of battle."
 	prompt
@@ -86,9 +74,7 @@ _CeruleanHouse2Text_74eaf::
 	prompt
 
 _CeruleanHouse2Text_74eb4::
-	text "Your #MON's"
-	line "SPECIAL abilities"
-	cont "increase a bit."
+	text "You get nothing!"
 	prompt
 
 _CeruleanHouse2Text_74eb9::

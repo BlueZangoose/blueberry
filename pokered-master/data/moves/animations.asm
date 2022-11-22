@@ -474,7 +474,7 @@ DivebombAnim:
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end
 IceBoulderAnim:
-	battle_anim SEISMIC_ROCK, SE_SLIDE_MON_DOWN
+	battle_anim SEISMIC_ROCK, SE_SQUISH_MON_PIC
 	battle_anim NO_MOVE, SUBANIM_0_ICE_FALL, 0, 4
 	battle_anim DRUMBEAK, SUBANIM_1_SPHERE_BIG_FALL, 1, 6
 	battle_anim NO_MOVE, SE_DELAY_ANIMATION_10
@@ -493,7 +493,7 @@ WaterjetAnim:
 	battle_anim NO_MOVE, SUBANIM_0_WATER_COLUMNS, 0, 1	
 	db -1 ; end
 BoulderRollAnim:
-	battle_anim POLLEN_ARMOR, SE_SLIDE_MON_DOWN
+	battle_anim POLLEN_ARMOR, SE_SQUISH_MON_PIC
 	battle_anim MEGAVOLT, SUBANIM_1_CLOUD_TOSS, 0, 6
 	battle_anim NO_MOVE, SE_SLIDE_MON_UP
 	db -1 ; end

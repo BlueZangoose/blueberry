@@ -87,7 +87,11 @@ AnimCutGrass_SwapOAMEntries:
 	ld de, wOAMBuffer + $98
 	ld bc, $8
 	jp CopyData
-
+	
+;NEW: Replicated from engine/battle/animations.asm as it is no longer in the same bank. Used in dust_smoke.asm, has to be here because it falls through.
+AdjustOAMBlockXPosCopy:
+	ld l, e
+	ld h, d
 ;NEW: Replicated from engine/battle/animations.asm as it is no longer in the same bank.
 AdjustOAMBlockXPos2copy:
 	ld de, 4
@@ -109,6 +113,10 @@ AdjustOAMBlockXPos2copy:
 	jr nz, .loop
 	ret
 
+;NEW: Replicated from engine/battle/animations.asm as it is no longer in the same bank. Used in dust_smoke.asm, has to be here because it falls through.
+AdjustOAMBlockYPosCopy:
+	ld l, e
+	ld h, d
 ;NEW: Replicated from engine/battle/animations.asm as it is no longer in the same bank.
 AdjustOAMBlockYPos2copy:
 	ld de, 4

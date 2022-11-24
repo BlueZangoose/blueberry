@@ -57,10 +57,10 @@ boulder_dust_adjust: MACRO
 ENDM
 
 MoveBoulderDustFunctionPointerTable:
-	boulder_dust_adjust -1, 0, AdjustOAMBlockYPos ; down
-	boulder_dust_adjust  1, 0, AdjustOAMBlockYPos ; up
-	boulder_dust_adjust  1, 1, AdjustOAMBlockXPos ; left
-	boulder_dust_adjust -1, 1, AdjustOAMBlockXPos ; right
+	boulder_dust_adjust -1, 0, AdjustOAMBlockYPosCopy ; down	; replicated due to this file being moved out of the bank containing this function. Found in cut2.asm
+	boulder_dust_adjust  1, 0, AdjustOAMBlockYPosCopy ; up		; replicated due to this file being moved out of the bank containing this function. Found in cut2.asm
+	boulder_dust_adjust  1, 1, AdjustOAMBlockXPosCopy ; left	; replicated due to this file being moved out of the bank containing this function. Found in cut2.asm
+	boulder_dust_adjust -1, 1, AdjustOAMBlockXPosCopy ; right	; replicated due to this file being moved out of the bank containing this function. Found in cut2.asm
 
 LoadSmokeTileFourTimes::
 	ld hl, vChars1 tile $7c

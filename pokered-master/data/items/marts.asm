@@ -2,7 +2,7 @@
 ; they are texts
 
 ViridianCashierText::
-	script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL, RARE_CANDY, MASTER_BALL
+	script_mart POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL
 
 PewterCashierText::
 	script_mart POKE_BALL, POTION, ESCAPE_ROPE, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
@@ -48,3 +48,9 @@ SaffronCashierText::
 
 IndigoCashierText::
 	script_mart ULTRA_BALL, GREAT_BALL, FULL_RESTORE, MAX_POTION, FULL_HEAL, REVIVE, MAX_REPEL
+
+CheatHouseCashier1Text::
+	script_mart MOON_STONE, OLD_AMBER, DOME_FOSSIL, HELIX_FOSSIL
+
+CheatHouseCashier2Text::
+	script_mart PP_UP, RARE_CANDY, MASTER_BALL, ETHER, MAX_ETHER, ELIXER, MAX_ELIXER

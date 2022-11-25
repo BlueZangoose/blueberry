@@ -48,3 +48,10 @@ _Route1Text3::
 	line "PALLET TOWN -"
 	cont "VIRIDIAN CITY"
 	done
+
+_Route1Text4::
+	text "CHEAT HOUSE"
+	line "For the trainer"
+	cont "who wants to"
+	cont "take shortcuts."
+	done

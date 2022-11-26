@@ -716,7 +716,8 @@ SlowpokeEvosMoves:
 
 KadabraEvosMoves:
 ; Evolutions
-	db EV_TRADE, 1, ALAKAZAM
+	db EV_ITEM, TRADE_STONE, 1, ALAKAZAM
+;	db EV_TRADE, 1, ALAKAZAM
 	db 0
 ; Learnset
 	db	1	,	MINDREADER
@@ -731,7 +732,8 @@ KadabraEvosMoves:
 
 GravelerEvosMoves:
 ; Evolutions
-	db EV_TRADE, 1, GOLEM
+	db EV_ITEM, TRADE_STONE, 1, GOLEM
+;	db EV_TRADE, 1, GOLEM
 	db 0
 ; Learnset
 	db	1	,	STONE_FIST
@@ -760,7 +762,8 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EV_TRADE, 1, MACHAMP
+	db EV_ITEM, TRADE_STONE, 1, MACHAMP
+;	db EV_TRADE, 1, MACHAMP
 	db 0
 ; Learnset
 	db	1	,	JAB
@@ -2043,7 +2046,8 @@ MissingNo92EvosMoves:
 
 HaunterEvosMoves:
 ; Evolutions
-	db EV_TRADE, 1, GENGAR
+	db EV_ITEM, TRADE_STONE, 1, GENGAR
+;	db EV_TRADE, 1, GENGAR
 	db 0
 ; Learnset
 	db	1	,	SLEEPING_GAS

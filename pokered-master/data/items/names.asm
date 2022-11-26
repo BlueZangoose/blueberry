@@ -43,7 +43,7 @@ ItemNames::
 	li "DOME FOSSIL"
 	li "HELIX FOSSIL"
 	li "SECRET KEY"
-	li "?????"
+	li "TRADE STONE"			; was ?????
 	li "BIKE VOUCHER"
 	li "X ACCURACY"
 	li "LEAF STONE"

@@ -30,9 +30,15 @@ GainExperience:
 .gainStatExpLoop
 	ld a, [hli]
 	ld b, a ; enemy mon base stat
+	;cheat check
+	ld a, [wCheatFlags]		;check for stat xp disabled flag
+	bit 1, a
+	jr nz, .cheatSkip
+	;cheat check finished
 	ld a, [de] ; stat exp
 	add b ; add enemy mon base state to stat exp
 	ld [de], a
+.cheatSkip
 	jr nc, .nextBaseStat
 ; if there was a carry, increment the upper byte
 	dec de

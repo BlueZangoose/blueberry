@@ -278,3 +278,7 @@ INCLUDE "data/pokemon/dex_text.asm"
 SECTION "Move Names", ROMX
 
 INCLUDE "data/moves/names.asm"
+
+SECTION "New Stuff", ROMX		;new
+
+INCLUDE "text/CheatHouse.asm"	;new

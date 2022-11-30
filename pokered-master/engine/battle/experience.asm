@@ -124,36 +124,36 @@ GainExperience:
 	call GetMonHeader
 ;	ld d, MAX_LEVEL
 ;new:load a with a max level value based on badges owned (cheat)
-	ld a, [wCheatFlags]
-	bit 0, a
+	ld hl, wCheatFlags
+	bit 0, [hl]
 	ld a, MAX_LEVEL
 	jr z, .saveLimit
 	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
 	ld a, MAX_LEVEL
 	jr nz, .saveLimit	
-	ld a, [wBeatGymFlags]
-	bit 7, a			;giovanni
+	ld hl, wBeatGymFlags
+	bit 7, [hl]			;giovanni
 	ld a, 65
 	jr nz, .saveLimit
-	bit 6, a			;Blaine
+	bit 6, [hl]			;Blaine
 	ld a, 50
 	jr nz, .saveLimit
-	bit 5, a			;Koga
+	bit 5, [hl]			;Koga
 	ld a, 47
 	jr nz, .saveLimit
-	bit 4, a			;Sabrina
+	bit 4, [hl]			;Sabrina
 	ld a, 47
 	jr nz, .saveLimit
-	bit 3, a			;Erika
+	bit 3, [hl]			;Erika
 	ld a, 29
 	jr nz, .saveLimit
-	bit 2, a			;Surge
+	bit 2, [hl]			;Surge
 	ld a, 24
 	jr nz, .saveLimit
-	bit 1, a			;Misty
+	bit 1, [hl]			;Misty
 	ld a, 21
 	jr nz, .saveLimit
-	bit 0, a			;Brock
+	bit 0, [hl]			;Brock
 	ld a, 14
 	;fall through
 .saveLimit

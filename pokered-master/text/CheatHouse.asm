@@ -75,3 +75,37 @@ _LevelLimitStayEnabledText::
 	line "Level limits stay"
 	cont "off!"
 	done
+;~~~BADGE BOOST TEXT
+_CheatHouseBadgeBoostText1::		;flag not set
+	text "Badge boosts"
+	line "on."
+	para "Turn off"
+	line "badge boost?"
+	done
+
+_CheatHouseBadgeBoostText2::		;flag set
+	text "Badge boosts"
+	line "off."
+	para "Turn on"
+	line "badge boost?"
+	done
+	
+_BadgeBoostFlagSetText::
+	text "Badge boost"
+	line "off."
+	done
+	
+_BadgeBoostFlagResetText::
+	text "Badge boost"
+	line "on."
+	done
+	
+_BadgeBoostStayDisabledText::
+	text "Badge boost"
+	line "left off."
+	done
+	
+_BadgeBoostStayEnabledText::
+	text "Badge boost"
+	line "left on."
+	done

@@ -6845,7 +6845,11 @@ CalculateModifiedStat:
 	ret
 
 ApplyBadgeStatBoosts:
-	ret			; THIS LINE DISABLES THE BADGE BOOSTS
+;cheat to disable badge boosts
+	ld hl, wCheatFlags
+	bit 2, [hl]
+	ret nz			; THIS LINE DISABLES THE BADGE BOOSTS
+;cheat end
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z ; return if link battle

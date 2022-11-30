@@ -6,6 +6,7 @@ CheatHouse_TextPointers:
 	dw CheatHouseCashier2Text
 	dw CheatHouseStatXpText
 	dw CheatHouseLevelLimitText
+	dw CheatHouseBadgeBoostText
 	text_end
 	
 CheatHouseStatXpText:
@@ -145,4 +146,72 @@ LevelLimitStayEnabledText:
 LevelLimitStayDisabledText:
 	text_far _LevelLimitStayDisabledText
 	text_end
+	
+CheatHouseBadgeBoostText:
+	text_asm
+	ld a, [wCheatFlags]		;flag 1 is the stat xp flag
+	bit 2, a
+	jr nz, .flagSet
+;flag not set
+	ld hl, CheatHouseBadgeBoostText1
+	jr .printHello
+.flagSet
+	ld hl, CheatHouseBadgeBoostText2
+	;fall through
+.printHello
+	call PrintText
+	call YesNoChoice		; if yes, wCurrentMenuItem is 0. If no, 1
+	ld a, [wCurrentMenuItem]
+	and a
+	ld a, [wCheatFlags]
+	jr nz, .dontChangeFlag
+;change stat xp flag
+	bit 2, a
+	jr z, .ifNotSet
+;ifSet
+	res 2, a
+	ld hl, BadgeBoostFlagResetText
+	jr .saveNewFlag
+.ifNotSet
+	set 2, a
+	ld hl, BadgeBoostFlagSetText
+	;fall through
+.saveNewFlag
+	ld [wCheatFlags], a
+	call PrintText
+	jp TextScriptEnd
+.dontChangeFlag
+	bit 2, a
+	jr nz, .stayDisabled
+;stayEnabled
+	ld hl, BadgeBoostStayEnabledText
+	jr .printUnchangedFlag
+.stayDisabled
+	ld hl, BadgeBoostStayDisabledText
+.printUnchangedFlag
+	call PrintText
+	jp TextScriptEnd
 
+CheatHouseBadgeBoostText1:				;used if flag not set (cheat disabled)
+	text_far _CheatHouseBadgeBoostText1
+	text_end
+	
+CheatHouseBadgeBoostText2:				;used if flag set (cheat enabled)
+	text_far _CheatHouseBadgeBoostText2
+	text_end
+
+BadgeBoostFlagSetText:
+	text_far _BadgeBoostFlagSetText
+	text_end
+
+BadgeBoostFlagResetText:
+	text_far _BadgeBoostFlagResetText
+	text_end
+
+BadgeBoostStayEnabledText:
+	text_far _BadgeBoostStayEnabledText
+	text_end
+
+BadgeBoostStayDisabledText:
+	text_far _BadgeBoostStayDisabledText
+	text_end

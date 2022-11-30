@@ -1842,7 +1842,7 @@ wWarpEntries:: ds 32 * 4 ; Y, X, warp ID, map ID
 ; if $ff, the player's coordinates are not updated when entering the map
 wDestinationWarpID:: db
 ;Cheat flags: 
-;0 - Level limits (unimplemented)
+;0 - Level limits
 ;1 - Remove stat xp
 ;2 - remove badge boost (unimplemented)
 ;3-7 - undefined

@@ -628,6 +628,53 @@ AICureStatus:
 	ld hl, wEnemyMon1Status
 	ld bc, wEnemyMon2 - wEnemyMon1
 	call AddNTimes
+;revert stat drops from brn/par
+	ld hl, wEnemyMonStatus
+	ld de, wEnemyMonAttack
+	ld bc, wEnemyMonSpeed
+	ld a, [hl]
+	cp 1 << BRN
+	jr z, .revertBurnAttackDrop
+	CP 1 << PAR
+	jr z, .revertParalyzeSpeedDrop
+	jr .clearStatus
+.revertBurnAttackDrop:
+	push hl			; save status from HL
+	ld a, [de]		; load high byte 
+	ld h, a
+	inc de	
+	ld a, [de]		; load low byte
+	ld l, a
+	dec de
+	rl l			; rotate left to double
+	rl h			; rotate left to double
+	ld a, h			; can only load [de] from a
+	ld [de], a
+	inc de			; move to low byte
+	ld a, l
+	ld [de], a
+	pop hl			; load status to HL
+	jr .clearStatus
+.revertParalyzeSpeedDrop:
+	push hl			; save status from HL
+	ld a, [bc]		; load high byte 
+	ld h, a
+	inc bc	
+	ld a, [bc]		; load low byte
+	ld l, a
+	dec bc
+	rl l			; rotate left to double
+	rl h			; rotate left to double
+	rl l			; rotate left to double again!
+	rl h			; rotate left to double again!
+	ld a, h			; can only load [bc] from a
+	ld [bc], a
+	inc bc			; move to low byte
+	ld a, l
+	ld [bc], a
+	pop hl			; load status to HL
+.clearStatus
+;stat drop reversion finished
 	xor a
 	ld [hl], a ; clear status in enemy team roster
 	ld [wEnemyMonStatus], a ; clear status of active enemy

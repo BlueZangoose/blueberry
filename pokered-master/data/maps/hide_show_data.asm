@@ -506,7 +506,7 @@ SilphCo11FHS:
 	db SILPH_CO_11F, $04, SHOW
 	db SILPH_CO_11F, $05, SHOW
 CheatHouseHS:					; was UnusedMapF4HS
-	db CHEAT_HOUSE, $01, HIDE	; was UNUSED_MAP_F4
+	db CHEAT_HOUSE, $01, SHOW	; was UNUSED_MAP_F4
 PokemonMansion2FHS:
 	db POKEMON_MANSION_2F, $02, SHOW
 PokemonMansion3FHS:

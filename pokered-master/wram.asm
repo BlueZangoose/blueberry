@@ -1847,7 +1847,8 @@ wDestinationWarpID:: db
 ;2 - remove badge boost (unimplemented)
 ;3-7 - undefined
 wCheatFlags:: db	;new
-	ds 127
+wLevelLimit:: db	;new
+	ds 126
 
 ; number of signs in the current map (up to 16)
 wNumSigns:: db

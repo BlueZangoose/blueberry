@@ -1,33 +1,77 @@
+;~~~STAT XP TEXT
 _CheatHouseStatXpText1::		;flag not set
-	text "Stat XP is"
+	text "Stat XP gain is"
 	line "ENABLED."
 	para "Disable"
-	line "stat XP?"
+	line "stat XP gain?"
 	done
 
 _CheatHouseStatXpText2::		;flag set
-	text "Stat XP is"
+	text "Stat XP gain is"
 	line "DISABLED."
 	para "Enable"
-	line "stat XP?"
+	line "stat XP gain?"
 	done
 	
 _StatXpFlagSetText::
-	text "Stat XP"
+	text "Stat XP gain"
 	line "disabled!"
 	done
 	
 _StatXpFlagResetText::
-	text "Stat XP"
+	text "Stat XP gain"
 	line "enabled!"
 	done
 	
 _StatXpStayDisabledText::
-	text "Stat XP was left"
-	line "disabled."
+	text "Stat XP gain was"
+	line "left disabled."
 	done
 	
 _StatXpStayEnabledText::
-	text "Stat XP was left"
-	line "enabled."
+	text "Stat XP gain was"
+	line "left enabled."
+	done
+;~~~LEVEL LIMIT TEXT
+_CheatHouseLevelLimitText1::		;flag not set
+	text "You can level up"
+	line "to level 100, no"
+	cont "problem, cutie!"
+	para "Wanna turn on"
+	line "level limits?"
+	done
+
+_CheatHouseLevelLimitText2::		;flag set
+	text "Your levels are"
+	line "limited by your"
+	cont "BADGES, cutie!"
+	para "Wanna turn off"
+	line "level limits?"
+	done
+	
+_LevelLimitFlagSetText::
+	text "Now your"
+	line "#MON's levels"
+	cont "are limited!"
+	para "Any #MON above"
+	line "the limit will"
+	cont "level down after"
+	cont "a fight!"
+	done
+	
+_LevelLimitFlagResetText::
+	text "No more level"
+	line "limits, darlin'!"
+	done
+	
+_LevelLimitStayDisabledText::
+	text "Oh, so strong!"
+	line "Level limits stay"
+	cont "on!"
+	done
+	
+_LevelLimitStayEnabledText::
+	text "Okay, cutie!"
+	line "Level limits stay"
+	cont "off!"
 	done

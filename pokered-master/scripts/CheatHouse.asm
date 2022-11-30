@@ -5,6 +5,7 @@ CheatHouse_TextPointers:
 	dw CheatHouseCashier1Text
 	dw CheatHouseCashier2Text
 	dw CheatHouseStatXpText
+	dw CheatHouseLevelLimitText
 	text_end
 	
 CheatHouseStatXpText:
@@ -27,7 +28,6 @@ CheatHouseStatXpText:
 	jr nz, .dontChangeFlag
 ;change stat xp flag
 	bit 1, a
-	and a
 	jr z, .ifNotSet
 ;ifSet
 	res 1, a
@@ -43,7 +43,6 @@ CheatHouseStatXpText:
 	jp TextScriptEnd
 .dontChangeFlag
 	bit 1, a
-	and a
 	jr nz, .stayDisabled
 ;stayEnabled
 	ld hl, StatXpStayEnabledText
@@ -77,4 +76,73 @@ StatXpStayEnabledText:
 StatXpStayDisabledText:
 	text_far _StatXpStayDisabledText
 	text_end
+
+CheatHouseLevelLimitText:
+	text_asm
+	ld a, [wCheatFlags]		;flag 0 is the level limit flag
+	bit 0, a
+	jr nz, .flagSet
+;flag not set
+	ld hl, CheatHouseLevelLimitText1
+	jr .printHello
+.flagSet
+	ld hl, CheatHouseLevelLimitText2
+	;fall through
+.printHello
+	call PrintText
+	call YesNoChoice		; if yes, wCurrentMenuItem is 0. If no, 1
+	ld a, [wCurrentMenuItem]
+	and a
+	ld a, [wCheatFlags]
+	jr nz, .dontChangeFlag
+;change stat xp flag
+	bit 0, a
+	jr z, .ifNotSet
+;ifSet
+	res 0, a
+	ld hl, LevelLimitFlagResetText
+	jr .saveNewFlag
+.ifNotSet
+	set 0, a
+	ld hl, LevelLimitFlagSetText
+	;fall through
+.saveNewFlag
+	ld [wCheatFlags], a
+	call PrintText
+	jp TextScriptEnd
+.dontChangeFlag
+	bit 0, a
+	jr nz, .stayDisabled
+;stayEnabled
+	ld hl, LevelLimitStayEnabledText
+	jr .printUnchangedFlag
+.stayDisabled
+	ld hl, LevelLimitStayDisabledText
+.printUnchangedFlag
+	call PrintText
+	jp TextScriptEnd
+
+CheatHouseLevelLimitText1:				;used if flag not set (cheat disabled)
+	text_far _CheatHouseLevelLimitText1
+	text_end
 	
+CheatHouseLevelLimitText2:				;used if flag set (cheat enabled)
+	text_far _CheatHouseLevelLimitText2
+	text_end
+
+LevelLimitFlagSetText:
+	text_far _LevelLimitFlagSetText
+	text_end
+
+LevelLimitFlagResetText:
+	text_far _LevelLimitFlagResetText
+	text_end
+
+LevelLimitStayEnabledText:
+	text_far _LevelLimitStayEnabledText
+	text_end
+
+LevelLimitStayDisabledText:
+	text_far _LevelLimitStayDisabledText
+	text_end
+

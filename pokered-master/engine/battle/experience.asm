@@ -122,7 +122,43 @@ GainExperience:
 	ld a, [hl] ; species
 	ld [wd0b5], a
 	call GetMonHeader
-	ld d, MAX_LEVEL
+;	ld d, MAX_LEVEL
+;new:load a with a max level value based on badges owned (cheat)
+	ld a, [wCheatFlags]
+	bit 0, a
+	ld a, MAX_LEVEL
+	jr z, .saveLimit
+	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
+	ld a, MAX_LEVEL
+	jr nz, .saveLimit	
+	ld a, [wBeatGymFlags]
+	bit 7, a			;giovanni
+	ld a, 65
+	jr nz, .saveLimit
+	bit 6, a			;Blaine
+	ld a, 50
+	jr nz, .saveLimit
+	bit 5, a			;Koga
+	ld a, 47
+	jr nz, .saveLimit
+	bit 4, a			;Sabrina
+	ld a, 47
+	jr nz, .saveLimit
+	bit 3, a			;Erika
+	ld a, 29
+	jr nz, .saveLimit
+	bit 2, a			;Surge
+	ld a, 24
+	jr nz, .saveLimit
+	bit 1, a			;Misty
+	ld a, 21
+	jr nz, .saveLimit
+	bit 0, a			;Brock
+	ld a, 14
+	;fall through
+.saveLimit
+	ld d, a
+;end new
 	callfar CalcExperience ; get max exp
 ; compare max exp with current exp
 	ldh a, [hExperience]

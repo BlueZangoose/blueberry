@@ -1844,7 +1844,7 @@ wDestinationWarpID:: db
 ;Cheat flags: 
 ;0 - Level limits
 ;1 - Remove stat xp
-;2 - remove badge boost (unimplemented)
+;2 - remove badge boost
 ;3-7 - undefined
 wCheatFlags:: db	;new
 wLevelLimit:: db	;new

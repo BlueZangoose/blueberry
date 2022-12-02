@@ -132,7 +132,7 @@ GainExperience:
 	ld a, MAX_LEVEL
 	jr nz, .saveLimit	
 	ld hl, wBeatGymFlags
-	bit 7, [hl]			;giovanni
+	bit 7, [hl]			;Giovanni
 	ld a, 65
 	jr nz, .saveLimit
 	bit 6, [hl]			;Blaine
@@ -142,19 +142,21 @@ GainExperience:
 	ld a, 47
 	jr nz, .saveLimit
 	bit 4, [hl]			;Sabrina
-	ld a, 47
+	ld a, 43
 	jr nz, .saveLimit
 	bit 3, [hl]			;Erika
-	ld a, 29
+	ld a, 43
 	jr nz, .saveLimit
 	bit 2, [hl]			;Surge
-	ld a, 24
+	ld a, 29
 	jr nz, .saveLimit
 	bit 1, [hl]			;Misty
-	ld a, 21
+	ld a, 24
 	jr nz, .saveLimit
 	bit 0, [hl]			;Brock
-	ld a, 14
+	ld a, 21
+	jr nz, .saveLimit
+	ld a, 14			;new game
 	;fall through
 .saveLimit
 	ld d, a

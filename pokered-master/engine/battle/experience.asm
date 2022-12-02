@@ -138,12 +138,12 @@ GainExperience:
 	bit 6, [hl]			;Blaine
 	ld a, 50
 	jr nz, .saveLimit
-	bit 5, [hl]			;Koga
+	bit 5, [hl]			;Sabrina
+	jr z, .skipSabrinaCheck
+	bit 4, [hl]			;Koga
 	ld a, 47
 	jr nz, .saveLimit
-	bit 4, [hl]			;Sabrina
-	ld a, 43
-	jr nz, .saveLimit
+.skipSabrinaCheck
 	bit 3, [hl]			;Erika
 	ld a, 43
 	jr nz, .saveLimit

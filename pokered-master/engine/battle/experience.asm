@@ -128,35 +128,8 @@ GainExperience:
 	bit 0, [hl]
 	ld a, MAX_LEVEL
 	jr z, .saveLimit
-	CheckEvent EVENT_BEAT_CHAMPION_RIVAL
-	ld a, MAX_LEVEL
-	jr nz, .saveLimit	
-	ld hl, wBeatGymFlags
-	bit 7, [hl]			;Giovanni
-	ld a, 65
-	jr nz, .saveLimit
-	bit 6, [hl]			;Blaine
-	ld a, 50
-	jr nz, .saveLimit
-	bit 5, [hl]			;Sabrina
-	jr z, .skipSabrinaCheck
-	bit 4, [hl]			;Koga
-	ld a, 47
-	jr nz, .saveLimit
-.skipSabrinaCheck
-	bit 3, [hl]			;Erika
-	ld a, 43
-	jr nz, .saveLimit
-	bit 2, [hl]			;Surge
-	ld a, 29
-	jr nz, .saveLimit
-	bit 1, [hl]			;Misty
-	ld a, 24
-	jr nz, .saveLimit
-	bit 0, [hl]			;Brock
-	ld a, 21
-	jr nz, .saveLimit
-	ld a, 14			;new game
+	ld hl, wLevelLimit
+	ld a, [hl]
 	;fall through
 .saveLimit
 	ld d, a

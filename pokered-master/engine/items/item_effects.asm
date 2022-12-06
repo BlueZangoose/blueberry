@@ -1336,6 +1336,18 @@ ItemUseMedicine:
 	ld a, [hl] ; a = level
 	cp MAX_LEVEL
 	jr z, .vitaminNoEffect ; can't raise level above 100
+	;cheat check
+	push hl			;saving hl to be restored after the checks
+	ld hl, wCheatFlags
+	bit 0, [hl]
+	pop hl
+	jr z, .noCheat
+	push hl
+	ld hl, wLevelLimit
+	cp [hl]
+	pop hl			;restoring hl after the checks
+	jr nc, .vitaminNoEffect
+.noCheat
 	inc a
 	ld [hl], a ; store incremented level
 	ld [wCurEnemyLVL], a

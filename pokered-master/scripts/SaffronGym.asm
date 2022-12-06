@@ -64,6 +64,7 @@ SaffronGymReceiveTM46:
 	set BIT_MARSHBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_MARSHBADGE, [hl]
+	farcall SetLevelLimit
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_SAFFRON_GYM_TRAINER_0, EVENT_BEAT_SAFFRON_GYM_TRAINER_6

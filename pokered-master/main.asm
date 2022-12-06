@@ -382,3 +382,7 @@ INCLUDE "engine/battle/move_effects/NEW_boost_side_effect.asm"
 SECTION "bank21", ROMX
 ;new, used to store animation data that no longer fits in Bank 1E.
 INCLUDE "engine/battle/animation_subfiles/play_applying_attack_sound.asm"
+
+SECTION "bank22", ROMX
+;new, used for other new files
+INCLUDE "engine/events/set_level_limit.asm"

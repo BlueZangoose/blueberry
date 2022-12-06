@@ -131,6 +131,7 @@ InitOptions:
 	ld [wOptions], a
 	ld a, %00000000
 	ld [wCheatFlags], a ; set all cheat flags to 0
+	farcall SetLevelLimit
 	ret
 
 LinkMenu:

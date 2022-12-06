@@ -64,6 +64,7 @@ CeladonGymReceiveTM21:
 	set BIT_RAINBOWBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_RAINBOWBADGE, [hl]
+	farcall SetLevelLimit
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_CELADON_GYM_TRAINER_0, EVENT_BEAT_CELADON_GYM_TRAINER_6

@@ -64,6 +64,7 @@ CeruleanGymReceiveTM11:
 	set BIT_CASCADEBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_CASCADEBADGE, [hl]
+	farcall SetLevelLimit
 
 	; deactivate gym trainers
 	SetEvents EVENT_BEAT_CERULEAN_GYM_TRAINER_0, EVENT_BEAT_CERULEAN_GYM_TRAINER_1

@@ -156,6 +156,7 @@ ViridianGymReceiveTM27:
 	set BIT_EARTHBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_EARTHBADGE, [hl]
+	farcall SetLevelLimit
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_VIRIDIAN_GYM_TRAINER_0, EVENT_BEAT_VIRIDIAN_GYM_TRAINER_7

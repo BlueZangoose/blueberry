@@ -164,6 +164,7 @@ CinnabarGymReceiveTM38:
 	set BIT_VOLCANOBADGE, [hl]
 	ld hl, wBeatGymFlags
 	set BIT_VOLCANOBADGE, [hl]
+	farcall SetLevelLimit
 
 	; deactivate gym trainers
 	SetEventRange EVENT_BEAT_CINNABAR_GYM_TRAINER_0, EVENT_BEAT_CINNABAR_GYM_TRAINER_6

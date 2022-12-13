@@ -1354,11 +1354,11 @@ KabutoEvosMoves:
 ; Learnset
 	db	1	,	SLING_STONE
 	db	1	,	FOSSIL_ZEAL
-	db	5	,	CLAW_SWIPE
-	db	11	,	SHELL_SMACK
-	db	18	,	CRABWALK
-	db	25	,	ROCK_BULLET
-	db	31	,	RAPIDS_RUSH
+	db	25	,	CLAW_SWIPE
+	db	29	,	SHELL_SMACK
+	db	31	,	CRABWALK
+	db	34	,	ROCK_BULLET
+	db	36	,	RAPIDS_RUSH
 	db	39	,	LEECH_BITE
 	db 0
 
@@ -1368,8 +1368,8 @@ KabutopsEvosMoves:
 ; Learnset
 	db	1	,	SLING_STONE
 	db	1	,	FOSSIL_ZEAL
-	db	15	,	CRABWALK
-	db	25	,	RAPIDS_RUSH
+	db	30	,	CRABWALK
+	db	35	,	RAPIDS_RUSH
 	db	41	,	SLICE
 	db	48	,	BLADE_STRIKE
 	db	55	,	STONETAIL
@@ -1453,11 +1453,11 @@ OmanyteEvosMoves:
 ; Learnset
 	db	1	,	WATERJET
 	db	1	,	FOSSIL_ZEAL
-	db	5	,	ICED_WATER
-	db	11	,	GHOSTFIRE
-	db	18	,	FLOW
-	db	25	,	STONE_SHELL
-	db	31	,	BOULDER_ROLL
+	db	25	,	ICED_WATER
+	db	29	,	GHOSTFIRE
+	db	31	,	FLOW
+	db	34	,	STONE_SHELL
+	db	36	,	BOULDER_ROLL
 	db	39	,	COLDPRESENCE
 	db 0
 
@@ -1467,8 +1467,8 @@ OmastarEvosMoves:
 ; Learnset
 	db	1	,	WATERJET
 	db	1	,	FOSSIL_ZEAL
-	db	15	,	ICED_WATER
-	db	25	,	GHOSTFIRE
+	db	30	,	ICED_WATER
+	db	35	,	GHOSTFIRE
 	db	41	,	FLOW
 	db	48	,	STONE_SHELL
 	db	55	,	BOULDER_ROLL

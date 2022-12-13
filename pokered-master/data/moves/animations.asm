@@ -992,7 +992,7 @@ CuteBarkAnim:
 ;	db -1 ; end
 ;sing:
 GemMissileAnim:
-	battle_anim BONE_STRIKE, SUBANIM_0_SAFARI_ROCK, 0, 2
+	battle_anim BONE_STRIKE, SUBANIM_1_CLOUD_TOSS, 0, 2
 ;	battle_anim BONE_STRIKE, SUBANIM_1_CLOUD_TOSS, 0, 1
 	battle_anim NO_MOVE, SUBANIM_1_EXPLOSION_SMALL_ENEMY, 1, 4
 ;	battle_anim GEM_MISSILE, SUBANIM_BOTH_HEART_MUSIC, 1, 6

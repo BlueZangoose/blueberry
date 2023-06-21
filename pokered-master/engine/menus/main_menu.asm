@@ -129,9 +129,9 @@ InitOptions:
 	ld [wLetterPrintingDelayFlags], a
 	ld a, %01000001 ; Fast text, set battle mode, animations on
 	ld [wOptions], a
-	ld a, %00000000
-	ld [wCheatFlags], a ; set all cheat flags to 0
-	farcall SetLevelLimit
+;	ld a, %00000000
+;	ld [wCheatFlags], a ; set all cheat flags to 0
+;	farcall SetLevelLimit
 	ret
 
 LinkMenu:

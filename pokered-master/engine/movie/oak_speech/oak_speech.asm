@@ -22,6 +22,9 @@ SetDefaultNames:
 	ld a, [wOptionsInitialized]
 	and a
 	call z, InitOptions
+	ld a, %00000000
+	ld [wCheatFlags], a ; set all cheat flags to 0
+	farcall SetLevelLimit	; set the level limit to 14
 	ld hl, NintenText
 	ld de, wPlayerName
 	ld bc, NAME_LENGTH

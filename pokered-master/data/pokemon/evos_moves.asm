@@ -491,10 +491,27 @@ MewEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, TRANSFORM
-	db 20, DRUMBEAK
-	db 30, MONKEYAROUND
-	db 40, FALLING_STAR
+	db	1	,	LEAF_CHOMP
+	db	5	,	COIN_TRICK
+	db	10	,	REGENERATE
+	db	15	,	SNOW_BREATH
+	db	20	,	AURA_IMPACT
+	db	25	,	BLAZE
+	db	30	,	LEECH_BITE
+	db	35	,	FLAMETAIL
+	db	40	,	ION_BEAM
+	db	45	,	STARFIRE
+	db	50	,	AMP_UP
+	db	55	,	DRAGONFIRE
+	db	60	,	AIR_SCYTHE
+	db	65	,	VORTEX
+	db	70	,	SPOOKYENERGY
+	db	75	,	FALLING_STAR
+	db	80	,	OMEN_SCREAM
+	db	85	,	MOON_VEIL
+	db	90	,	FOCUS
+	db	95	,	PSYBLAST
+	db	100	,	DRAGON_BLAST
 	db 0
 
 GyaradosEvosMoves:
